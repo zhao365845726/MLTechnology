@@ -51,5 +51,6 @@ Module.symvers
 Mkfile.old
 dkms.conf
 /bin/Debug/netcoreapp2.1
+/obj/*.*
 /obj/Debug/netcoreapp2.1
 /.vs/MLTechnology
