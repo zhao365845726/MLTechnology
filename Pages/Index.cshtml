@@ -1,97 +1,179 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "首页";
+    ViewData["Title"] = "米立科技";
 }
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+<link  rel="stylesheet" href="~/css/index.css"/>
+<style>
+    .span {
+    position: absolute;
+    bottom: -20px;
+    right: -288px;
+    padding: 1px 5px;
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+    background-color: rgba(255,255,255,.6);
+    }
+</style>
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="1000" style="width:1440px;height:380px;    margin-top: 77px;">
+    @*<ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol*@
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img src="~/images/banner1.svg" alt="ASP.NET" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how to build ASP.NET apps that can run anywhere.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
-                        更多1111111>>
-                        当前时间：@DateTime.Now 
-                    </a>
-                </p>
-            </div>
+            <img src="~/images/02.jpg" alt="ASP.NET" class="img-responsive" />
+            <div class="carousel-caption" ><span class="span">1</span></div>
+            @*<div class="carousel-caption" role="option">
+                    <p>
+                        <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
+                            当前时间：@DateTime.Now
+                        </a>
+                    </p>
+                </div>*@
         </div>
         <div class="item">
-            <img src="~/images/banner2.svg" alt="Visual Studio" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    There are powerful new features in Visual Studio for building modern web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
+            <img src="~/images/03.jpg" class="img-responsive" />
+            <div class="carousel-caption" ><span class="span">2</span></div>
+            @*<div class="carousel-caption" role="option">
+                    <p>
+                        There are powerful new features in Visual Studio for building modern web apps.
+                        <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
+                            Learn More
+                        </a>
+                    </p>
+                </div>*@
         </div>
         <div class="item">
-            <img src="~/images/banner3.svg" alt="Microsoft Azure" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how Microsoft's Azure cloud platform allows you to build, deploy, and scale web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
+            <img src="~/images/01.jpg" alt="Microsoft Azure" class="img-responsive" />
+            <div class="carousel-caption"><span class="span">3</span></div>
+            @*<div class="carousel-caption" role="option">
+                    <p>
+                        Learn how Microsoft's Azure cloud platform allows you to build, deploy, and scale web apps.
+                        <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
+                            Learn More
+                        </a>
+                    </p>
+                </div>*@
         </div>
     </div>
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
+
+    @*<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>*@
 </div>
 
-<div class="row">
-    <div class="col-md-3">
-        <h2>Application uses</h2>
-        <ul>
-            <li>Sample pages using ASP.NET Core Razor Pages</li>
-            <li>Theming using <a href="https://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
-        </ul>
+
+<div class="qiye">
+    <p  class="qiye1">企业战略目标</p>
+    <p  class="qiye2">成为中国领先的软件服务商，进军全国百强企业，打造专业的软件开发品牌。</p>
+    <p  class="qiye3">Become China'sleading software service providers, to enter the top 100enterprises, to createa professional software development brand.</p>
+    <div class="xian"></div>
+</div>
+
+
+<div  class="ruanjian">
+    <div  class="ruanjian1">
+        <p class="p1">系统软件开发</p>
+        <p class="p2">SYSTEM SOFEWARE</p>
+        <p class="p3">DEVELOPMENT</p>
+        <p class="p4">专业的软件开发，拥有专业的人才团队，根据客户的要求，为客户量身设计合理的系统及软件，为客户提供专业的“一对一”服务，更大程度上满足客户的需求，保证最专业的技术与服务。</p>
+        <img src="~/images/04.jpg" />
     </div>
-    <div class="col-md-3">
-        <h2>How to</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?linkid=852130">Working with Razor Pages.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699315">Manage User Secrets using Secret Manager.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699316">Use logging to log a message.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699317">Add packages using NuGet.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699319">Target development, staging or production environment.</a></li>
-        </ul>
+
+
+    <div class="ruanjian2">
+        <p class="p1">微信公众号/小程序开发</p>
+        <p class="p2">WECHAT PUBLIC/SMALL PROGRA</p>
+        <p class="p3">M DEVELOPMENT</p>
+        <p class="p4">专业的软件开发，拥有专业的人才团队，根据客户的要求，为客户量身设计合理的系统及软件，为客户提供专业的“一对一”服务，更大程度上满足客户的需求，保证最专业的技术与服务。</p>
+        <img src="~/images/04.jpg" />
     </div>
-    <div class="col-md-3">
-        <h2>Overview</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=518008">Conceptual overview of what is ASP.NET Core</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699320">Fundamentals of ASP.NET Core such as Startup and middleware.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398602">Working with Data</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398603">Security</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699321">Client side development</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
-        </ul>
+    <div class="ruanjian3">
+        <p class="p1">手机网站/APP开发</p>
+        <p class="p2">MOBILE PHONEWEBSITE / APP</p>
+        <p class="p3">DEVELOPMENT</p>
+        <p class="p4">专业的软件开发，拥有专业的人才团队，根据客户的要求，为客户量身设计合理的系统及软件，为客户提供专业的“一对一”服务，更大程度上满足客户的需求，保证最专业的技术与服务。</p>
+        <img src="~/images/04.jpg" />
     </div>
-    <div class="col-md-3">
-        <h2>Run &amp; Deploy</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517853">Run tools such as EF migrations and more</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure App Service</a></li>
+</div>
+
+
+
+<div class="guanyu">
+    <p class="guanyu1">关于我们</p>
+    <span class="guanyu2">/ABOUT US</span>
+</div>
+
+<div  class="tpw">
+    <div class="wz">
+        <p class="wz1">创立于2014年11月份，前身为杨铭工作室，2016年成立为山西米立信息技术有限公司。本着以是在高新技术应用领域中专业从事应用系统开发、信息安全服务的高新技术企业。米立长期专注于教育行业、煤炭行业、房地产、市政运营管理等相关行业信息化领域，凭借多年在应用系统开发以及信息安全服务的积累的经验，米立科技已经成为该领域内著名的应用系统解决方案提供商。</p>
+        <p class="wz1">米立科技倡导“专业、务实、高效、创新”的企业精神，具有良好的内部机制。优良的工作环境以及良好的激励机制，吸引了一批年轻的、有学识的、具有实干精神的人才。高素质、高水平、高效率的人才是尊蓝信息在当今激烈的市场中立于不败之地的保障...</p>
+        <span class="wz2">了解更多>></span>
+    </div> 
+    <div class="tupian">
+        <img src="~/images/06.jpg" />
+    </div>
+</div>
+
+
+<div  class="xinwen">
+    <p class="xinwen1">新闻动态</p>
+    <span class="xinwen2">/news</span>
+    <span class="xinwen3">了解更多</span>
+</div>
+
+
+<div class="tpw1">
+    <div class="tupian1">
+        <img src="~/images/07.jpg" style="width: 350px;height: 242px;"/>
+    </div>
+    <div class="dongtai">
+        <p class="dt1">山西米立信息技术有限公司</p>
+
+        <p >
+            <a href="#" class="dt2">近日，山西省米立信息技术有限公司成立，办公地点位于高平市</a>
+        </p>
+
+        <p style="line-height:4px;">
+                <a href="#" class="dt3">金安小区166号...</a>
+        </p>
+
+        <ul class="dt4">
+
+
+            <li  class="li1">
+                <a href="~/images/banner1.svg" class="a1">微信小程序上线</a>
+                <a href="#" class="a2">2019-05-28</a>
+            </li>
+            <li >
+                <a href="#" class="a1">第二届三次会员大会暨四次理事会会议纪要</a>
+
+                <a href="#" class="a3">2019-05-28</a>
+            </li>
+            <li >
+                <a href="#" class="a1">数据迁移</a>
+
+                <a href="#" class="a4">2019-05-28</a>
+            </li>
+            <li >
+                <a href="#" class="a1">考试系统上线</a>
+
+                <a href="#" class="a5">2019-05-28</a>
+            </li>
+            <li>
+                <a href="#" class="a1">微信公众号与订阅号区别</a>
+
+                <a shref="#"  class="a6">2019-05-28</a>
+            </li>
         </ul>
     </div>
 </div>

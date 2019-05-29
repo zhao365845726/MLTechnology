@@ -1,15 +1,50 @@
 ﻿@page
 @model AboutModel
 @{
-    ViewData["Title"] = "关于我们";
+    ViewData["Title"] = "米立科技";
 }
 <h2>@ViewData["Title"]</h2>
-<h3>@Model.Message</h3>
+<link rel="stylesheet" href="~/css/About.css" />
 
-<p>
-    【企业简介】
-    山西米立信息技术有限公司创立于2014年11月份，前身为杨铭工作室，2016年正式注册成立。本着以在高新技术应用领域中专业从事应用系统开发、行业软件开发的发展使命。米立长期专注于教育培训行业、煤炭行业、房地产、市政运营管理、企业内部管理等相关行业的软件信息化领域，凭借多年在应用系统软件开发领域积累的经验，专门针对各行各业进行实地的考察与沟通，并实时的给予优良的售后服务，为中小微企业的工作效率得以快速提升。米立现已经成为中小微企业内具有巨大实力的软件系统方案提供商。
-    米立科技倡导“专业、务实、高效、创新”的企业精神。秉承为中小微企业的腾飞而努力奋斗的价值使命。
-    具有良好的内部机制，优良的工作环境以及良好的激励机制，吸引了一批年轻、有学识、具有实干精神的人才，为此成立了一支高效专业的研发团队，为中小企业在软件行业的需求提供了良好的开发与服务保障。
 
-</p>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="1000" style="width:1440px;height:380px;    margin-top: 22px;">
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="~/images/02.jpg" alt="ASP.NET" class="img-responsive" />
+            <div class="carousel-caption"><span class="span">1</span></div>
+        </div>
+        <div class="item">
+            <img src="~/images/03.jpg" class="img-responsive" />
+            <div class="carousel-caption"><span class="span">2</span></div>
+        </div>
+        <div class="item">
+            <img src="~/images/01.jpg" alt="Microsoft Azure" class="img-responsive" />
+            <div class="carousel-caption"><span class="span">3</span></div>
+        </div>
+    </div>
+</div>
+
+<div class="guanyu">
+    <p class="guanyu1">企业简介</p>
+    <span class="guanyu2">/ABOUT US</span>
+</div>
+
+<div class="tpw">
+    <div class="wz">
+        <p class="wz1">山西米立信息技术有限公司创立于2014年11月份，前身为杨铭工作室，2016年成立为山西米立信息技术有限公司。本着以是在高新技术应用领域中专业从事应用系统开发、信息安全服务的高新技术企业。米立长期专注于教育行业、煤炭行业、房地产、市政运营管理等相关行业信息化领域，凭借多年在应用系统开发以及信息安全服务的积累的经验，米立科技已经成为该领域内著名的应用系统解决方案提供商。</p>
+        <p class="wz1">米立科技倡导“专业、务实、高效、创新”的企业精神，具有良好的内部机制。优良的工作环境以及良好的激励机制，吸引了一批年轻的、有学识的、具有实干精神的人才。高素质、高水平、高效率的人才是尊蓝信息在当今激烈的市场中立于不败之地的保障...</p>
+        <span class="wz2">了解更多>></span>
+    </div>
+    <div class="tupian">
+        <img src="~/images/06.jpg" />
+    </div>
+</div>
+
+
+
+
+
+
+
+
