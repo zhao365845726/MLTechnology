@@ -1,0 +1,60 @@
+/* Copyright (c) 2010 Baidu, Inc. All Rights Reserved */
+var baidu=baidu||{version:"1-1-0",guid:"$BAIDU$"};window[baidu.guid]=window[baidu.guid]||{};baidu.string=baidu.string||{};
+(function(){var a=new RegExp("(^[\\s\\t\\xa0\\u3000]+)|([\\u3000\\xa0\\s\\t]+\x24)","g");baidu.string.trim=function(b){return String(b).replace(a,"")
+}})();baidu.trim=baidu.string.trim;baidu.ajax=baidu.ajax||{};baidu.ajax.request=function(d,o){function j(){if(n.readyState==4){try{var q=n.status
+}catch(p){e("failure");return}e(q);if((q>=200&&q<300)||q==304||q==1223){e("success")}else{e("failure")}window.setTimeout(function(){n.onreadystatechange=new Function();
+if(g){n=null}},0)}}function c(){if(window.ActiveXObject){try{return new ActiveXObject("Msxml2.XMLHTTP")}catch(p){try{return new ActiveXObject("Microsoft.XMLHTTP")
+}catch(p){}}}if(window.XMLHttpRequest){return new XMLHttpRequest()}}function e(q){q="on"+q;var p=b[q],r=baidu.ajax[q];if(p){if(q!="onsuccess"){p(n)
+}else{p(n,n.responseText)}}else{if(r){if(q=="onsuccess"){return}r(n)}}}o=o||{};var i=o.data||"",g=!(o.async===false),h=o.username||"",m=o.password||"",a=(o.method||"GET").toUpperCase(),f=o.headers||{},b={},l,n;
+for(l in o){b[l]=o[l]}f["X-Request-By"]="baidu.ajax";try{n=c();if(a=="GET"){d+=(d.indexOf("?")>=0?"&":"?");if(i){d+=i+"&";
+i=null}d+="b"+(new Date()).getTime()+"=1"}if(h){n.open(a,d,g,h,m)}else{n.open(a,d,g)}if(g){n.onreadystatechange=j}if(a=="POST"){n.setRequestHeader("Content-Type","application/x-www-form-urlencoded")
+}for(l in f){if(f.hasOwnProperty(l)){n.setRequestHeader(l,f[l])}}e("beforerequest");n.send(i);if(!g){j()}}catch(k){e("failure")
+}return n};baidu.ajax.get=function(b,a){return baidu.ajax.request(b,{onsuccess:a})};baidu.ajax.form=function(a,c){c=c||{};
+var f=a.elements,n=f.length,b=a.getAttribute("method"),e=a.getAttribute("action"),t=c.replacer||function(u,i){return u},q={},s=[],l,p,r,m,d,g,h,k,j;
+function o(i,u){s.push(i+"="+u)}for(l in c){if(c.hasOwnProperty(l)){q[l]=c[l]}}for(l=0;l<n;l++){p=f[l];m=p.name;if(!p.disabled&&m){r=p.type;
+d=p.value;switch(r){case"radio":case"checkbox":if(!p.checked){break}case"textarea":case"text":case"password":case"hidden":case"select-one":o(m,t(d,m));
+break;case"select-multiple":g=p.options;k=g.length;for(h=0;h<k;h++){j=g[h];if(j.selected){o(m,t(j.value,m))}}break}}}q.data=s.join("&");
+q.method=a.getAttribute("method")||"POST";return baidu.ajax.request(e,q)};baidu.dom=baidu.dom||{};baidu.dom.g=function(a){if("string"==typeof a||a instanceof String){return document.getElementById(a)
+}else{if(a&&a.nodeName&&(a.nodeType==1||a.nodeType==9)){return a}}return null};baidu.g=baidu.G=baidu.dom.g;baidu.ajax.post=function(b,c,a){return baidu.ajax.request(b,{onsuccess:a,method:"POST",data:c})
+};baidu.sio=baidu.sio||{};baidu.sio.callByBrowser=function(b,d){var c=document.createElement("SCRIPT"),a=0;
+c.onload=c.onreadystatechange=function(){if(a){return}var e=c.readyState;if("undefined"==typeof e||e=="loaded"||e=="complete"){a=1;
+try{("function"==typeof d)&&d()}finally{if(c&&c.parentNode){c.parentNode.removeChild(c)}c.onload=c.onreadystatechange=null;
+c=null}}};c.setAttribute("type","text/javascript");c.setAttribute("src",b);document.getElementsByTagName("head")[0].appendChild(c)
+};baidu.sio.callByServer=function(a,f){var d=document.createElement("SCRIPT"),b="bd__cbs__",e=typeof f,c;if("string"==e){c=f
+}else{if("function"==e){while(1){c=b+Math.floor(Math.random()*2147483648).toString(36);if(!window[c]){window[c]=function(){try{f.apply(window,arguments)
+}finally{if(d&&d.parentNode){d.parentNode.removeChild(d)}d=null;window[c]=null}};break}}}}if("string"==typeof c){a=a.replace(/(\?|&)callback=[^&]*/,"\x241callback="+c);
+if(a.search(/(\?|&)callback=/)<0){a+=(a.indexOf("?")<0?"?":"&");a+="callback="+c}}d.setAttribute("type","text/javascript");
+d.setAttribute("src",a);document.getElementsByTagName("head")[0].appendChild(d)};
+
+function getUserState(userState){
+    if(userState){
+        var uName = userState.uName;
+        var isOnline = userState.isOnline;
+        if(isOnline==1){
+           var login =  baidu.G("login");
+           var userName = baidu.G("userName");
+           userName.innerHTML ="<a href='"+bapi.config.passport+"?center&tpl=my&aid=7&default_tab=4'>"+uName+"</a><span class=\"line\">|</span>";
+           login.innerHTML = "退出";
+           login.href = "javascript:void(0)";
+           login.onclick=function(){
+                window.location.href = bapi.config.passport+"?logout&u="+bapi.config.apikey;
+           };
+        };
+    };
+};
+
+var bapi = {};
+
+//url地址
+bapi.config={
+    passport:"http://passport.baidu.com/"
+    ,apikey:"http://dev.baidu.com/wiki/index.html"
+};
+bapi.checkLogin = function(){
+    var url = bapi.config.passport+"?checkuser&callback=getUserState&t="+new Date().getTime();
+    var scr = document.createElement("SCRIPT");
+    scr.setAttribute('type', 'text/javascript');
+	scr.setAttribute('charset', 'gbk');
+    scr.setAttribute('src', url);
+    document.getElementsByTagName("head")[0].appendChild(scr);
+};

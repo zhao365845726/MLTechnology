@@ -54,3 +54,5 @@ dkms.conf
 /obj/*.*
 /obj/Debug/netcoreapp2.1
 /.vs/MLTechnology
+/obj/Release/netcoreapp2.1
+/.vs
