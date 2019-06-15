@@ -1,0 +1,319 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html;" />
+  <title></title>
+  <style>
+    /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+      background-color: #f1f1f1;
+    }
+    /*定义滑块 内阴影+圆角*/
+    ::-webkit-scrollbar-thumb {
+      background-color: #b2b2b2;
+      width: 16px;
+      -webkit-border-radius: 16px;
+      -moz-border-radius: 16px;
+      border-radius: 16px;
+    }
+
+    .BMap_Marker img {
+      max-width: 100%;
+    }
+
+    .msgBox {
+      display: inline-block;
+      cursor: default;
+      position: absolute;
+      width: auto;
+      height: auto;
+      padding: 18px 21px 18px 12px;
+      background-color: #fff;
+      border-radius: 6px;
+      box-shadow: rgb(0, 0, 0) 0px 0px 6px -3px;
+    }
+
+      .msgBox .msg {
+        display: inline-block;
+        width: auto;
+        word-wrap: break-word;
+        word-break: break-word;
+        font-size: 14px;
+        width: 230px;
+        color: #333;
+      }
+
+      .msgBox .arrow {
+        position: absolute;
+        display: inline-block;
+        bottom: -6px;
+        left: 75px;
+        width: 0;
+        height: 0px;
+        content: '';
+        border-style: solid;
+        border-width: 7px;
+        border-color: #fff #fff transparent transparent;
+        transform: rotate(135deg);
+        box-shadow: rgb(0, 0, 0) 1px -1px 3px -2px;
+      }
+
+      .msgBox .close {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 10px;
+        height: 10px;
+        background: url(//0.ss.faisys.com/image/onlineMap/close.png?v=201811211416);
+        background-size: cover;
+      }
+  </style>
+  <script type="text/javascript" src="http://1.ss.faisys.com/js/comm/jquery/jquery-core.min.js?v=201811211412"></script>
+  <script type="text/javascript" src="http://1.ss.faisys.com/js/comm/fai.min.js?v=201902201454"></script>
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=BPPrdn0rN6iz2l1o97PohYt2Q7aOT9lW"></script>
+  <script type="text/javascript">
+    function initBaiduMap() {
+      var mapZoom = 14,
+        winInfo = "汇鑫商贸城创客梦想城",//输入的内容作为JS的字符串需要调用这个方法 by jser
+        mapX = 112.951689,
+        mapY = 35.774697,
+        overlayX = 112.951689,
+        overlayY = 35.774697;
+
+      var map = new BMap.Map("mapContainer333"); // map实例
+      var point = new BMap.Point(overlayX, overlayY); 			 // 坐标点
+      map.centerAndZoom(point, mapZoom);
+
+      // var oPoint = new BMap.Point(overlayX ,  overlayY );
+      // var marker = new BMap.Marker(oPoint);
+
+      map.enableScrollWheelZoom();				// 启用滚轮放大缩小
+      map.disableDoubleClickZoom();				// 禁止双击放大
+      // map.addOverlay(marker);						// 添加一个小圆点
+      //marker.enableDragging(true);				// 设置标注可拖拽
+      var bMapNavigation = new BMap.NavigationControl();
+      map.addControl(bMapNavigation);										// 添加一条鱼骨
+
+      //自定义标注
+      var myIcon = new BMap.Icon("//0.ss.faisys.com/image/onlineMap/marker_red_sprite.png?v=201809101152", new BMap.Size(22, 25), {
+        anchor: new BMap.Size(10, 25),
+      });
+      var marker = new BMap.Marker(point, { icon: myIcon });        // 创建标注
+      map.addOverlay(marker);
+
+      initInfoWindow(point, winInfo);//添加信息窗
+
+      function initInfoWindow(point, infomation) {
+        if (!infomation) { return }
+
+        function ComplexCustomOverlay(param) {
+          this.point = param.point; //覆盖物坐标点
+          this.content = param.content || ''; //覆盖内容
+          this.zIndex = param.zIndex || 1; //覆盖物内容层级
+          this.boxClass = param.boxClass || ''; //覆盖物容器class名称
+          this.boxStyle = cssText(param.boxStyle); //覆盖物容器样式
+          this.arrowClass = param.arrowClass || ''; //覆盖物箭头class名称
+          this.arrowStyle = cssText(param.arrowStyle); //覆盖物箭头样式
+          this.offset = param.offset || { x: 0, y: 0 }; //覆盖物的偏移量
+        }
+
+        //把百度地图遮盖物对象赋值给构造函数原型对象
+        ComplexCustomOverlay.prototype = new BMap.Overlay();
+
+        //初始化创建覆盖物
+        ComplexCustomOverlay.prototype.initialize = function (map) {
+          this.map = map;
+          this.box = document.createElement('div');
+          this.box.className = this.boxClass;
+          this.box.style.cssText = this.boxStyle;
+          this.box.innerHTML = this.content;
+
+          this.close = document.createElement('div');
+          this.close.className = "close";
+
+          this.arrow = document.createElement('div');
+          this.arrow.className = this.arrowClass;
+          this.arrow.style.cssText = this.arrowStyle;
+          this.box.appendChild(this.arrow);
+          this.box.appendChild(this.close);
+
+          //这个方法是把定义好的盒子 添加到文本标注所在的容器
+          map.getPanes().labelPane.appendChild(this.box);
+
+          this.initDefaultEvent(map);
+          return this.box;
+        };
+        ComplexCustomOverlay.prototype.addEventListener = function (event, fun) {
+          this.box.addEventListener(event, fun)
+        }
+        ComplexCustomOverlay.prototype.initDefaultEvent = function (map) {
+          var self = this;
+          //阻止默认事件
+          this.addEventListener("mousedown", function (e) { e.stopPropagation(); })
+          this.addEventListener("click", function (e) { e.stopPropagation(); })
+          this.addEventListener("touchmove", function (e) { e.stopPropagation(); })
+          this.addEventListener("touchstart", function (e) {
+            if (e.target.getAttribute('class').indexOf("close") != -1) {
+              map.removeOverlay(self)
+            }
+          })
+          this.addEventListener("mousedown", function (e) {
+            if (e.target.getAttribute('class').indexOf("close") != -1) {
+              map.removeOverlay(self)
+            }
+          })
+        }
+        //地图拖动调用事件
+        ComplexCustomOverlay.prototype.draw = function () {
+          mapDraw(this);
+        };
+        ComplexCustomOverlay.prototype.hide = function () {
+          this.box.style.display = "none"
+        };
+        ComplexCustomOverlay.prototype.reDraw = function () {
+          mapDraw(this);
+        };
+        //计算覆盖物在地图上的位置
+        function mapDraw(_this) {
+          var pixel = _this.map.pointToOverlayPixel(_this.point);
+          _this.box.style.left = pixel.x - parseInt(getStyle(_this.box, 'width')) / 2 - (parseInt(getStyle(_this.box, 'padding-left')) + parseInt(getStyle(_this.box, 'padding-right'))) / 2 + _this.offset.x + "px";
+          _this.box.style.bottom = -pixel.y + parseInt(getStyle(_this.arrow, 'height')) - _this.offset.y + "px";
+
+          _this.arrow.style.left = parseInt(getStyle(_this.box, 'width')) / 2 + 9 + "px"
+        }
+        /*--自定义核心代码结束------------------------------------------------------------------------------------*/
+        /*--下面为辅助代码------------------------------------------------------------------------------------*/
+        //获取元素样式
+        function getStyle(node, attr) {
+          if (typeof getComputedStyle != 'undefined') {
+            var value = getComputedStyle(node, null).getPropertyValue(attr);
+            return attr == 'opacity' ? value * 100 : value; //兼容不透明度，如果是不透明度，则返回整数方便计算
+          } else if (typeof node.currentStyle != 'undefined') { //如果是IE
+            if (attr == 'opacity') { //兼容不透明度
+              return Number(node.currentStyle.getAttribute('filter').match(/(?:opacity[=:])(\d+)/)[1]);
+            } else {
+              return node.currentStyle.getAttribute(attr);
+            }
+          }
+        }
+        //css样式字符串处理
+        function cssText(style) {
+          var css = '';
+          if (typeof style == 'string') {
+            css = style;
+          } else if (typeof style == 'object') {
+            for (var i in style) {
+              css += i + ':' + style[i] + ';';
+            }
+          }
+          return css;
+        }
+        //实例化覆盖物对象----用于替代信息窗体
+        var myCompOverlay = new ComplexCustomOverlay({
+          point: point,
+          content: '<div class="msg">' + infomation + '</div>',
+          boxClass: 'msgBox',
+          arrowClass: 'arrow',
+          zIndex: 1,
+          offset: {
+            x: 0,
+            y: -35
+          }
+        });
+        //地图缩放重新计算覆盖物位置
+        map.addEventListener("zoomend", function () {
+          myCompOverlay.reDraw()
+        });
+        //把自定义覆盖物添加到地图
+        map.addOverlay(myCompOverlay);
+        map.addEventListener('click', function (e) {
+          if (e.overlay) {
+            e.overlay.addEventListener("infowindowopen", function (e) {
+              map.removeOverlay(myCompOverlay);
+            })
+          }
+        });
+        marker.addEventListener('click', function () {
+          map.clearOverlays();
+          map.addOverlay(myCompOverlay);
+          map.addOverlay(marker);
+          map.panTo(point);
+        });
+      }
+    }
+    function addScrollWrap(info) {//2.0的信息弹窗不支持滚动条，手工包装一个可以带滚动条的容器 by jser
+      if (info) {
+        info = ('<div style="word-wrap:break-word;padding:0 7px;">' + info + '</div>');
+      }
+      return info;
+    }
+    function initGoogleMap() {
+      //获取承载谷歌地图的容器
+      var container = document.getElementById('mapContainer333');
+      var myLatLng = new google.maps.LatLng(23.133158856784426, 113.33254255767213);
+      var myOverLatLng = new google.maps.LatLng(23.133158856784426, 113.33254255767213);
+      //创建谷歌地图
+      var googleMap = new google.maps.Map(container,
+        {
+          draggable: true,
+          scrollwheel: false,
+          zoom: 17,
+          streetViewControl: false,
+          center: myOverLatLng,
+          scaleControl: true,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+      //创建标记
+      marker = new google.maps.Marker({
+        map: googleMap, position: myLatLng, animation: google.maps.Animation.DROP,
+        draggable: true
+      });
+      marker.setMap(googleMap);
+      var infoWin = new google.maps.InfoWindow({ content: "汇鑫商贸城创客梦想城", width: "auto", height: "auto" });
+      infoWin.open(googleMap, marker);
+    }
+    function loadMapError() {
+      var mapContainer = $('#mapContainer333');
+      mapContainer.css({ color: 'red', position: 'relative', textAlign: 'center' });
+      var msg = $('<div>').css({ position: 'absolute', top: '50%', width: '100%' }).text('加载地图失败，请刷新重试');
+      mapContainer.append(msg);
+    }
+    $(function () {
+      var hasCatchExp = false,
+        mapType = 1,
+        useGoogle = (mapType == 2),
+        useBaidu = (mapType == 1);
+
+      if (hasCatchExp) {
+        Fai.ing("当前设置的坐标数据有问题，为保证百度API正常使用，现已重置为默认坐标。请您联系客服处理。", true);
+      }
+
+      if (useBaidu) {
+        if (typeof BMap == 'undefined') {
+          loadMapError();
+        } else {
+          initBaiduMap();
+        }
+      }
+      if (useGoogle) {
+        var G = window.google,
+          googleExist = !!(G && G.maps && G.maps.Map);//转boolean值，否则会在google下会拿到一个obj by jser 2017-9-11
+
+        if (!googleExist) {
+          loadMapError();
+        } else {
+          initGoogleMap();
+        }
+      }
+    });
+  </script>
+</head>
+<body style="margin:0px; padding:0px; font-size:12px;">
+  <div id="mapContainer333" style="height:350px; width:720px;"></div>
+</body>
+</html>

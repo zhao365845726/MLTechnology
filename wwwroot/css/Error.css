@@ -1,0 +1,66 @@
+﻿.span {
+  position: absolute;
+  bottom: -20px;
+  right: -288px;
+  padding: 1px 5px;
+  text-align: center;
+  font-size: 12px;
+  color: #333;
+  background-color: rgba(255,255,255,.6);
+}
+
+.div {
+  border: 0px solid;
+  width: 100%;
+  height: 480px;
+  margin-left: 135px;
+  margin-top: 20px;
+}
+
+.div1 {
+  width: 210px;
+  height:395px;
+  border-bottom: 1px solid gainsboro;
+  border-right: 1px solid gainsboro;
+  border-left: 1px solid gainsboro;
+  float: left;
+}
+
+.kf {
+  width: 210px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 13px;
+  color: white;
+  background-color: #005d98;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  text-indent: 1em;
+  margin-bottom: -12px;
+}
+
+.div > .div1 >.from> p {
+  margin-top:14px;
+  margin-left:6px;
+  margin-bottom:-10px;
+}
+  .div > .div1 >.from> p > input {
+    width:155px;
+    height:17px;
+  }
+.div > .div1 > .from > button {
+    margin-left:6px;
+    margin-top:15px;
+}
+#neirong {
+  height:10px;
+}
+
+
+.div2 {
+  border: 0px solid;
+  height: 478px;
+  width: 858px;
+  float: left;
+  margin-left: 100px;
+}
