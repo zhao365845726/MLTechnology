@@ -14,112 +14,23 @@
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
-    <style type="text/css">
-       
-        .navbar {
-            background-color:white;width:100%;height:107px;border:none;
-        }
-            .navbar > .container {
-                margin-top: 26px;margin-left: 518px;
-            }
-                .navbar > .container > .collapse > .nav > .tp1 {
-                    margin-left:-169px;margin-right: 153px;
-                }
-                .navbar > .container > .collapse > .nav > li {
-                    margin-right:40px;
-                }
-                 .navbar > .container > .collapse > .nav > .tp1 >img{
-                    height:49px;width:219px;
-                }
-                .navbar > .container > .collapse > .nav > li> a {
-                    color:black;
-                }
-                 .navbar .container .nav > li > a:hover {
-                            background-color:#E66B51 ;
-                            color:white;
-                        }
-
-        .container > .dibu {
-                width:100%;height:120px;border-top:2px solid red;background-color:black;margin:auto;
-        }
-            .container > .dibu > .dibu1 {
-                        border:0px solid;
-                        width: 1000px;
-                        height: 25px;
-                        margin-left:666px;
-                        margin-top: 30px;  
-            }
-                
-                .container > .dibu > .dibu1 > .ul > li {
-                        width: 60px;
-                        height: 20px;
-                        float: left;
-                        list-style: none;
-                        font-size: 15px;
-                        color: white;
-                        display:inline-block;
-                        text-align:center;
-                }
-                    .container > .dibu > .dibu1 > .ul > li > a {
-                        color:white;
-                    }
-            .container > .dibu > .dibu2{
-                    font-size: 15px;
-                    color: grey;
-                    margin-left:722px;
-            }
-            .container > .dibu > .dibu3 {
-                    border:0px solid;
-                    width: 1000px;
-                    height: 20px;
-                    margin-left: 676px;
-                    margin-top: -13px;
-            }
-                .container > .dibu > .dibu3 > .ul1 > li {
-                        height: 20px;
-                        float: left;
-                        list-style: none;
-                        font-size: 14px;
-                        color: gray;
-                        margin-left: 5px;
-                }
-                 .container > .dibu > .dibu3 > .ul1 > li > a {
-                        color:gray;
-                    }
-                    .container > .dibu > .dibu3 > .ul1 > li > .li2 {
-                        margin-left:18px;
-                    }
-        .container .dibu .dibu1 .ul > li > a:hover {
-                color:#E65842;
-        }
-        .container .dibu .dibu3 .ul1 > li > a:hover {
-                color:#E65842;
-        }
-
-    </style>
+    <link  rel="stylesheet" href="~/css/Layout.css"/>
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top navbar-default" >
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class=" collapse navbar-collapse navbar-brand">
-                <ul class="nav navbar-nav">
-                    <li class="tp1"> 
-                        <img src="http://9513246.s21i.faiusr.com/4/ABUIABAEGAAg0pLhywUo5KXEhgQw2wE4MQ.png" alt="米立科技"  /></li>
-                    <li ><a asp-page="/Index" >首页</a></li>
-                    <li ><a asp-page="/Error" >服务网络</a></li>
-                    <li ><a asp-page="/About" >关于我们</a></li>
-                    <li><a asp-page="/Contact" >联系我们</a></li>
-                </ul>
-            </div>
+      <div class="container">
+        <div class=" collapse navbar-collapse navbar-brand ">
+          <ul class="nav navbar-nav" >
+            <li class="tp1">
+              <img src="http://9513246.s21i.faiusr.com/4/ABUIABAEGAAg0pLhywUo5KXEhgQw2wE4MQ.png" alt="米立科技" />
+            </li>
+            <li><a asp-page="/Index">首页</a></li>
+            <li><a asp-page="/Error">服务网络</a></li>
+            <li><a asp-page="/About">关于我们</a></li>
+            <li><a asp-page="/Contact">联系我们</a></li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <partial name="_CookieConsentPartial" />

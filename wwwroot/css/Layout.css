@@ -1,0 +1,251 @@
+﻿.navbar {
+  background-color: white;
+  width: 100%;
+  height: 107px;
+  border: none;
+}
+
+  .navbar > .container {
+    margin-top: 26px;
+    margin-left: 518px;
+  }
+
+    .navbar > .container > .collapse > .nav > .tp1 {
+      margin-left: -169px;
+      margin-right: 153px;
+    }
+
+    .navbar > .container > .collapse > .nav > li {
+      margin-right: 40px;
+    }
+
+    .navbar > .container > .collapse > .nav > .tp1 > img {
+      height: 49px;
+      width: 219px;
+    }
+
+    .navbar > .container > .collapse > .nav > li > a {
+      color: black;
+    }
+
+  .navbar .container .nav > li > a:hover {
+    background-color: #E66B51;
+    color: white;
+  }
+
+.container > .dibu {
+  width: 100%;
+  height: 120px;
+  border-top: 2px solid red;
+  background-color: black;
+  margin: auto;
+}
+
+  .container > .dibu > .dibu1 {
+    border: 0px solid;
+    width: 1000px;
+    height: 25px;
+    margin-left: 666px;
+    margin-top: 30px;
+  }
+
+    .container > .dibu > .dibu1 > .ul > li {
+      width: 60px;
+      height: 20px;
+      float: left;
+      list-style: none;
+      font-size: 15px;
+      color: white;
+      display: inline-block;
+      text-align: center;
+    }
+
+      .container > .dibu > .dibu1 > .ul > li > a {
+        color: white;
+      }
+
+  .container > .dibu > .dibu2 {
+    font-size: 15px;
+    color: grey;
+    margin-left: 722px;
+  }
+
+  .container > .dibu > .dibu3 {
+    border: 0px solid;
+    width: 1000px;
+    height: 20px;
+    margin-left: 676px;
+    margin-top: -13px;
+  }
+
+    .container > .dibu > .dibu3 > .ul1 > li {
+      height: 20px;
+      float: left;
+      list-style: none;
+      font-size: 14px;
+      color: gray;
+      margin-left: 5px;
+    }
+
+      .container > .dibu > .dibu3 > .ul1 > li > a {
+        color: gray;
+      }
+
+      .container > .dibu > .dibu3 > .ul1 > li > .li2 {
+        margin-left: 18px;
+      }
+
+.container .dibu .dibu1 .ul > li > a:hover {
+  color: #E65842;
+}
+
+.container .dibu .dibu3 .ul1 > li > a:hover {
+  color: #E65842;
+}
+
+
+
+@media screen and (max-width:1200px) {
+  .navbar {
+    background-color: white;
+    width: 100%;
+    height: 107px;
+    border:0px solid;
+  }
+
+    .navbar > .container > .collapse > .nav > .tp1 {
+      margin-left: -368px;
+      margin-right: 153px;
+      border:0px solid;
+      margin-top:-8px;
+    }
+  .container > .dibu {
+    width: 100%;
+    height: 120px;
+    border-top: 2px solid red;
+    background-color: black;
+    margin: auto;
+  }
+  .container > .dibu > .dibu1 {
+    border: 0px solid;
+    width: 100%;
+    height: 25px;
+    margin-left: 316px;
+    margin-top: 30px;
+  }
+  .container > .dibu > .dibu2 {
+    font-size: 15px;
+    color: grey;
+    margin-left: 371px;
+  }
+
+  .container > .dibu > .dibu3 {
+    border: 0px solid;
+    width: 100%;
+    height: 20px;
+    margin-left: 325px;
+    margin-top: -13px;
+  }
+}
+
+
+@media screen and (max-width:1000px) {
+  .navbar {
+    background-color: white;
+    width: 100%;
+    height: 107px;
+    border: 0px solid;
+  }
+
+    .navbar > .container > .collapse > .nav > .tp1 {
+      margin-left: -407px;
+      margin-right: 153px;
+      border: 0px solid;
+      margin-top: -8px;
+    }
+  .navbar > .container > .collapse > .nav {
+    width: 140%;
+    margin-left: -57px;
+  }
+  .container > .dibu {
+    width: 100%;
+    height: 120px;
+    border-top: 2px solid red;
+    background-color: black;
+    margin: auto;
+  }
+
+    .container > .dibu > .dibu1 {
+      border: 0px solid;
+      width: 100%;
+      height: 25px;
+      margin-left: 233px;
+      margin-top: 30px;
+    }
+
+    .container > .dibu > .dibu2 {
+      font-size: 15px;
+      color: grey;
+      margin-left: 289px;
+    }
+
+    .container > .dibu > .dibu3 {
+      border: 0px solid;
+      width: 100%;
+      height: 20px;
+      margin-left: 242px;
+      margin-top: -13px;
+    }
+}
+@media screen and (max-width:800px) {
+  .navbar {
+    background-color: white;
+    width: 100%;
+    height: 107px;
+    border: 0px solid;
+  }
+
+    .navbar > .container > .collapse > .nav > .tp1 {
+      margin-left: -254px;
+      margin-right: 22px;
+      border: 0px solid;
+      margin-top: -8px;
+    }
+
+    .navbar > .container > .collapse > .nav {
+      width: 100%;
+      margin-left: -244px;
+    }
+  .navbar > .container > .collapse {
+      width:100%;
+  }
+  .container > .dibu {
+    width: 100%;
+    height: 120px;
+    border-top: 2px solid red;
+    background-color: black;
+    margin: auto;
+  }
+
+    .container > .dibu > .dibu1 {
+      border: 0px solid;
+      width: 100%;
+      height: 25px;
+      margin-left: 148px;
+      margin-top: 30px;
+    }
+
+    .container > .dibu > .dibu2 {
+      font-size: 15px;
+      color: grey;
+      margin-left: 205px;
+    }
+
+    .container > .dibu > .dibu3 {
+      border: 0px solid;
+      width: 100%;
+      height: 20px;
+      margin-left: 158px;
+      margin-top: -13px;
+    }
+}
