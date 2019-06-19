@@ -17,56 +17,60 @@
     <link  rel="stylesheet" href="~/css/Layout.css"/>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top navbar-default" >
-      <div class="container">
-        <div class=" collapse navbar-collapse navbar-brand ">
-          <ul class="nav navbar-nav" >
-            <li class="tp1">
-              <img src="http://9513246.s21i.faiusr.com/4/ABUIABAEGAAg0pLhywUo5KXEhgQw2wE4MQ.png" alt="米立科技" />
-            </li>
-            <li><a asp-page="/Index">首页</a></li>
-            <li><a asp-page="/Error">服务网络</a></li>
-            <li><a asp-page="/About">关于我们</a></li>
-            <li><a asp-page="/Contact">联系我们</a></li>
-          </ul>
+  <div style="width:100%;margin:auto;border:0px solid blue;">
+    <div style="width:100%;margin:auto;border:0px solid #FF0099 ;height:103px;">
+      @*<nav class="navbar navbar-inverse navbar-fixed-top navbar-default" style="width:100%;margin:auto;border:1px solid red;">*@
+        <div class="container">
+          <div class=" collapse navbar-collapse navbar-brand ">
+            <ul class="nav navbar-nav">
+              <li class="tp1">
+                <img src="http://9513246.s21i.faiusr.com/4/ABUIABAEGAAg0pLhywUo5KXEhgQw2wE4MQ.png" alt="米立科技" />
+              </li>
+              <li><a asp-page="/Index">首页</a></li>
+              <li><a asp-page="/Error">服务网络</a></li>
+              <li><a asp-page="/About">关于我们</a></li>
+              <li><a asp-page="/Contact">联系我们</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-
-    <partial name="_CookieConsentPartial" />
-
-    <div class="container body-content ">
-        @RenderBody()
-        <hr />
+      @*</nav>*@
+      <partial name="_CookieConsentPartial" />
     </div>
-    <div class="container" style="width:100%;padding:0px;">
+    <div class="container body-content " style="width:100%;margin:auto;border:0px solid #660066;">
+      @RenderBody()
+      <hr />
+    </div>
+    <div class="container" style="width:100%;padding:0px;margin:auto;">
       <footer class="dibu">
-        <div class="dibu1">
-          <ul class="ul">
-            <li><a asp-page="/Index">首页</a></li>
-            <li>|</li>
-            <li><a asp-page="/Error">服务网络</a></li>
-            <li>|</li>
-            <li><a asp-page="/About">关于我们</a></li>
-            <li>|</li>
-            <li><a asp-page="/Contact">联系我们</a></li>
-          </ul>
+        <div style="width:90%;margin:auto;border:0px solid #E65842;height:100%;">
+          <div class="dibu1">
+            <ul class="ul">
+              <li><a asp-page="/Index">首页</a></li>
+              <li>|</li>
+              <li><a asp-page="/Error">服务网络</a></li>
+              <li>|</li>
+              <li><a asp-page="/About">关于我们</a></li>
+              <li>|</li>
+              <li><a asp-page="/Contact">联系我们</a></li>
+            </ul>
+          </div>
+
+          <p class="dibu2">&copy; 2019 - MLTechnology 版权所有 晋ICP备17004359号</p>
+
+          <div class="dibu3">
+            <ul class="ul1">
+              <li><a href="#">手机版权</a></li>
+              <li>|</li>
+              <li>v2.0<a class="li2" href="#">米立科技</a></li>
+              <li>|</li>
+              <li><a href="#">管理登录</a></li>
+            </ul>
+          </div>
         </div>
-
-        <p class="dibu2">&copy; 2019 - MLTechnology 版权所有 晋ICP备17004359号</p>
-
-        <div class="dibu3">
-          <ul class="ul1">
-            <li><a href="#">手机版权</a></li>
-            <li>|</li>
-            <li>v1.0<a class="li2" href="#">米立科技</a></li>
-            <li>|</li>
-            <li><a href="#">管理登录</a></li>
-          </ul>
-        </div>
-
       </footer>
     </div>
+  </div>
+  
 
 
 

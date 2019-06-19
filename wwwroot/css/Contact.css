@@ -2,32 +2,37 @@
 
 
 .span {
-    position: absolute;
-    bottom: -20px;
-    right: -288px;
-    padding: 1px 5px;
-    text-align: center;
-    font-size: 12px;
-    color: #333;
-    background-color: rgba(255,255,255,.6);
+  position: absolute;
+  bottom: -10px;
+  right: -33%;
+  padding: 0px 6px;
+  text-align: center;
+  font-size: 12px;
+  color: black;
+  background-color: wheat;
+}
+
+.img-responsive {
+  width: 100%;
 }
 .div {
     border: 0px solid;
-    width: 100%;
+    width: 70%;
     height: 480px;
-    margin-left: 135px;
+     margin:auto;
     margin-top: 20px;
 }
 .div1 {
-    width: 210px;
+    width:20%;
     height: 445px;
     border-bottom: 1px solid gainsboro;
     border-right: 1px solid gainsboro;
     border-left: 1px solid gainsboro;
     float:left;
+    margin-left:2%;
 }
 .kf {
-    width: 210px;
+    width: 100%;
     height: 34px;
     line-height: 34px;
     font-size: 13px;
@@ -39,7 +44,7 @@
     margin-bottom: -12px;
 }
 .qq {
-    width: 200px;
+    width: 100%;
     height: 90px;
     margin-top: 2px;
     border-bottom: 1px dashed gainsboro;
@@ -63,7 +68,7 @@
     top: 2px;
 }
 .time {
-    width: 198px;
+    width: 100%;
     height: 33px;
     position: relative;
 }
@@ -91,7 +96,7 @@
     margin-top: 11px;
 }
 .dizhi {
-    width: 200px;
+    width: 100%;
     height: 110px;
     margin-top: 2px;
     border-bottom: 1px dashed gainsboro;
@@ -106,7 +111,7 @@
     background-size:25px 25px;
 }
 .lianxi1 {
-    width: 305px;
+    width: 100%;
     height: 90px;
     margin-top: 2px;
 }
@@ -136,8 +141,8 @@
 
 .div2 {
     border: 0px solid;
-    height: 478px;
-    width: 858px;
+    height: 455px;
+    width: 68%;
     float: left;
-    margin-left: 100px;
+    margin-left: 9%;
 }

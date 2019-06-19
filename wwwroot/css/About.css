@@ -4,57 +4,66 @@
 
 
 .span {
-    position: absolute;
-    bottom: -20px;
-    right: -288px;
-    padding: 1px 5px;
-    text-align: center;
-    font-size: 12px;
-    color: #333;
-    background-color: rgba(255,255,255,.6);
+  position: absolute;
+  bottom: -10px;
+  right: -33%;
+  padding: 0px 6px;
+  text-align: center;
+  font-size: 12px;
+  color: black;
+  background-color: wheat;
+}
+
+.img-responsive {
+  width: 100%;
 }
 
 .guanyu {
-    width: 1000px;
+    width: 70%;
     height: 68px;
     position: relative;
     border-bottom: 1px solid;
-    margin-left: 227px;
+   margin:auto;
     margin-top: 23px;
+    border:0px solid;
 }
 
 .guanyu1 {
-    width: 100px;
+    width: 10%;
     height: 40px;
     font-size: 20px;
     text-align: center;
     line-height: 40px;
     color: #E65842;
     font-weight: bold;
+    margin-top:1%;
 }
 
 .guanyu2 {
-    position: absolute;
     top: 11px;
     left: 110px;
     font-size: 18px;
     color: grey;
     font-weight: bold;
+    float:left;
+    margin-left:9%;
+    margin-top:-39px;
 }
 .tpw {
     border: 0px solid;
-    width: 100%;
+    width: 70%;
     height: 330px;
-    margin-left: 229px;
+   margin:auto;
     margin-top: 5px;
 }
 
 .wz {
-    width: 500px;
-    height: 329px;
+    width: 44%;
+    height: 318px;
     float: left;
     border: 0px solid;
     margin-top: 10px;
+    margin-left:1%;
 }
 
 .wz1 {
@@ -73,9 +82,10 @@
 }
 
 .tupian {
-    width: 500px;
-    height: 329px;
+    width: 50%;
+    height: 307px;
     float: left;
     border: 0px solid;
-    margin-top: 12px;
+    margin-top: 1%;
+    margin-left:4%;
 }
