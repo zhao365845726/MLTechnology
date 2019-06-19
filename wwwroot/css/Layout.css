@@ -40,14 +40,14 @@
   }
   .container > .dibu > div .dibu1 {
     border: 0px solid;
-    width: 100%;
+    width: 35%;
     height: 25px;
     margin: auto;
     margin-left:33%;
     margin-top:22px;
   }
   .container > .dibu > div >.dibu1 > .ul > li {
-    width: 60px;
+    width: 13%;
     height: 20px;
     float: left;
     list-style: none;
@@ -63,17 +63,18 @@
     font-size: 15px;
     color: grey;
     margin: auto;
-    width: 100%;
+    width: 25%;
     margin-left:37%;
+    border:0px solid;
   }
 
   .container > .dibu > div .dibu3 {
     border: 0px solid;
-    width: 100%;
+    width: 30%;
     height: 20px;
     margin: auto;
-    margin-top: -13px;
-    margin-left:34%;
+    margin-left:34.5%;
+    margin-top:-0.7%;
   }
 
   .container > .dibu > div> .dibu3 > .ul1 > li {
