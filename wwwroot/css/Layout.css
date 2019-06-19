@@ -21,6 +21,7 @@
 }
   .container > .collapse > .nav {
       width:100%;
+      margin-left:4%;
   }
   .container > .collapse > .nav li {
     margin-left: 52px;
@@ -33,7 +34,7 @@
 
   .container > .dibu {
     width: 100%;
-    height: 120px;
+    height: 100%;
     border-top: 2px solid red;
     background-color: black;
     margin: auto;
@@ -43,11 +44,11 @@
     width: 35%;
     height: 25px;
     margin: auto;
-    margin-left:33%;
+    
     margin-top:22px;
   }
   .container > .dibu > div >.dibu1 > .ul > li {
-    width: 13%;
+    width: 60px;
     height: 20px;
     float: left;
     list-style: none;
@@ -63,8 +64,8 @@
     font-size: 15px;
     color: grey;
     margin: auto;
-    width: 25%;
-    margin-left:37%;
+    width: 27%;
+    
     border:0px solid;
   }
 
@@ -104,7 +105,41 @@
 
 @media screen and (max-width:1024px) {
   .container > .collapse > .nav > .tp1 {
+    margin-left: 10%;
+  }
+    .container > .dibu > div .dibu1 {
+      width: 53%;
+    }
+    .container > .dibu > div .dibu2 {
+      width: 42%;
+    }
+
+    .container > .dibu > div .dibu3 {
+      width: 31%;
+      margin-left: 24.5%;
+    }
+}
+@media screen and (max-width:768px) {
+  .container > .collapse > .nav > .tp1 {
     margin-left: 4%;
   }
+  .container > .collapse > .nav li {
+    margin-left: 20px;
+  }
+  .container > .dibu > div .dibu1 {
+    width: 75%;
+  }
 
+  .container > .dibu > div .dibu2 {
+    width: 58%;
+  }
+
+  .container > .dibu > div .dibu3 {
+    width: 44%;
+    margin-left: 23.5%;
+    margin-top:-10px;
+  }
+}
+@media screen and (max-width:378px) {
+    
 }
