@@ -1,33 +1,48 @@
-﻿
-.container {
+﻿.navbar {
+  width: 100%;
+  margin: auto;
+  border: 0px solid red;
+  background-color: white;
+  height: 103px;
+}
+.container-fluid {
   width: 100%;
   border: 0px solid red;
   margin: auto;
-  height:100%;
+  height: 100%;
 }
-  .container > .collapse > .nav > li > a {
-    color: black;
+  .container-fluid > .navbar-header {
+      border:0px solid;
+      height:100%;
+      margin-left:24%;
   }
- .container .nav > li > a:hover {
-  background-color: #E66B51;
-  color: white;
-}
-.container > .collapse {
-  width: 100%;
-  border: 0px solid blue;
-  margin: auto;
-  padding: 0;
-  margin-top:20PX;
-}
-  .container > .collapse > .nav {
+  .container-fluid > .navbar-header > #tp1 {
+      border:0px solid;
       width:100%;
-      margin-left:4%;
+      height:80%;
+      margin:auto;
+      margin-top:3%;
   }
-  .container > .collapse > .nav li {
-    margin-left: 52px;
+  .container-fluid > .collapse > .nav > li > a {
+      color:black;
+      font-size:18px;
   }
-  .container > .collapse > .nav > .tp1 {
-    margin-left:22%;
+  .container-fluid > .collapse > .nav > li > a:hover {
+    background-color: #E66B51;
+    color: white;
+  }
+  .container-fluid > .collapse {
+    width: 89%;
+    border: 0px solid blue;
+    margin: auto;
+    padding: 0;
+  }
+  .container-fluid > .collapse > .nav {
+    width: 44%;
+    margin-top:2%;
+  }
+  .container-fluid > .collapse > .nav li {
+    margin-left: 7%;
   }
 
 
@@ -74,7 +89,7 @@
     width: 30%;
     height: 20px;
     margin: auto;
-    margin-left:34.5%;
+    margin-left:37%;
     margin-top:-0.7%;
   }
 
@@ -104,8 +119,12 @@
 
 
 @media screen and (max-width:1024px) {
-  .container > .collapse > .nav > .tp1 {
-    margin-left: 10%;
+  .container-fluid > .navbar-header {
+    margin-left: 7%;
+  }
+  .container-fluid > .collapse > .nav {
+    width: 69%;
+    margin-top: 3%;
   }
     .container > .dibu > div .dibu1 {
       width: 53%;
@@ -115,17 +134,30 @@
     }
 
     .container > .dibu > div .dibu3 {
-      width: 31%;
-      margin-left: 24.5%;
+      width: 32%;
+      margin-left: 30.5%;
     }
 }
 @media screen and (max-width:768px) {
-  .container > .collapse > .nav > .tp1 {
-    margin-left: 4%;
-  }
-  .container > .collapse > .nav li {
-    margin-left: 20px;
-  }
+    .container-fluid > .navbar-header {
+      margin-left: 5%;
+    }
+    .container-fluid > .collapse > .nav > li > a {
+      font-size: 16px;
+    }
+
+      .container-fluid > .collapse > .nav > li > a:hover {
+        background-color: #E66B51;
+        color: white;
+      }
+
+      .container-fluid > .collapse > .nav {
+        width: 61%;
+        margin-top: 4%;
+      }
+   .container-fluid > .collapse > .nav li {
+          margin-left: 0%;
+        }
   .container > .dibu > div .dibu1 {
     width: 75%;
   }
@@ -140,6 +172,129 @@
     margin-top:-10px;
   }
 }
-@media screen and (max-width:378px) {
-    
+@media screen and (max-width:375px) {
+  .navbar {
+    width: 96%;
+    margin:0px;
+    border:0px solid red;
+  }
+ .container-fluid > .navbar-header {
+      border: 0px solid;
+      height: 100%;
+      margin:0px;
+    }
+      .container-fluid > .navbar-header > #tp1 {
+        border: 0px solid;
+        width: 50%;
+        height: 66%;
+        margin: auto;
+        margin-top: 5%;
+      }
+    .container-fluid > .navbar-header > #tp1 img {
+        width:100%;
+    }
+    .container-fluid > .collapse > .nav > li > a {
+      color: black;
+      font-size: 12px;
+    }
+      .container-fluid > .collapse > .nav > li > a:hover {
+        background-color: #E66B51;
+        color: white;
+      }
+    .container-fluid > .collapse {
+      width: 100%;
+      border: 0px solid blue;
+      margin: auto;
+      padding: 0;
+      height:49%;
+      float:right;
+      margin-top:-8%;
+    }
+      .container-fluid > .collapse > .nav {
+        width: 100%;
+        margin-top: 2%;
+        margin-left:5%;
+      }
+        .container-fluid > .collapse > .nav li {
+          display:inline-block;
+        }
+  .container-fluid > .navbar-header > .navbar-toggle {
+      margin-top:8%;
+  }
+
+
+  .container > .dibu {
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid red;
+    background-color: black;
+    margin: auto;
+  }
+
+    .container > .dibu > div .dibu1 {
+      border: 0px solid;
+      width: 100%;
+      height: 25px;
+      margin: auto;
+      margin-top: 22px;
+    }
+
+    .container > .dibu > div > .dibu1 > .ul > li {
+      width: 48px;
+      height: 20px;
+      float: left;
+      list-style: none;
+      font-size: 12px;
+      color: white;
+      display: inline-block;
+      text-align: center;
+      margin-left:-4%;
+    }
+
+      .container > .dibu > div > .dibu1 > .ul > li > a {
+        color: white;
+      }
+
+    .container > .dibu > div .dibu2 {
+      font-size: 12px;
+      color: grey;
+      margin: auto;
+      width: 100%;
+      border: 0px solid;
+      text-align:center;
+    }
+
+    .container > .dibu > div .dibu3 {
+      border: 0px solid;
+      width: 100%;
+      height: 20px;
+      margin: auto;
+      margin-left: 0px;
+      margin-top: -3.2%;
+    }
+
+    .container > .dibu > div > .dibu3 > .ul1 > li {
+      height: 20px;
+      float: left;
+      list-style: none;
+      font-size: 14px;
+      color: gray;
+      margin-left: 5px;
+    }
+
+      .container > .dibu > div > .dibu3 > .ul1 > li > a {
+        color: gray;
+      }
+
+      .container > .dibu > div > .dibu3 > .ul1 > li > .li2 {
+        margin-left: 18px;
+      }
+
+  .container .dibu div .dibu1 .ul > li > a:hover {
+    color: #E65842;
+  }
+
+  .container .dibu div .dibu3 .ul1 > li > a:hover {
+    color: #E65842;
+  }
 }
