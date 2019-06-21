@@ -4,6 +4,7 @@
   border: 0px solid red;
   background-color: white;
   height: 103px;
+  border-bottom: 2px solid #F1F1F1;
 }
 .container-fluid {
   width: 100%;
@@ -138,22 +139,33 @@
       margin-left: 30.5%;
     }
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .container-fluid > .navbar-header {
       margin-left: 5%;
     }
     .container-fluid > .collapse > .nav > li > a {
-      font-size: 16px;
+      font-size: 12px;
+      line-height:5px;
     }
-
-      .container-fluid > .collapse > .nav > li > a:hover {
-        background-color: #E66B51;
-        color: white;
-      }
-
+  .container-fluid > .collapse {
+        width:18%;
+        float:right;
+        margin-top:-17%;
+  }
+  .container-fluid > .collapse > .nav > li > a:hover {
+    background-color: #E66B51;
+    color: white;
+  }
+  .container-fluid > .navbar-header > #tp1 {
+    border: 0px solid;
+    width: 33%;
+    height: 80%;
+    margin: auto;
+    margin-top: 3%;
+  }
       .container-fluid > .collapse > .nav {
-        width: 61%;
-        margin-top: 4%;
+        width: 77%;
+        margin-top: 1%;
       }
    .container-fluid > .collapse > .nav li {
           margin-left: 0%;
@@ -172,17 +184,67 @@
     margin-top:-10px;
   }
 }
+@media screen and (max-width:768px) {
+  .container-fluid > .navbar-header {
+    margin-left: 5%;
+  }
+
+  .container-fluid > .collapse > .nav > li > a {
+    font-size: 16px;
+  }
+
+  .container-fluid > .collapse {
+    width: 60%;
+    float: right;
+  }
+
+    .container-fluid > .collapse > .nav > li > a:hover {
+      background-color: #E66B51;
+      color: white;
+    }
+
+    .container-fluid > .collapse > .nav {
+      width: 80%;
+      margin-top: 5%;
+    }
+
+      .container-fluid > .collapse > .nav li {
+        margin-left: 0%;
+      }
+
+  .container > .dibu > div .dibu1 {
+    width: 75%;
+  }
+
+  .container > .dibu > div .dibu2 {
+    width: 58%;
+  }
+
+  .container > .dibu > div .dibu3 {
+    width: 44%;
+    margin-left: 23.5%;
+    margin-top: -10px;
+  }
+}
 @media screen and (max-width:375px) {
   .navbar {
     width: 96%;
-    margin:0px;
-    border:0px solid red;
+    margin: 0px;
+    border: 0px solid red;
+      border-bottom: 2px solid #F1F1F1;
   }
- .container-fluid > .navbar-header {
-      border: 0px solid;
-      height: 100%;
-      margin:0px;
-    }
+
+  .container-fluid {
+  width: 100%;
+  border: 0px solid red;
+  margin: auto;
+  height: 88%;
+  }
+  .container-fluid > .navbar-header {
+    border: 0px solid;
+    height: 100%;
+    margin: 0px;
+  }
       .container-fluid > .navbar-header > #tp1 {
         border: 0px solid;
         width: 50%;
@@ -196,6 +258,7 @@
     .container-fluid > .collapse > .nav > li > a {
       color: black;
       font-size: 12px;
+      padding:11px;
     }
       .container-fluid > .collapse > .nav > li > a:hover {
         background-color: #E66B51;
@@ -206,14 +269,14 @@
       border: 0px solid blue;
       margin: auto;
       padding: 0;
-      height:49%;
+      height:67%;
       float:right;
       margin-top:-8%;
+      margin-right:-7%;
     }
       .container-fluid > .collapse > .nav {
         width: 100%;
         margin-top: 2%;
-        margin-left:5%;
       }
         .container-fluid > .collapse > .nav li {
           display:inline-block;
@@ -262,6 +325,153 @@
       width: 100%;
       border: 0px solid;
       text-align:center;
+    }
+
+    .container > .dibu > div .dibu3 {
+      border: 0px solid;
+      width: 100%;
+      height: 20px;
+      margin: auto;
+      margin-left: 0px;
+      margin-top: -3.2%;
+    }
+
+    .container > .dibu > div > .dibu3 > .ul1 > li {
+      height: 20px;
+      float: left;
+      list-style: none;
+      font-size: 14px;
+      color: gray;
+      margin-left: 5px;
+    }
+
+      .container > .dibu > div > .dibu3 > .ul1 > li > a {
+        color: gray;
+      }
+
+      .container > .dibu > div > .dibu3 > .ul1 > li > .li2 {
+        margin-left: 18px;
+      }
+
+  .container .dibu div .dibu1 .ul > li > a:hover {
+    color: #E65842;
+  }
+
+  .container .dibu div .dibu3 .ul1 > li > a:hover {
+    color: #E65842;
+  }
+}
+@media screen and (max-width:414px) {
+  .navbar {
+    width: 96%;
+    margin: 0px;
+    border: 0px solid red;
+    border-bottom: 2px solid #F1F1F1;
+  }
+
+  .container-fluid {
+    width: 100%;
+    border: 0px solid red;
+    margin: auto;
+    height: 88%;
+  }
+
+    .container-fluid > .navbar-header {
+      border: 0px solid;
+      height: 100%;
+      margin: 0px;
+    }
+
+      .container-fluid > .navbar-header > #tp1 {
+        border: 0px solid;
+        width: 50%;
+        height: 66%;
+        margin: auto;
+        margin-top: 5%;
+      }
+
+        .container-fluid > .navbar-header > #tp1 img {
+          width: 100%;
+        }
+
+    .container-fluid > .collapse > .nav > li > a {
+      color: black;
+      font-size: 12px;
+    }
+
+      .container-fluid > .collapse > .nav > li > a:hover {
+        background-color: #E66B51;
+        color: white;
+      }
+
+    .container-fluid > .collapse {
+      width: 100%;
+      border: 0px solid blue;
+      margin: auto;
+      padding: 0;
+      height: 67%;
+      float: right;
+      margin-top: -3%;
+      margin-right: 0px;
+    }
+
+      .container-fluid > .collapse > .nav {
+        width: 94%;
+        margin-top: 4%;
+        margin:auto;
+       
+      }
+
+        .container-fluid > .collapse > .nav li {
+          display: inline-block;
+          margin-left:1%;
+          margin-right:1%;
+        }
+
+    .container-fluid > .navbar-header > .navbar-toggle {
+      margin-top: 8%;
+    }
+
+
+  .container > .dibu {
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid red;
+    background-color: black;
+    margin: auto;
+  }
+
+    .container > .dibu > div .dibu1 {
+      border: 0px solid;
+      width: 100%;
+      height: 25px;
+      margin: auto;
+      margin-top: 22px;
+    }
+
+    .container > .dibu > div > .dibu1 > .ul > li {
+      width: 48px;
+      height: 20px;
+      float: left;
+      list-style: none;
+      font-size: 12px;
+      color: white;
+      display: inline-block;
+      text-align: center;
+      margin-left: -4%;
+    }
+
+      .container > .dibu > div > .dibu1 > .ul > li > a {
+        color: white;
+      }
+
+    .container > .dibu > div .dibu2 {
+      font-size: 12px;
+      color: grey;
+      margin: auto;
+      width: 100%;
+      border: 0px solid;
+      text-align: center;
     }
 
     .container > .dibu > div .dibu3 {

@@ -17,15 +17,22 @@
 .img-responsive {
   width: 100%;
 }
-
+#myCarousel {
+  width: 100%;
+  height: 400px;
+  border: 0px solid blue;
+}
+.carousel-inner {
+  width:90%;margin:auto;height:394px;
+  }
 .guanyu {
-    width: 60%;
-    height: 68px;
-    position: relative;
-    border-bottom: 1px solid;
-   margin:auto;
-    margin-top: 23px;
-    border:0px solid;
+  width: 60%;
+  height: 68px;
+  position: relative;
+  border-bottom: 1px solid;
+  margin: auto;
+  margin-top: 23px;
+  border: 0px solid;
 }
 
 .guanyu1 {
@@ -88,4 +95,275 @@
     border: 0px solid;
     margin-top: 1%;
     margin-left:4%;
+}
+@media screen and (max-width:1024px) {
+  .span {
+    bottom: -19px;
+  }
+
+  #myCarousel {
+    height: 267px;
+  }
+
+  .carousel-inner {
+    height: 251px;
+  }
+  .guanyu {
+    margin-left: 13.5%;
+    height:33px;
+  }
+
+  .guanyu1 {
+    width: 15%;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    color: #E65842;
+    font-weight: bold;
+    margin-top: 1%;
+    border: 0px solid;
+  }
+  .guanyu2 {
+    margin-left: 16%;
+  }
+
+  .tpw {
+    width: 72%;
+    margin-left: 13.5%;
+  }
+
+  .wz2 {
+    margin-top: -5%;
+  }
+}
+@media screen and (max-width:768px) {
+  #myCarousel {
+    height: 181px;
+  }
+
+  .carousel-inner {
+    height: 179px;
+  }
+
+  .guanyu {
+    margin-left: 14%;
+    height: 44px;
+  }
+  .guanyu1 {
+    width: 19%;
+    height: 35px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    color: #E65842;
+    font-weight: bold;
+    margin-top: 1%;
+    border: 0px solid;
+  }
+    .guanyu2 {
+    margin-left: 20%;
+    margin-top:-7.5%;
+  }
+
+  .tpw {
+    height: 410px;
+  }
+
+  .wz {
+    width: 46%;
+    height: 410px;
+  }
+  .wz1 {
+    font-size: 12px;
+  }
+  .wz2 {
+    margin-top: -5%;
+  }
+  .tupian {
+    margin-top: 6%;
+    margin-left: 3%;
+  }
+}
+@media screen and (max-width:375px) {
+  #myCarousel {
+    height: 150px;
+    border: 0px solid;
+    margin-top: 4%;
+  }
+
+  .carousel-inner {
+    width: 90%;
+    margin: auto;
+    height: 150px;
+  }
+
+    .carousel-inner > .item > .img-responsive {
+      height: 149px;
+    }
+  /*关于我们*/
+  .guanyu {
+    width: 94%;
+    margin-left: 4%;
+    border-bottom: 1px solid;
+    height: 3%;
+  }
+
+  .guanyu1 {
+    width: 80px;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    color: #E65842;
+    font-weight: bold;
+    margin-top: 14px;
+    margin-left: 0%;
+  }
+
+  .guanyu2 {
+    top: 11px;
+    left: 110px;
+    font-size: 15px;
+    color: grey;
+    font-weight: bold;
+    margin-top: -38px;
+    float: left;
+    margin-left: 25%;
+  }
+
+  .tpw {
+    border: 0px solid;
+    width: 100%;
+    height: 572px;
+    margin: auto;
+    margin-top: 5px;
+  }
+
+  .wz {
+    width: 92%;
+    height: 336px;
+    /* float: left; */
+    border: 0px solid;
+    /* margin-top: 9px; */
+    margin-left: 4%;
+    /* margin: auto; */
+    /* margin: auto; */
+  }
+
+  .wz1 {
+    text-indent: 1em;
+    margin-top: 5px;
+    font-size: 10px;
+    color: grey;
+    line-height: 22px;
+    position: relative;
+  }
+
+  .wz2 {
+    margin-top: -3%;
+    line-height: 75px;
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 3%;
+  }
+
+  .tupian {
+    width: 92%;
+    height: 219px;
+    border: 0px solid;
+    margin-top: 4%;
+    margin-left: 4%;
+  }
+}
+@media screen and (max-width:414px) {
+  #myCarousel {
+    height: 150px;
+    border: 0px solid;
+    margin-top: 4%;
+  }
+
+  .carousel-inner {
+    width: 90%;
+    margin: auto;
+    height: 150px;
+  }
+
+    .carousel-inner > .item > .img-responsive {
+      height: 149px;
+    }
+  /*关于我们*/
+  .guanyu {
+    width: 94%;
+    margin-left: 4%;
+    border-bottom: 1px solid;
+    height: 3%;
+  }
+
+  .guanyu1 {
+    width: 80px;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    color: #E65842;
+    font-weight: bold;
+    margin-top: 14px;
+    margin-left: 0%;
+  }
+
+  .guanyu2 {
+    top: 11px;
+    left: 110px;
+    font-size: 15px;
+    color: grey;
+    font-weight: bold;
+    margin-top: -38px;
+    float: left;
+    margin-left: 25%;
+  }
+
+  .tpw {
+    border: 0px solid;
+    width: 100%;
+    height: 572px;
+    margin: auto;
+    margin-top: 5px;
+  }
+
+  .wz {
+    width: 92%;
+    height: 336px;
+    /* float: left; */
+    border: 0px solid;
+    /* margin-top: 9px; */
+    margin-left: 4%;
+    /* margin: auto; */
+    /* margin: auto; */
+  }
+
+  .wz1 {
+    text-indent: 1em;
+    margin-top: 5px;
+    font-size: 10px;
+    color: grey;
+    line-height: 22px;
+    position: relative;
+  }
+
+  .wz2 {
+    margin-top: -3%;
+    line-height: 75px;
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 3%;
+  }
+
+  .tupian {
+    width: 92%;
+    height: 219px;
+    border: 0px solid;
+    margin-top: 4%;
+    margin-left: 4%;
+  }
 }
