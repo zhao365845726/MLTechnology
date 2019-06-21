@@ -1,30 +1,19 @@
 ﻿
 
-
-
-
-.span {
-  position: absolute;
-  bottom: -10px;
-  right: -33%;
-  padding: 0px 6px;
-  text-align: center;
-  font-size: 12px;
-  color: black;
-  background-color: wheat;
-}
-
 .img-responsive {
   width: 100%;
 }
 #myCarousel {
   width: 100%;
-  height: 400px;
+  height: 364px;
   border: 0px solid blue;
+  margin-top: 1%;
 }
 .carousel-inner {
-  width:90%;margin:auto;height:394px;
-  }
+  width: 72%;
+  margin: auto;
+  height: 363px;
+}
 .guanyu {
   width: 60%;
   height: 68px;
@@ -34,7 +23,6 @@
   margin-top: 23px;
   border: 0px solid;
 }
-
 .guanyu1 {
     width: 10%;
     height: 40px;
@@ -45,7 +33,6 @@
     font-weight: bold;
     margin-top:1%;
 }
-
 .guanyu2 {
     top: 11px;
     left: 110px;
@@ -63,7 +50,6 @@
    margin:auto;
     margin-top: 5px;
 }
-
 .wz {
     width: 44%;
     height: 318px;
@@ -72,7 +58,6 @@
     margin-top: 10px;
     margin-left:1%;
 }
-
 .wz1 {
     text-indent: 2em;
     margin-top: 5px;
@@ -80,14 +65,12 @@
     color: grey;
     line-height: 22px;
 }
-
 .wz2 {
     margin-top: 55px;
     line-height: 75px;
     display: inline-block;
     font-size: 16px;
 }
-
 .tupian {
     width: 50%;
     height: 307px;
@@ -97,14 +80,9 @@
     margin-left:4%;
 }
 @media screen and (max-width:1024px) {
-  .span {
-    bottom: -19px;
-  }
-
   #myCarousel {
     height: 267px;
   }
-
   .carousel-inner {
     height: 251px;
   }
@@ -112,7 +90,6 @@
     margin-left: 13.5%;
     height:33px;
   }
-
   .guanyu1 {
     width: 15%;
     height: 40px;
@@ -127,12 +104,10 @@
   .guanyu2 {
     margin-left: 16%;
   }
-
   .tpw {
     width: 72%;
     margin-left: 13.5%;
   }
-
   .wz2 {
     margin-top: -5%;
   }
@@ -141,11 +116,9 @@
   #myCarousel {
     height: 181px;
   }
-
   .carousel-inner {
     height: 179px;
   }
-
   .guanyu {
     margin-left: 14%;
     height: 44px;
@@ -165,11 +138,9 @@
     margin-left: 20%;
     margin-top:-7.5%;
   }
-
   .tpw {
     height: 410px;
   }
-
   .wz {
     width: 46%;
     height: 410px;
@@ -191,13 +162,11 @@
     border: 0px solid;
     margin-top: 4%;
   }
-
   .carousel-inner {
     width: 90%;
     margin: auto;
     height: 150px;
   }
-
     .carousel-inner > .item > .img-responsive {
       height: 149px;
     }
@@ -208,7 +177,6 @@
     border-bottom: 1px solid;
     height: 3%;
   }
-
   .guanyu1 {
     width: 80px;
     height: 40px;
@@ -220,7 +188,6 @@
     margin-top: 14px;
     margin-left: 0%;
   }
-
   .guanyu2 {
     top: 11px;
     left: 110px;
@@ -231,7 +198,6 @@
     float: left;
     margin-left: 25%;
   }
-
   .tpw {
     border: 0px solid;
     width: 100%;
@@ -239,7 +205,6 @@
     margin: auto;
     margin-top: 5px;
   }
-
   .wz {
     width: 92%;
     height: 336px;
@@ -250,7 +215,6 @@
     /* margin: auto; */
     /* margin: auto; */
   }
-
   .wz1 {
     text-indent: 1em;
     margin-top: 5px;
@@ -259,7 +223,6 @@
     line-height: 22px;
     position: relative;
   }
-
   .wz2 {
     margin-top: -3%;
     line-height: 75px;
@@ -267,7 +230,6 @@
     font-size: 14px;
     margin-left: 3%;
   }
-
   .tupian {
     width: 92%;
     height: 219px;
@@ -282,13 +244,11 @@
     border: 0px solid;
     margin-top: 4%;
   }
-
   .carousel-inner {
     width: 90%;
     margin: auto;
     height: 150px;
   }
-
     .carousel-inner > .item > .img-responsive {
       height: 149px;
     }
@@ -299,7 +259,6 @@
     border-bottom: 1px solid;
     height: 3%;
   }
-
   .guanyu1 {
     width: 80px;
     height: 40px;
@@ -311,7 +270,6 @@
     margin-top: 14px;
     margin-left: 0%;
   }
-
   .guanyu2 {
     top: 11px;
     left: 110px;
@@ -322,7 +280,6 @@
     float: left;
     margin-left: 25%;
   }
-
   .tpw {
     border: 0px solid;
     width: 100%;
@@ -330,7 +287,6 @@
     margin: auto;
     margin-top: 5px;
   }
-
   .wz {
     width: 92%;
     height: 336px;
@@ -341,7 +297,6 @@
     /* margin: auto; */
     /* margin: auto; */
   }
-
   .wz1 {
     text-indent: 1em;
     margin-top: 5px;
@@ -350,7 +305,6 @@
     line-height: 22px;
     position: relative;
   }
-
   .wz2 {
     margin-top: -3%;
     line-height: 75px;
@@ -358,7 +312,6 @@
     font-size: 14px;
     margin-left: 3%;
   }
-
   .tupian {
     width: 92%;
     height: 219px;

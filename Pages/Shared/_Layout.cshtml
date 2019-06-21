@@ -34,8 +34,8 @@
             </a>
           </div>
           <div class="collapse navbar-collapse" id="example-navbar-collapse">
-            <ul class="nav navbar-nav">
-              <li ><a asp-page="/Index">首页</a></li>
+            <ul class="nav navbar-nav " >
+              <li ><a asp-page="/Index">&nbsp;&nbsp;首&nbsp;&nbsp;页&nbsp;&nbsp;</a></li>
               <li><a asp-page="/Error">服务网络</a></li>
               <li><a asp-page="/About">关于我们</a></li>
               <li><a asp-page="/Contact">联系我们</a></li>
@@ -49,9 +49,9 @@
       @RenderBody()
       <hr />
     </div>
-    <div class="container" style="width:100%;padding:0px;margin:auto;">
+    <div class="container" style="width:100%;padding:0px;margin:auto;height:130px;">
       <footer class="dibu">
-        <div style="width:90%;margin:auto;border:0px solid #E65842;height:100%;">
+        <div style="width:90%;margin:auto;border:0px solid #E65842;height:80%;">
           <div class="dibu1">
             <ul class="ul">
               <li><a asp-page="/Index">首页</a></li>
@@ -70,7 +70,7 @@
             <ul class="ul1">
               <li><a href="#">手机版权</a></li>
               <li>|</li>
-              <li>v1.5<a class="li2" href="#">米立科技</a></li>
+              <li>v1.6<a class="li2" href="#">米立科技</a></li>
               <li>|</li>
               <li><a href="#">管理登录</a></li>
             </ul>
@@ -80,16 +80,6 @@
     </div>
   </div>
   
-
-
-
-
-
-
-
-
-
-
 
 
     <environment include="Development">
@@ -114,5 +104,6 @@
     </environment>
 
     @RenderSection("Scripts", required: false)
+    
 </body>
 </html>

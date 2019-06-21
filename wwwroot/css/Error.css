@@ -1,26 +1,17 @@
-﻿.span {
-  position: absolute;
-  bottom: -10px;
-  right: -33%;
-  padding: 0px 6px;
-  text-align: center;
-  font-size: 12px;
-  color: black;
-  background-color: wheat;
-}
-
+﻿
 .img-responsive {
   width: 100%;
 }
 #myCarousel {
   width: 100%;
-  height: 400px;
+  height: 364px;
   border: 0px solid blue;
+  margin-top: 1%;
 }
 .carousel-inner {
-  width: 90%;
+  width: 72%;
   margin: auto;
-  height: 394px;
+  height: 363px;
 }
 .div {
   border: 0px solid;
@@ -29,7 +20,6 @@
   margin:auto;
   margin-top:20px;
 }
-
 .div1 {
   width: 18%;
   height:395px;
@@ -39,7 +29,6 @@
   float: left;
   margin-left:2%;
 }
-
 .kf {
   width:100%;
   height: 34px;
@@ -52,7 +41,6 @@
   text-indent: 1em;
   margin-bottom: -12px;
 }
-
 .div > .div1 >.from> p {
   margin-top:14px;
   margin-left:6px;
@@ -69,8 +57,6 @@
 #neirong {
   height:10px;
 }
-
-
 .div2 {
   border: 0px solid;
   height: 460px;
@@ -79,14 +65,9 @@
   margin-left: 8%;
 }
 @media screen and (max-width:1024px) {
-  .span {
-    bottom: -19px;
-  }
-
   #myCarousel {
     height: 267px;
   }
-
   .carousel-inner {
     height: 251px;
   }
@@ -97,7 +78,6 @@
     margin: auto;
     margin-top: 20px;
   }
-
   .div1 {
     width: 23%;
     height: 463px;
@@ -107,7 +87,6 @@
     float: left;
     margin-left: 2%;
   }
-
   .kf {
     width: 100%;
     height: 34px;
@@ -120,13 +99,11 @@
     text-indent: 1em;
     margin-bottom: -12px;
   }
-
   .div > .div1 > .from > p {
     margin-top: 14px;
     margin-left: 6px;
     margin-bottom: -10px;
   }
-
     .div > .div1 > .from > p > input {
       width: 80%;
       height: 18px;
@@ -167,7 +144,6 @@
     margin: auto;
     margin-top: 20px;
   }
-
   .div1 {
     width: 60%;
     height: 362px;
@@ -177,7 +153,6 @@
     float: left;
     margin-left: 20%;
   }
-
   .kf {
     width: 100%;
     height: 34px;
@@ -190,27 +165,22 @@
     text-indent: 1em;
     margin-bottom: -12px;
   }
-
   .div > .div1 > .from > p {
     margin-top: 14px;
     margin-left: 6px;
     margin-bottom: -10px;
   }
-
     .div > .div1 > .from > p > input {
       width: 80%;
       height: 18px;
     }
-
   .div > .div1 > .from > button {
     margin-left: 6px;
     margin-top: 15px;
   }
-
   #neirong {
     height: 10px;
   }
-
   .div2 {
     border: 0px solid;
     height: 262px;
@@ -218,7 +188,6 @@
     float: left;
     margin-left: 5%;
   }
-
 }
 @media screen and (max-width:414px) {
   #myCarousel {
@@ -226,17 +195,14 @@
     border: 0px solid;
     margin-top: 4%;
   }
-
   .carousel-inner {
     width: 90%;
     margin: auto;
     height: 150px;
   }
-
     .carousel-inner > .item > .img-responsive {
       height: 149px;
     }
-
   .div {
     border: 0px solid;
     width: 100%;
@@ -244,7 +210,6 @@
     margin: auto;
     margin-top: 20px;
   }
-
   .div1 {
     width: 60%;
     height: 362px;
@@ -254,7 +219,6 @@
     float: left;
     margin-left: 20%;
   }
-
   .kf {
     width: 100%;
     height: 34px;
@@ -267,27 +231,22 @@
     text-indent: 1em;
     margin-bottom: -12px;
   }
-
   .div > .div1 > .from > p {
     margin-top: 14px;
     margin-left: 6px;
     margin-bottom: -10px;
   }
-
     .div > .div1 > .from > p > input {
       width: 80%;
       height: 18px;
     }
-
   .div > .div1 > .from > button {
     margin-left: 6px;
     margin-top: 15px;
   }
-
   #neirong {
     height: 10px;
   }
-
   .div2 {
     border: 0px solid;
     height: 262px;
