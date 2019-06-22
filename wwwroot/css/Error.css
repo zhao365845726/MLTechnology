@@ -107,6 +107,7 @@
     .div > .div1 > .from > p > input {
       width: 80%;
       height: 18px;
+      font-size:12px;
     }
   .div > .div1 > .from > button {
     margin-left: 6px;
@@ -170,10 +171,11 @@
     margin-left: 6px;
     margin-bottom: -10px;
   }
-    .div > .div1 > .from > p > input {
-      width: 80%;
-      height: 18px;
-    }
+  .div > .div1 > .from > p > input {
+    width: 80%;
+    height: 18px;
+    font-size: 12px;
+  }
   .div > .div1 > .from > button {
     margin-left: 6px;
     margin-top: 15px;
@@ -236,10 +238,11 @@
     margin-left: 6px;
     margin-bottom: -10px;
   }
-    .div > .div1 > .from > p > input {
-      width: 80%;
-      height: 18px;
-    }
+  .div > .div1 > .from > p > input {
+    width: 80%;
+    height: 18px;
+    font-size: 12px;
+  }
   .div > .div1 > .from > button {
     margin-left: 6px;
     margin-top: 15px;

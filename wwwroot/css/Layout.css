@@ -85,7 +85,7 @@
     color: grey;
     margin: auto;
     width: 27%;
-    
+    margin-top:0.5%;
     border:0px solid;
   }
 
@@ -95,7 +95,7 @@
     height: 20px;
     margin: auto;
     margin-left:37%;
-    margin-top:0.7%;
+    margin-top:-0.2%;
   }
 
   .container > .dibu > div> .dibu3 > .ul1 > li {
@@ -427,7 +427,7 @@
       color: white;
       display: inline-block;
       text-align: center;
-      margin-left: -4%;
+      margin-left: -2%;
     }
       .container > .dibu > div > .dibu1 > .ul > li > a {
         color: white;
@@ -446,7 +446,7 @@
       height: 20px;
       margin: auto;
       margin-left: 0px;
-      margin-top: -3.2%;
+      margin-top: -2.2%;
     }
     .container > .dibu > div > .dibu3 > .ul1 > li {
       height: 20px;
@@ -454,7 +454,7 @@
       list-style: none;
       font-size: 14px;
       color: gray;
-      margin-left: 5px;
+      margin-left: 3.5%;
     }
       .container > .dibu > div > .dibu3 > .ul1 > li > a {
         color: gray;
