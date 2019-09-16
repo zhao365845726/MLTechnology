@@ -11798,11 +11798,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\git\\MLTechnology\\MLTechnology.csproj",
+      "projectUniqueName": "E:\\_GitHub\\MLTechnology\\MLTechnology.csproj",
       "projectName": "MLTechnology",
-      "projectPath": "E:\\git\\MLTechnology\\MLTechnology.csproj",
+      "projectPath": "E:\\_GitHub\\MLTechnology\\MLTechnology.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "E:\\git\\MLTechnology\\obj\\",
+      "outputPath": "E:\\_GitHub\\MLTechnology\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
