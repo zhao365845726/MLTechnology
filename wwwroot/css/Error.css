@@ -1,260 +1,196 @@
-﻿
-.img-responsive {
+﻿.actv {
+  color: #EE0A0A;
+  border-bottom: 2px solid #EE0A0A;
+}
+.produceBanner {
+  background: url(../images/2.1.jpg) no-repeat;
+  background-size: 100% 100%;
+  height: 600px;
   width: 100%;
 }
-#myCarousel {
-  width: 100%;
-  height: 364px;
-  border: 0px solid blue;
-  margin-top: 1%;
+.comPosition {
+  position: absolute;
+  top: 254px;
+  left: 26%;
+  color: #FFFEFE;
 }
-.carousel-inner {
-  width: 72%;
-  margin: auto;
-  height: 363px;
-}
-.div {
-  border: 0px solid;
-  width: 65%;
-  height: 480px;
-  margin:auto;
-  margin-top:20px;
-}
-.div1 {
-  width: 18%;
-  height:395px;
-  border-bottom: 1px solid gainsboro;
-  border-right: 1px solid gainsboro;
-  border-left: 1px solid gainsboro;
-  float: left;
-  margin-left:2%;
-}
-.kf {
-  width:100%;
-  height: 34px;
-  line-height: 34px;
-  font-size: 13px;
-  color: white;
-  background-color: #005d98;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  text-indent: 1em;
-  margin-bottom: -12px;
-}
-.div > .div1 >.from> p {
-  margin-top:14px;
-  margin-left:6px;
-  margin-bottom:-10px;
-}
-  .div > .div1 >.from> p > input {
-    width:80%;
-    height:17px;
+  .comPosition > h2 {
+    font-size: 38px;
+    padding-bottom: 15px;
+    font-weight: 500;
+    line-height: 60px;
+    margin:0;
   }
-.div > .div1 > .from > button {
-    margin-left:6px;
-    margin-top:15px;
+  .comPosition > p {
+    color: #F0EDED;
+    color: #F0EDED;
+    line-height: 30px;
+    font-size: 20px;
+    margin: 5px 0;
+  }
+.font18 {
+  font-size: 18px;
 }
-#neirong {
-  height:10px;
-}
-.div2 {
-  border: 0px solid;
-  height: 460px;
+
+.produceIntoduce {
+  margin-top: 24px;
   width: 70%;
+  margin: auto;
+  border: 0px solid;
+  margin-bottom: 34px;
+}
+p {
+  font-size: 14px;
+  margin: 1px 0 10px 0;
+  color: #515050;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+/*内容1*/
+.containerCenter {
+  background: url(../images/2.2.jpg) no-repeat;
+  background-size: 100% 100%;
+  height: 375px;
+  margin-top: 24px;
+  overflow: hidden;
+}
+.bannerCenter {
+  position: relative;
+  top: 70px;
+  left: 50px;
+  color: #FFFEFE;
+}
+  .bannerCenter > h2 {
+    line-height: 60px;
+    margin:0;
+  }
+
+.font22 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.bannerCenter > span {
+  padding-bottom: 10px;
+  display: inline-block;
+}
+.bannerCenter > p {
+  line-height: 26px;
+  color: #fff !important;
+}
+
+.font15 {
+  font-size: 15px;
+}
+/*内容2*/
+.overFlow {
+  overflow: hidden;
+  margin:0;
+}
+.combannerText {
+  width: 50%;
+  height: 450px;
+  padding: 50px;
+  background: #fff;
+}
+
+.fl {
   float: left;
-  margin-left: 8%;
 }
-@media screen and (max-width:1024px) {
-  #myCarousel {
-    height: 267px;
-  }
-  .carousel-inner {
-    height: 251px;
-  }
-  .div {
-    border: 0px solid;
-    width: 65%;
-    height: 480px;
-    margin: auto;
-    margin-top: 20px;
-  }
-  .div1 {
-    width: 23%;
-    height: 463px;
-    border-bottom: 1px solid gainsboro;
-    border-right: 1px solid gainsboro;
-    border-left: 1px solid gainsboro;
-    float: left;
-    margin-left: 2%;
-  }
-  .kf {
-    width: 100%;
-    height: 34px;
-    line-height: 34px;
-    font-size: 13px;
-    color: white;
-    background-color: #005d98;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    text-indent: 1em;
-    margin-bottom: -12px;
-  }
-  .div > .div1 > .from > p {
-    margin-top: 14px;
-    margin-left: 6px;
-    margin-bottom: -10px;
-  }
-    .div > .div1 > .from > p > input {
-      width: 80%;
-      height: 18px;
-      font-size:12px;
-    }
-  .div > .div1 > .from > button {
-    margin-left: 6px;
-    margin-top: 15px;
-  }
-  #neirong {
-    height: 10px;
-  }
-  .div2 {
-    border: 0px solid;
-    height: 460px;
-    width: 70%;
-    float: left;
-    margin-left: 5%;
-  }
+.fr {
+  float: right;
 }
-@media screen and (max-width:375px) {
-  #myCarousel {
-    height: 150px;
-    border: 0px solid;
-    margin-top: 4%;
-  }
-  .carousel-inner {
-    width: 90%;
-    margin: auto;
-    height: 150px;
-  }
-    .carousel-inner > .item > .img-responsive {
-      height: 149px;
-    }
-  .div {
-    border: 0px solid;
-    width: 100%;
-    height: 670px;
-    margin: auto;
-    margin-top: 20px;
-  }
-  .div1 {
-    width: 60%;
-    height: 362px;
-    border-bottom: 1px solid gainsboro;
-    border-right: 1px solid gainsboro;
-    border-left: 1px solid gainsboro;
-    float: left;
-    margin-left: 20%;
-  }
-  .kf {
-    width: 100%;
-    height: 34px;
-    line-height: 34px;
-    font-size: 13px;
-    color: white;
-    background-color: #005d98;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    text-indent: 1em;
-    margin-bottom: -12px;
-  }
-  .div > .div1 > .from > p {
-    margin-top: 14px;
-    margin-left: 6px;
-    margin-bottom: -10px;
-  }
-  .div > .div1 > .from > p > input {
-    width: 80%;
-    height: 18px;
-    font-size: 12px;
-  }
-  .div > .div1 > .from > button {
-    margin-left: 6px;
-    margin-top: 15px;
-  }
-  #neirong {
-    height: 10px;
-  }
-  .div2 {
-    border: 0px solid;
-    height: 262px;
-    width: 90%;
-    float: left;
-    margin-left: 5%;
-  }
+.bgGray {
+  background: #F7F7F7;
 }
-@media screen and (max-width:414px) {
-  #myCarousel {
-    height: 150px;
-    border: 0px solid;
-    margin-top: 4%;
+.combannerText .titleLogo {
+  display: inline-block;
+  padding-bottom: 40px;
+}
+
+.titleLogoTop {
+  padding-top: 5px;
+}
+.combannerText > h3 {
+  line-height: 30px;
+  font-size: 24px;
+  font-weight: 500;
+  margin:0;
+}
+.textLight {
+  line-height: 30px;
+}
+.combannerText > p {
+  line-height: 26px;
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin:0;
+}
+.logoTop {
+  padding-top: 20px;
+}
+/*内容3*/
+.companyDemand {
+  background: url(../images/2.3.jpg) no-repeat;
+  background-size: 100% 100%;
+  height: 450px;
+  margin-top: 24px;
+  border: 1px solid;
+}
+  .companyDemand > h2 {
+    line-height: 50px;
+    text-align: center;
+    padding-top: 60px;
+    color: #FEFEFE;
+    font-weight: 500;
+    margin:0;
   }
-  .carousel-inner {
-    width: 90%;
-    margin: auto;
-    height: 150px;
+  .companyDemand > p {
+    text-align: center;
+    color: #FEFEFE;
+    line-height: 30px;
   }
-    .carousel-inner > .item > .img-responsive {
-      height: 149px;
-    }
-  .div {
-    border: 0px solid;
-    width: 100%;
-    height: 670px;
-    margin: auto;
-    margin-top: 20px;
+.companyDemandCenter {
+  padding-top: 60px;
+  width: 800px;
+  margin: 0 auto;
+}
+.titleImg {
+  padding: 10px;
+  margin-right: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+  .titleImg:hover {
+    transform: scale(1.2);
   }
-  .div1 {
-    width: 60%;
-    height: 362px;
-    border-bottom: 1px solid gainsboro;
-    border-right: 1px solid gainsboro;
-    border-left: 1px solid gainsboro;
-    float: left;
-    margin-left: 20%;
+.titleText {
+  padding-top: 16px;
+}
+  .titleText > p {
+    color: #fff;
+    padding-bottom: 6px;
+    margin:0;
   }
-  .kf {
-    width: 100%;
-    height: 34px;
-    line-height: 34px;
-    font-size: 13px;
-    color: white;
-    background-color: #005d98;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    text-indent: 1em;
-    margin-bottom: -12px;
-  }
-  .div > .div1 > .from > p {
-    margin-top: 14px;
-    margin-left: 6px;
-    margin-bottom: -10px;
-  }
-  .div > .div1 > .from > p > input {
-    width: 80%;
-    height: 18px;
-    font-size: 12px;
-  }
-  .div > .div1 > .from > button {
-    margin-left: 6px;
-    margin-top: 15px;
-  }
-  #neirong {
-    height: 10px;
-  }
-  .div2 {
-    border: 0px solid;
-    height: 262px;
-    width: 90%;
-    float: left;
-    margin-left: 5%;
-  }
+.font14 {
+  font-size: 14px;
+}
+/*内容4*/
+.serviceCenter {
+  background: url(../images/2.4.jpg) no-repeat center center;
+  background-size: 100% 100%;
+  height: 375px;
+  margin-top:24px;
+}
+/*内容5*/
+.titleLogoImg {
+  display: inline-block;
+  padding-bottom: 40px;
+}
+/*内容6*/
+.comProduceBanner {
+  background: url(../images/2.5.jpg) no-repeat center center;
+  background-size: 100% 100%;
+  height: 375px;
+  margin-top: 24px;
 }

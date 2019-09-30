@@ -15,7 +15,7 @@
   .container-fluid > .navbar-header {
       border:0px solid;
       height:100%;
-      margin-left:24%;
+      margin-left:18%;
   }
   .container-fluid > .navbar-header > #tp1 {
       border:0px solid;
@@ -25,17 +25,24 @@
       margin-top:3%;
   }
   .container-fluid > .collapse > .nav > li > a {
-      color:black;
-      font-size:18px;
+    color: black;
+    font-size: 16px;
+    /* border: 1px solid; */
+    width: auto;
+    padding: 0;
+    padding-bottom: 7px;
   }
+.actv {
+  color: #EE0A0A;
+  border-bottom: 2px solid #EE0A0A;
+}
   .container-fluid > .collapse > .nav > li > a:hover {
-    background-color: #E66B51;
-    color: white;
+    color: #EE0A0A;
+    /*border-bottom: 2px solid #EE0A0A;*/
   }
-  .container-fluid > .collapse > .nav > li > a:active {
-    background-color: #E66B51;
-    color: white;
-  }
+  /*.container-fluid > .collapse > .nav > li:active {
+    border-bottom: 2px solid #EE0A0A;
+  }*/
   .container-fluid > .collapse {
     width: 89%;
     border: 0px solid blue;
@@ -43,79 +50,63 @@
     padding: 0;
   }
   .container-fluid > .collapse > .nav {
-    width: 44%;
-    margin-top:2%;
+    width:31%;
+    margin-top:2.2%;
   }
   .container-fluid > .collapse > .nav li {
-    margin-left: 7%;
+    margin-left: 12%;
+    /*color: #EE0A0A;
+    border-bottom: 2px solid #EE0A0A;*/
   }
+  /*底部*/
+.dibu {
+  background: #434343 !important;
+  padding-top: 0 !important;
+  overflow: hidden;
+  height: 320px !important;
+  width: 100%;
+  margin-top: -5px;
+  position: relative;
+  bottom: 0;
+}
 
+.footerContent {
+  width: 60%;
+  margin:auto;
+}
 
+.footerPadding {
+  padding: 45px 168px;
+  overflow: hidden;
+}
 
-  .container > .dibu {
-    width: 100%;
-    height: 100%;
-    border-top: 2px solid red;
-    background-color: black;
-    margin: auto;
-  }
-  .container > .dibu > div .dibu1 {
-    border: 0px solid;
-    width: 35%;
-    height: 25px;
-    margin: auto;
-    
-    margin-top:22px;
-  }
-  .container > .dibu > div >.dibu1 > .ul > li {
-    width: 60px;
-    height: 20px;
-    float: left;
-    list-style: none;
-    font-size: 15px;
-    color: white;
-    display: inline-block;
-    text-align: center;
-  }
-  .container > .dibu > div >.dibu1 > .ul > li > a {
-    color: white;
-  }
-  .container > .dibu > div .dibu2 {
-    font-size: 15px;
-    color: grey;
-    margin: auto;
-    width: 27%;
-    margin-top:0.2%;
-    border:0px solid;
-  }
+.footerContent .footerPadding > dl {
+  float: left;
+  color: #ededed;
+  border-right: 1px solid #BFBFBF;
+  padding: 0 45px;
+  height: 216px;
+}
 
-  .container > .dibu > div .dibu3 {
-    border: 0px solid;
-    width: 30%;
-    height: 20px;
-    margin: auto;
-    margin-left:37%;
-    margin-top:-0.3%;
-  }
+.footerPadding > dl > dt {
+  font-size: 16px;
+  padding-bottom: 15px;
+}
 
-  .container > .dibu > div> .dibu3 > .ul1 > li {
-    height: 20px;
-    float: left;
-    list-style: none;
-    font-size: 14px;
-    color: gray;
-    margin-left: 5px;
-  }
-
-  .container > .dibu > div> .dibu3 > .ul1 > li > a {
-    color: gray;
-  }
-  .container > .dibu > div>.dibu3 > .ul1 > li > .li2 {
-    margin-left: 18px;
-  }
-  .container .dibu div .dibu1 .ul > li > a:hover {
-    color: #E65842;
-  }
+.footerPadding > dl > dd > a {
+  font-size: 14px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #fff;
+}
+dd {
+  margin: 0 !important;
+}
+.footerContent .footerPadding .last {
+  float: left;
+  color: #ededed;
+  border-right: 0;
+}
 @media screen and (max-width:1024px) {
   .container-fluid > .navbar-header {
     margin-left: 7%;
@@ -467,5 +458,5 @@
   }
   .container .dibu div .dibu3 .ul1 > li > a:hover {
     color: #E65842;
-  }
+  }*/
 }

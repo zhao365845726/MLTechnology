@@ -18,67 +18,87 @@
 </head>
 <body>
   <div style="width:100%;margin:auto;border:0px solid blue;">
-    <div style="width:100%;margin:auto;border:0px solid #FF0099 ;height:103px;">
-      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#example-navbar-collapse">
-              <span class="sr-only">切换导航</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#" id="tp1">
-              <img src="http://9513246.s21i.faiusr.com/4/ABUIABAEGAAg0pLhywUo5KXEhgQw2wE4MQ.png" alt="米立科技" />
-            </a>
-          </div>
-          <div class="collapse navbar-collapse" id="example-navbar-collapse">
-            <ul class="nav navbar-nav " >
-              <li ><a asp-page="/Index">&nbsp;&nbsp;首&nbsp;&nbsp;页&nbsp;&nbsp;</a></li>
-              <li><a asp-page="/Error">服务网络</a></li>
-              <li><a asp-page="/About">关于我们</a></li>
-              <li><a asp-page="/Contact">联系我们</a></li>
-
-            </ul>
-          </div>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse"
+                  data-target="#example-navbar-collapse">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#" id="tp1">
+            <img src="http://9513246.s21i.faiusr.com/4/ABUIABAEGAAg0pLhywUo5KXEhgQw2wE4MQ.png" alt="米立科技" />
+          </a>
         </div>
-      </nav>
-      <partial name="_CookieConsentPartial" />
-    </div>
-    <div class="container body-content " style="width:100%;margin:auto;border:0px solid #660066;">
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+          <ul class="nav navbar-nav" style="width:40%;" id="coll">
+            <li><a href="/Index">&nbsp;&nbsp;首&nbsp;&nbsp;页&nbsp;&nbsp;</a></li>
+            <li><a href="/Error" id="error">产品中心</a></li>
+            <li><a href="/About">关于米立</a></li>
+            <li><a href="/Contact">加入我们</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="###"><span class="glyphicon glyphicon-user"></span> 注册</a></li>
+            <li style="margin-left:5%;"><a href="##"><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container body-content " style="width:100%;margin:auto;border:0px solid #660066;background-color:#EEEEEE;
+margin-bottom:0%">
       @RenderBody()
-      <hr />
     </div>
-    <div class="container" style="width:100%;padding:0px;margin:auto;height:130px;">
-      <footer class="dibu">
-        <div style="width:90%;margin:auto;border:0px solid #E65842;height:80%;">
-          <div class="dibu1">
-            <ul class="ul">
-              <li><a asp-page="/Index">首页</a></li>
-              <li>|</li>
-              <li><a asp-page="/Error">服务网络</a></li>
-              <li>|</li>
-              <li><a asp-page="/About">关于我们</a></li>
-              <li>|</li>
-              <li><a asp-page="/Contact">联系我们</a></li>
-            </ul>
-          </div>
-
-          <p class="dibu2">&copy; 2019 - MLTechnology 版权所有 晋ICP备19010399号-1</p>
-
-          <div class="dibu3">
-            <ul class="ul1">
-              <li><a href="#">手机版权</a></li>
-              <li>|</li>
-              <li>v1.8<a class="li2" href="#">米立科技</a></li>
-              <li>|</li>
-              <li><a href="#">管理登录</a></li>
-            </ul>
-          </div>
-        </div>
-      </footer>
+  <footer class="dibu">
+    <div class="footerContent">
+      <div class="footerPadding">
+        <dl class="padBottomList">
+          <dt>关于米立</dt>
+          <dd><a href="/Products/About/Introduction?c=About)">米立简介</a></dd>
+          <dd><a asp-page="/About">关于我们</a></dd>
+          <dd><a href="/Products/JoinUs/Job?c=About">工作机会</a></dd>
+          <dd><a href="/Products/About/Cooperation?c=About#agency">合作代理</a></dd>
+          <dd><a href="/Products/About/Pay?c=About#pay">支付方式</a></dd>
+        </dl>
+        <dl class="footerPadLeft padBottomList">
+          <dt>产品中心</dt>
+          <dd><a href="/Products#weiXinKaiFa">微信</a></dd>
+          <dd><a href="/Products#html5">HTML5</a></dd>
+          <dd><a href="/Products#companyCulture">企业信息化</a></dd>
+          <dd><a href="/Products#bigDate">大数据</a></dd>
+          <dd><a href="/Products/Course">米立课堂</a></dd>
+        </dl>
+        <dl class="footerPadLeft">
+          <dt>服务网络</dt>
+          <dd><a asp-page="/Error">公司新闻</a></dd>
+          <dd><a asp-page="/Index">首页</a></dd>
+          <dd><a href="/News?catalogGuid=54ab9a87-f97a-422d-9f76-4c6ed11524ea">手机版权</a></dd>
+          <dd><a href="/News?catalogGuid=a7d2951e-5bf4-439c-b6f7-dcfadcef8d97">更新日志</a></dd>
+          <dd><a href="/News?catalogGuid=55a7d02e-6ba6-46af-9b3d-50b530c81c5f">业内新闻</a></dd>
+          <dd><a href="/News?catalogGuid=14d1becf-745b-4b0d-a101-41ca280339c1">优惠活动</a></dd>
+        </dl>
+        <dl class="last footerPadLeft">
+          <dt>联系我们</dt>
+          <dd><a asp-page="/Contact">我要咨询建议</a></dd>
+          <dd><a href="http://www.miibeian.gov.cn/" target="_blank">晋ICP备19010399号-1</a></dd>
+          <dd>
+            <img style="width: 20px; height: 20px;" src="http://www.beian.gov.cn/img/ghs.png" alt="备案标识">
+            <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32050802010803" target="_blank" rel="nofollow noopener">晋公网安备 00000000000001 号 </a>
+          </dd>
+          <dd><a>©2019 - MLTechnology</a></dd>
+          <dd style="width: 28%;">
+            <span id="szgs_stat_icon_1024947667970555904">
+              <a href="http://www.beian.suzhou.gov.cn/websiteMark?siteid=1024947667970555904&amp;type=1" target="_blank">
+              <img src="http://www.beian.suzhou.gov.cn/resources/images/marker/szicbok.gif">
+              </a>
+            </span>
+          </dd>
+        </dl>
+      </div>
     </div>
+  </footer>
   </div>
   
 
@@ -87,21 +107,41 @@
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
+        <script>//导航
+          $(document).ready(function () {
+            $("#coll a").each(function () {
+              $this = $(this);
+              console.log($this[0].href == String(window.location))
+              if ($this[0].href == String(window.location)) {
+                $this.addClass("actv");
+              }          
+            });
+          });
+          window.onload = function () {
+              
+            var error = document.getElementById("error").attributes["href"].value.split('/')[1];
+            if (error !== Error) {
+
+                  //window.location.href.addClass("actv");
+              }
+                console.log(error)
+            }
+        </script>
     </environment>
     <environment exclude="Development">
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-                asp-fallback-test="window.jQuery"
-                crossorigin="anonymous"
-                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
-        </script>
-        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
-                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
-                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
-                crossorigin="anonymous"
-                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
-        </script>
-        <script src="~/js/site.min.js" asp-append-version="true"></script>
+      <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+              asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+              asp-fallback-test="window.jQuery"
+              crossorigin="anonymous"
+              integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
+      </script>
+      <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+              asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+              asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+              crossorigin="anonymous"
+              integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+      </script>
+      <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
 
     @RenderSection("Scripts", required: false)

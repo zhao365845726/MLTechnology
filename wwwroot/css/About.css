@@ -1,322 +1,284 @@
-﻿
+﻿p {
+  font-size: 14px;
+  margin: 1px 0 10px 0;
+  color: #515050;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+p, h3, h4, h2, dd {
+  margin: 0 !important;
+}
+img {
+  width:100%;height:100%;
+}
+.aboutbg {
+  background: url(../images/3.1.jpg) no-repeat;
+  background-size: 100% 100%;
+  height: 600px;
+  width: 100%;
+}
+.classPos {
+  position: absolute;
+  top: 254px;
+  left: 26%;
+}
 
-.img-responsive {
-  width: 100%;
-}
-#myCarousel {
-  width: 100%;
-  height: 364px;
-  border: 0px solid blue;
-  margin-top: 1%;
-}
-.carousel-inner {
-  width: 72%;
+  .classPos > h2 {
+    font-size: 46px;
+    font-weight: 500;
+    font-family: MicrosoftYaHei;
+    color: rgba(255,254,254,1);
+    line-height: 60px;
+    padding-bottom: 15px;
+    margin: 0;
+  }
+
+  .classPos > span {
+    font-size: 20px;
+    color: #DBDBDB;
+  }
+
+  .classPos > p {
+    font-size: 24px;
+    font-family: MicrosoftYaHei;
+    color: rgba(240,237,237,1);
+    line-height: 60px;
+  }
+/*内容*/
+.classContent {
+  width: 70%;
   margin: auto;
-  height: 363px;
-}
-.guanyu {
-  width: 60%;
-  height: 68px;
-  position: relative;
-  border-bottom: 1px solid;
-  margin: auto;
-  margin-top: 23px;
   border: 0px solid;
+  margin-bottom: 34px;
 }
-.guanyu1 {
-    width: 10%;
-    height: 40px;
-    font-size: 20px;
-    text-align: center;
-    line-height: 40px;
-    color: #E65842;
-    font-weight: bold;
-    margin-top:1%;
+/*内容1*/
+.classTop {
+  margin:0;
+  margin-top: 24px;
+  overflow: hidden;
 }
-.guanyu2 {
-    top: 11px;
-    left: 110px;
-    font-size: 18px;
-    color: grey;
-    font-weight: bold;
-    float:left;
-    margin-left:9%;
-    margin-top:-39px;
+.classLeft {
+  width: 50%;
+  height: 388px;
+  padding: 100px;
+  background: #F7F7F7;
 }
-.tpw {
-    border: 0px solid;
-    width: 60%;
-    height: 330px;
-   margin:auto;
-    margin-top: 5px;
+  .classLeft .red {
+    color: #C4152F;
+  }
+.fl {
+  float: left;
 }
-.wz {
-    width: 44%;
-    height: 318px;
-    float: left;
-    border: 0px solid;
-    margin-top: 10px;
-    margin-left:1%;
+.classLeft h1 {
+  font-size: 44px;
+  line-height: 70px;
+  font-weight: bold;
+  color: black;
 }
-.wz1 {
-    text-indent: 2em;
-    margin-top: 5px;
-    font-size: 13px;
-    color: grey;
-    line-height: 22px;
+.classLeft p {
+  line-height: 27px;
 }
-.wz2 {
-    margin-top: 55px;
-    line-height: 75px;
+
+.font20 {
+  font-size: 20px;
+}
+.classRight {
+  background: #fff;
+  width: 50%;
+  height: 388px;
+  padding: 47px 80px;
+}
+  .classRight > h2 {
+    font-size: 24px;
+    font-family: HiraginoSansGB-W3;
+    color:black;
+    font-weight: 500;
+    margin: 5px 0;
+  }
+.classRight > p {
+  line-height: 24px;
+
+}
+/*内容2*/
+.aboutContentbg {
+  background: url(../images/3.2.jpg) no-repeat center center;
+  background-size: 100% 100%;
+  height: 500px;
+  position: relative;
+  margin-top: 26px;
+}
+.classContentPos {
+  position: absolute;
+  top: 121px;
+  left: 100px;
+  color: #FFFFFF;
+}
+  .classContentPos > h3 {
+    font-size: 24px;
+    font-family: HiraginoSansGB-W3;
+    font-weight: 500;
+    margin:5px 0;
+  }
+  .classContentPos > p {
+    font-size: 15px;
+    font-family: HiraginoSansGB-W3;
+    color: rgba(215,215,215,1);
+    line-height: 26px;
+  }
+/*内容3*/
+.technologyInfo {
+  margin-top: 25px;
+}
+.technologyCenter {
+  background: url(../images/3.3.jpg) no-repeat center center;
+  background-size: 100% 100%;
+  height: 500px;
+}
+.technologyText {
+  text-align: center;
+  padding-top: 93px;
+  color: #fff;
+}
+  .technologyText > h2 {
+    font-size: 30px;
+    margin:0;
+  }
+.font18 {
+  font-size: 18px;
+}
+.technologyText > p {
+  font-size: 17px;
+  color: #fff;
+}
+.overFlow {
+  overflow: hidden;
+  margin:0;
+}
+.combannerText {
+  width: 50%;
+  height: 510px;
+  padding: 40px;
+  background: #fff;
+}
+.bgGray {
+  background: #F7F7F7;
+}
+.combannerText > h3 {
+  line-height: 28px;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+  color: black;
+}
+.textLight {
+  line-height: 30px;
+}
+.combannerText > p {
+  line-height: 26px;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+/*内容4*/
+.produceIntoduce {
+  margin-top: 24px;
+  overflow: hidden;
+}
+.aboutMeImg {
+  width: 56%;
+  height: 478px;
+}
+.IntroduceTextInfo {
+  width: 44%;
+  height: 478px;
+  background: #ffffff;
+  color: #000;
+  padding: 50px;
+  color: #101010;
+}
+  .IntroduceTextInfo > h3 {
+    font-size: 22px;
+    font-family: HiraginoSansGB-W3;
+    line-height: 30px;
+    font-weight: 500;
+    padding-top: 40px;
+  }
+  .IntroduceTextInfo > span {
     display: inline-block;
+    line-height: 30px;
+  }
+  .IntroduceTextInfo > p {
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 1px;
+  }
+/*内容5*/
+.selfIntoduce {
+  margin-top: 24px;
+  overflow: hidden;
+}
+.aboutMeImg {
+  width: 56%;
+  height: 478px;
+}
+
+.fr {
+  float: right;
+}
+.aboutMeIntroduce {
+  width: 44%;
+  height: 478px;
+  background: #434343;
+  color: #FFFFFF;
+  padding: 50px;
+}
+.font22 {
+  font-size: 22px;
+}
+.aboutMeIntroduce > span {
+  display: inline-block;
+  line-height: 30px;
+}
+.aboutMeIntroduce > p {
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  color: #fff !important;
+}
+/*内容6*/
+.payWay {
+  padding: 20px 50px;
+  background: #fff;
+}
+  .payWay > h3 {
+    font-weight: 500;
+    padding: 24px 0;
+    color:black;
+    font-size:19px;
+  }
+.payPad {
+  background: #F5F5F5;
+  padding: 24px;
+  margin-top: 20px;
+}
+  .payPad > h3 {
+    padding-bottom: 28px;
+    font-weight: 500;
+    font-size: 20px;
+    color:black;
+  }
+  .payPad > p {
+    padding-bottom: 15px;
     font-size: 16px;
+  }
+table {
+  width: 50%;
+  border: 0;
 }
-.tupian {
-    width: 50%;
-    height: 307px;
-    float: left;
-    border: 0px solid;
-    margin-top: 1%;
-    margin-left:4%;
-}
-@media screen and (max-width:1024px) {
-  #myCarousel {
-    height: 267px;
+  table th {
+    text-align: left;
+    color: #515050;
+    font-weight: initial;
+    padding: 8px;
+    font-size:16px;
+    background-color: #F5F5F5;
   }
-  .carousel-inner {
-    height: 251px;
-  }
-  .guanyu {
-    margin-left: 13.5%;
-    height:33px;
-  }
-  .guanyu1 {
-    width: 15%;
-    height: 40px;
-    font-size: 20px;
-    text-align: center;
-    line-height: 40px;
-    color: #E65842;
-    font-weight: bold;
-    margin-top: 1%;
-    border: 0px solid;
-  }
-  .guanyu2 {
-    margin-left: 16%;
-  }
-  .tpw {
-    width: 72%;
-    margin-left: 13.5%;
-  }
-  .wz2 {
-    margin-top: -5%;
-  }
-}
-@media screen and (max-width:768px) {
-  #myCarousel {
-    height: 181px;
-  }
-  .carousel-inner {
-    height: 179px;
-  }
-  .guanyu {
-    margin-left: 14%;
-    height: 44px;
-  }
-  .guanyu1 {
-    width: 19%;
-    height: 35px;
-    font-size: 20px;
-    text-align: center;
-    line-height: 40px;
-    color: #E65842;
-    font-weight: bold;
-    margin-top: 1%;
-    border: 0px solid;
-  }
-    .guanyu2 {
-    margin-left: 20%;
-    margin-top:-7.5%;
-  }
-  .tpw {
-    height: 410px;
-  }
-  .wz {
-    width: 46%;
-    height: 410px;
-  }
-  .wz1 {
-    font-size: 12px;
-  }
-  .wz2 {
-    margin-top: -5%;
-  }
-  .tupian {
-    margin-top: 6%;
-    margin-left: 3%;
-  }
-}
-@media screen and (max-width:375px) {
-  #myCarousel {
-    height: 150px;
-    border: 0px solid;
-    margin-top: 4%;
-  }
-  .carousel-inner {
-    width: 90%;
-    margin: auto;
-    height: 150px;
-  }
-    .carousel-inner > .item > .img-responsive {
-      height: 149px;
-    }
-  /*关于我们*/
-  .guanyu {
-    width: 94%;
-    margin-left: 4%;
-    border-bottom: 1px solid;
-    height: 3%;
-  }
-  .guanyu1 {
-    width: 80px;
-    height: 40px;
-    font-size: 18px;
-    text-align: center;
-    line-height: 40px;
-    color: #E65842;
-    font-weight: bold;
-    margin-top: 14px;
-    margin-left: 0%;
-  }
-  .guanyu2 {
-    top: 11px;
-    left: 110px;
-    font-size: 15px;
-    color: grey;
-    font-weight: bold;
-    margin-top: -38px;
-    float: left;
-    margin-left: 25%;
-  }
-  .tpw {
-    border: 0px solid;
-    width: 100%;
-    height: 572px;
-    margin: auto;
-    margin-top: 5px;
-  }
-  .wz {
-    width: 92%;
-    height: 336px;
-    /* float: left; */
-    border: 0px solid;
-    /* margin-top: 9px; */
-    margin-left: 4%;
-    /* margin: auto; */
-    /* margin: auto; */
-  }
-  .wz1 {
-    text-indent: 1em;
-    margin-top: 5px;
-    font-size: 10px;
-    color: grey;
-    line-height: 22px;
-    position: relative;
-  }
-  .wz2 {
-    margin-top: -3%;
-    line-height: 75px;
-    display: inline-block;
-    font-size: 14px;
-    margin-left: 3%;
-  }
-  .tupian {
-    width: 92%;
-    height: 219px;
-    border: 0px solid;
-    margin-top: 4%;
-    margin-left: 4%;
-  }
-}
-@media screen and (max-width:414px) {
-  #myCarousel {
-    height: 150px;
-    border: 0px solid;
-    margin-top: 4%;
-  }
-  .carousel-inner {
-    width: 90%;
-    margin: auto;
-    height: 150px;
-  }
-    .carousel-inner > .item > .img-responsive {
-      height: 149px;
-    }
-  /*关于我们*/
-  .guanyu {
-    width: 94%;
-    margin-left: 4%;
-    border-bottom: 1px solid;
-    height: 3%;
-  }
-  .guanyu1 {
-    width: 80px;
-    height: 40px;
-    font-size: 18px;
-    text-align: center;
-    line-height: 40px;
-    color: #E65842;
-    font-weight: bold;
-    margin-top: 14px;
-    margin-left: 0%;
-  }
-  .guanyu2 {
-    top: 11px;
-    left: 110px;
-    font-size: 15px;
-    color: grey;
-    font-weight: bold;
-    margin-top: -38px;
-    float: left;
-    margin-left: 25%;
-  }
-  .tpw {
-    border: 0px solid;
-    width: 100%;
-    height: 572px;
-    margin: auto;
-    margin-top: 5px;
-  }
-  .wz {
-    width: 92%;
-    height: 336px;
-    /* float: left; */
-    border: 0px solid;
-    /* margin-top: 9px; */
-    margin-left: 4%;
-    /* margin: auto; */
-    /* margin: auto; */
-  }
-  .wz1 {
-    text-indent: 1em;
-    margin-top: 5px;
-    font-size: 10px;
-    color: grey;
-    line-height: 22px;
-    position: relative;
-  }
-  .wz2 {
-    margin-top: -3%;
-    line-height: 75px;
-    display: inline-block;
-    font-size: 14px;
-    margin-left: 3%;
-  }
-  .tupian {
-    width: 92%;
-    height: 219px;
-    border: 0px solid;
-    margin-top: 4%;
-    margin-left: 4%;
-  }
-}

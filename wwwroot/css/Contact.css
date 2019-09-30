@@ -1,280 +1,114 @@
 ﻿
-.span {
+
+.joinUsbg {
+  background: url(../images/4.1.jpg) no-repeat;
+  background-size: 100% 100%;
+  height: 600px;
+  width: 100%;
+}
+.classPos {
   position: absolute;
-  bottom: -10px;
-  right: -33%;
-  padding: 0px 6px;
-  text-align: center;
-  font-size: 12px;
-  color: black;
-  background-color: wheat;
+  top: 254px;
+  left: 26%;
 }
-.img-responsive {
-  width: 100%;
-}
-#myCarousel {
-  width: 100%;
-  height: 364px;
-  border: 0px solid blue;
-  margin-top: 1%;
-}
-.carousel-inner {
-  width: 72%;
+  .classPos > h2 {
+    font-size: 46px;
+    font-weight: 500;
+    font-family: MicrosoftYaHei;
+    color: rgba(255,254,254,1);
+    line-height: 60px;
+    padding-bottom: 15px;
+  }
+  .classPos > span {
+    font-size: 20px;
+    color: #DBDBDB;
+  }
+  .classPos > p {
+    font-size: 24px;
+    font-family: MicrosoftYaHei;
+    color: rgba(240,237,237,1);
+    line-height: 60px;
+  }
+  /*内容*/
+.classContent {
+  width: 70%;
   margin: auto;
-  height: 363px;
-}
-.div {
   border: 0px solid;
-  width: 65%;
-  height: 480px;
-  margin: auto;
-  margin-top: 20px;
+  margin-bottom: 34px;
 }
-.div1 {
-    width:20%;
-    height: 445px;
-    border-bottom: 1px solid gainsboro;
-    border-right: 1px solid gainsboro;
-    border-left: 1px solid gainsboro;
-    float:left;
-    margin-left:2%;
+.workInfo {
+  margin-top: 24px;
 }
-.kf {
-    width: 100%;
-    height: 34px;
-    line-height: 34px;
-    font-size: 13px;
-    color: white;
-    background-color: #005d98;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    text-indent: 1em;
-    margin-bottom: -12px;
+
+.overFlow {
+  overflow: hidden;
 }
-.qq {
-    width: 100%;
-    height: 90px;
-    margin-top: 2px;
-    border-bottom: 1px dashed gainsboro;
+.workInfoLeft {
+  width: 50%;
+  height: 768px;
+  background: rgba(255,255,255,1);
+  padding: 50px;
 }
-.qq1 {
-    display: block;
-    width: 126px;
-    height: 16px;
-    text-decoration: none;
-    color: #000000;
-    font-size: 12px;
-    margin-top: 15px;
-    position: relative;
+.workName {
+  font-weight: 500;
+  padding-bottom: 20px;
+  font-size: 24px;
+  color: black;
+  border-bottom: 1px solid #E5E5E5;
 }
-.qq2 {
-    width: 62px;
-    height: 16px;
-    display: inline-block;
-    background:url(/images/pa10.gif);
-    position: absolute;
-    top: 2px;
+.workDescription {
+  padding-top: 38px;
+  font-weight: 500;
+  font-size: 19px;
+  color: black;
 }
-.time {
-    width: 100%;
-    height: 33px;
-    position: relative;
+.workInfoLeft > p {
+  padding-top: 23px;
+  line-height: 25px;
 }
-.time1 {
-    display: inline-block;
-    width: 27px;
-    height: 27px;
-    background: url(/images/serviceOnlineTime1.png);
-    margin-top: 2px;
-    margin-left: 2px;
+.edcationInfo {
+  /* padding-top: 45px; */
+  padding-top: 67px;
+  font-weight: 500;
+  font-size: 19px;
+  color: black;
 }
-.time2 {
-    display: inline-block;
-    font-size: 14px;
-    width: 56px;
-    height: 33px;
-    position: absolute;
-    left: 40px;
-    top: 6px;
+.workInfoRight {
+  width: 50%;
+  height: 768px;
+  background: rgba(249,249,249,1);
+  padding: 50px;
 }
-.zt1 {
-    font-size: 12px;
-    margin-left: 10px;
-    line-height: 10px;
-    margin-top: 11px;
-}
-.dizhi {
-    width: 100%;
-    height: 110px;
-    margin-top: 2px;
-    border-bottom: 1px dashed gainsboro;
-}
-.dizhi1 {
-    display: inline-block;
-    width: 27px;
-    height: 27px;
-    background: url(/images/8.jpg);
-    margin-top: 2px;
-    margin-left: 2px;
-    background-size:25px 25px;
-}
-.lianxi1 {
-    width: 100%;
-    height: 90px;
-    margin-top: 2px;
-}
-.lianxi {
-    display: inline-block;
-    width: 27px;
-    height: 27px;
-    background: url(/images/serviceOnlineCall.png);
-    margin-top: 2px;
-    margin-left: 2px;
-}
-.zt2 {
-    font-size: 12px;
-    margin-left: 8px;
-    line-height: 6px;
-    margin-top: 12px;
-}
-.ys {
-    color:black;
-}
-.div .div1 .lianxi1 p a:hover {
-    color: brown;
-    text-decoration:none;
-}
-.div2 {
-    border: 0px solid;
-    height: 455px;
-    width: 68%;
-    float: left;
-    margin-left: 9%;
-}
-@media screen and (max-width:1024px) {
-  #myCarousel {
-    height: 267px;
+  .workInfoRight > p {
+    padding-top: 23px;
+    line-height: 25px;
   }
-  .carousel-inner {
-    height: 251px;
-  }
-  .div1 {
-    width: 31%;
-    height: 466px;
-    border-bottom: 1px solid gainsboro;
-    border-right: 1px solid gainsboro;
-    border-left: 1px solid gainsboro;
-    float: left;
-    margin-left: 0px;
-  }
-  .div2 {
-    border: 0px solid;
-    height: 460px;
-    width: 64%;
-    float: left;
-    margin-left: 5%;
-  }
+.workProperty {
+  padding-top: 118px;
+  font-weight: 500;
+  color: black;
+  font-size: 19px;
 }
-@media screen and (max-width:768px) {
-  .span {
-    bottom: -19px;
-  }
-  #myCarousel {
-    height: 183px;
-  }
-  .carousel-inner {
-    height: 183px;
-  }
-  .div1 {
-    width: 42%;
-    height: 466px;
-    border-bottom: 1px solid gainsboro;
-    border-right: 1px solid gainsboro;
-    border-left: 1px solid gainsboro;
-    float: left;
-    margin-left: 0px;
-  }
-  .div2 {
-    border: 0px solid;
-    height: 423px;
-    width: 56%;
-    float: left;
-    margin-left: 2%;
-  }
+.fl {
+  float: left;
 }
-@media screen and (max-width:375px) {
-  #myCarousel {
-    height: 150px;
-    border: 0px solid;
-    margin-top: 4%;
-  }
-  .carousel-inner {
-    width: 90%;
-    margin: auto;
-    height: 150px;
-  }
-    .carousel-inner > .item > .img-responsive {
-      height: 149px;
-    }
-  .div {
-    border: 0px solid;
-    width: 100%;
-    height: 703px;
-    margin: auto;
-    margin-top: 20px;
-  }
-  .div1 {
-    width: 60%;
-    height: 436px;
-    border-bottom: 1px solid gainsboro;
-    border-right: 1px solid gainsboro;
-    border-left: 1px solid gainsboro;
-    float: left;
-    margin-left: 20%;
-  }
-  .div2 {
-    border: 0px solid;
-    height: 262px;
-    width: 90%;
-    float: left;
-    margin-left: 5%;
-  }
+.explainInfo {
+  background: #fff;
+  margin-top: 24px;
+  padding: 30px;
 }
-@media screen and (max-width:414px) {
-  #myCarousel {
-    height: 150px;
-    border: 0px solid;
-    margin-top: 4%;
-  }
-  .carousel-inner {
-    width: 90%;
-    margin: auto;
-    height: 150px;
-  }
-    .carousel-inner > .item > .img-responsive {
-      height: 149px;
-    }
-  .div {
-    border: 0px solid;
-    width: 100%;
-    height: 703px;
-    margin: auto;
-    margin-top: 20px;
-  }
-  .div1 {
-    width: 60%;
-    height: 436px;
-    border-bottom: 1px solid gainsboro;
-    border-right: 1px solid gainsboro;
-    border-left: 1px solid gainsboro;
-    float: left;
-    margin-left: 20%;
-  }
-  .div2 {
-    border: 0px solid;
-    height: 262px;
-    width: 90%;
-    float: left;
-    margin-left: 5%;
-  }
+.font14 {
+  font-size: 14px;
+}
+.explainInfo > p {
+  line-height: 30px;
+}
+p {
+  font-size: 14px;
+  color: #515050;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+h2, h3 {
+  margin:0;
 }
