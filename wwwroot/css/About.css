@@ -19,8 +19,8 @@ img {
 }
 .classPos {
   position: absolute;
-  top: 254px;
-  left: 26%;
+  top: 170px;
+  left: 25%;
 }
 
   .classPos > h2 {
@@ -282,3 +282,381 @@ table {
     font-size:16px;
     background-color: #F5F5F5;
   }
+@media screen and (max-width: 1024px) {
+  .aboutbg {
+    height: 420px;
+  }
+  .classPos {
+    top: 90px;
+    left: 21%;
+  }
+  .classPos > h2 {
+    font-size: 32px;
+    padding-bottom: 0;
+  }
+  .classPos > p {
+    font-size: 20px;
+    line-height: 45px;
+  }
+  .classContent {
+    width: 80%;
+  }
+  .classRight {
+    padding: 29px;
+  }
+  .classRight > p {
+    font-size: 12px;
+  }
+  .aboutContentbg {
+    height: 400px;
+  }
+  .technologyCenter {
+    height: 400px;
+  }
+  .technologyText {
+    padding-top: 58px;
+    width: 90%;
+    margin: auto;
+  }
+  .technologyText > p {
+    line-height: 28px;
+  }
+  .combannerText > p {
+    font-size: 13px;
+  }
+  .aboutMeImg {
+    height: 378px;
+  }
+  .IntroduceTextInfo {
+    height: 378px;
+    padding: 40px;
+  }
+  .IntroduceTextInfo > h3 {
+    padding-top: 16px;
+  }
+  .aboutMeIntroduce {
+    height: 378px;
+    padding: 20px;
+  }
+  .aboutMeIntroduce > p {
+    font-size: 12px;
+    line-height: 21px;
+  }
+  .payWay > h3 {
+    padding: 5px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .aboutbg {
+    height: 350px;
+  }
+  .classPos {
+    top: 70px;
+    left: 20%;
+  }
+  .classPos > h2 {
+    font-size: 30px;
+  }
+  .classPos > p {
+    font-size: 18px;
+    line-height: 36px;
+  }
+  .classContent {
+    width: 90%;
+  }
+  .classLeft {
+    padding: 74px;
+  }
+  .classRight > p {
+    line-height: 19px;
+  }
+  .aboutContentbg {
+    height: 350px;
+  }
+  .classContentPos {
+    left: 74px;
+  }
+  .technologyCenter {
+    height: 350px;
+  }
+  .technologyText {
+    padding-top: 45px;
+  }
+  .combannerText > p {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .combannerText {
+    padding: 34px;
+  }
+  .combannerText > h3 {
+    font-size: 20px;
+  }
+  .aboutMeImg {
+    height: 300px;
+  }
+  .IntroduceTextInfo {
+    height: 300px;
+    padding: 20px;
+  }
+  .IntroduceTextInfo > h3 {
+    padding-top: 0;
+    font-size: 20px;
+  }
+  .IntroduceTextInfo > p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+  .aboutMeIntroduce {
+    height: 300px;
+    padding: 20px;
+  }
+  .aboutMeIntroduce > .logya {
+    display:none;
+  }
+  .aboutMeIntroduce > p {
+    line-height: 24px;
+  }
+  .payWay > h3 {
+    font-size: 17px;
+  }
+  .payPad > h3 {
+    font-size: 14px;
+  }
+  .payPad > p {
+    font-size: 13px;
+  }
+  table th {
+    font-size: 13px;
+  }
+  .classRight > h2 {
+    font-size: 21px;
+  }
+  .font22 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width:414px) {
+  .aboutbg {
+    height: 200px;
+  }
+  .classPos {
+    top: 40px;
+    left: 10%;
+    width: 80%;
+  }
+  .classPos > h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .classPos > p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .classContent {
+    width: 98%;
+    margin-bottom: 15px;
+  }
+  .classTop {
+    margin-top: 14px;
+  }
+  .classLeft {
+    padding: 0;
+    width: 100%;
+    height: 165px;
+  }
+  .classLeft h1 {
+    font-size: 40px;
+    line-height: 70px;
+    padding-left: 120px;
+  }
+  .font20 {
+    font-size: 18px;
+    padding-left: 25px;
+  }
+  .classRight {
+    padding: 25px;
+    width: 100%;
+    height: 320px;
+  }
+  .classRight > h2 {
+    font-size: 20px;
+  }
+  .aboutContentbg {
+    height: 200px;
+    margin-top: 14px;
+  }
+  .classContentPos {
+    left: 25px;
+    width: 80%;
+    top: 50px;
+  }
+  .classContentPos > h3 {
+    font-size: 20px;
+  }
+  .classContentPos > p {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .technologyInfo {
+    margin-top: 14px;
+  }
+  .technologyCenter {
+    height: 200px;
+  }
+  .technologyText {
+    padding-top: 16px;
+    width: 93%;
+    margin: 0;
+    padding-left: 25px;
+  }
+  .technologyText > h2 {
+    font-size: 20px;
+  }
+  .technologyText > p {
+    line-height: 21px;
+    font-size: 12px;
+  }
+  .combannerText {
+    padding: 25px;
+    overflow: auto;
+    height: 260px;
+  }
+  .combannerText > h3 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .combannerText > p {
+    font-size: 12px;
+    line-height: 19px;
+  }
+  .produceIntoduce {
+    margin-top: 14px;
+  }
+  .aboutMeImg {
+    width: 100%;
+    height: 240px;
+  }
+  .IntroduceTextInfo {
+    height: 200px;
+    padding: 25px;
+    width: 100%;
+    padding-top: 20px;
+  }
+  .IntroduceTextInfo > h3 {
+    padding-top: 0;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .IntroduceTextInfo > p {
+    font-size: 12px;
+    line-height: 19px;
+  }
+  .selfIntoduce {
+    margin-top: 14px;
+  }
+  .aboutMeIntroduce {
+    height: 200px;
+    width: 100%;
+    padding: 25px;
+    padding-top: 18px;
+  }
+  .font22 {
+    font-size: 18px;
+  }
+  .aboutMeIntroduce > p {
+    line-height: 21px;
+  }
+  .payWay {
+    padding: 20px 25px;
+  }
+  .payPad {
+    padding: 16px;
+    margin-top: 14px;
+  }
+  .payPad > p {
+    font-size: 12px;
+  }
+  .payPad > h3 {
+    font-size: 14px;
+    padding-bottom: 14px;
+  }
+  table th {
+    font-size: 12px;
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .classPos > p {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .classLeft h1 {
+    font-size: 36px;
+    line-height: 70px;
+    padding-left: 115px;
+  }
+  .font20 {
+    font-size: 16px;
+    padding-left: 25px;
+  }
+  .classRight {
+    padding-top: 20px;
+  }
+  .classRight > h2 {
+    font-size: 16px;
+  }
+  .classContentPos {
+    width: 82%;
+  }
+  .classContentPos > h3 {
+    font-size: 16px;
+  }
+  .technologyText > h2 {
+    font-size: 16px;
+  }
+  .combannerText > h3 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .IntroduceTextInfo > h3 {
+    font-size: 16px;
+  }
+  .aboutMeIntroduce > p {
+    line-height: 17px;
+  }
+  .font22 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .classPos {
+    top: 40px;
+    left: 6%;
+    width: 90%;
+  }
+  .classPos > h2 {
+    font-size: 16px;
+  }
+  .classLeft {
+    height: 143px;
+  }
+  .classLeft h1 {
+    font-size: 30px;
+    line-height: 55px;
+    padding-left: 95px;
+  }
+  .font20 {
+    font-size: 13px;
+    padding-left: 23px;
+  }
+  .classRight > p {
+    line-height: 17px;
+  }
+  .classContentPos > p {
+    line-height: 20px;
+  }
+  .aboutMeIntroduce {
+    padding-top: 10px;
+  }
+}

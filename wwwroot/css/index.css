@@ -14,8 +14,8 @@
 .topsize {
   z-index: 10;
   position: absolute;
-  top: 254px;
-  left: 26%;
+  top: 170px;
+  left: 25%;
   font-family: MicrosoftYaHei;
   font-size: 36px;
   letter-spacing: 2px;
@@ -26,11 +26,15 @@
   font-size: 36px;
   padding-bottom: 15px;
 }
+.psize {
+  font-size: 24px;
+  color: #FFFFF3;
+}
 /*内容*/
 .content {
-   width:70%;
-   margin:auto;
-   border:0px solid;
+  width: 70%;
+  margin: auto;
+  border: 0px solid;
 }
   .content img {
     height:100%;
@@ -231,12 +235,9 @@ table {
 }
 .LogoInfo > table > tbody > tr > td {
   /* margin-right: 20px; */
-  margin-right: 35px;
-  margin-bottom: 20px;
+  width: 16.6%;
+  padding: 15px;
   display: inline-block;
-}
-table tr:nth-child(odd) td {
-  background-color: #fff;
 }
 /*内容6*/
 .contentFooter {
@@ -286,4 +287,465 @@ table tr:nth-child(odd) td {
 }
 .mapa img{
   width:10%;
+}
+.footerpad>.padimg {
+  width: 30%;
+}
+@media screen and (max-width: 1024px) {
+  .topimg {
+    height: 420px;
+  }
+  .topsize {
+    top: 90px;
+    left: 21%;
+  }
+  .clear {
+    font-size: 32px;
+  }
+  .psize {
+    font-size: 20px;
+  }
+  .content {
+    width: 80%;
+  }
+  .aboutMeImg {
+    height: 400px;
+  }
+  .aboutMeIntroduce {
+    padding: 28px;
+    height: 400px;
+  }
+  h3, .h3 {
+    font-size: 22px;
+    margin: 0;
+  }
+  .mep {
+    font-size: 13px;
+  }
+  .serviceIntoduce {
+    padding: 30px 30px 50px 30px;
+  }
+  .serviceIntoduce > h3 {
+    font-size: 22px;
+  }
+  .serviceIntoduce > p {
+    font-size: 16px;
+    margin: 0;
+  }
+  .intoduceInfo {
+    height: 500px;
+  }
+  .intouceImg {
+    height: 276px;
+  }
+  .intouceTitle > h4 {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .intouceTitle > p {
+    font-size: 13px;
+    line-height: 23px;
+  }
+  .font14 {
+    line-height: 31px;
+  }
+  .font22 {
+    font-size:20px;
+  }
+  .IntroduceTextInfo {
+    height: 400px;
+  }
+  .brandInfo > h3 {
+    font-size: 22px;
+  }
+  .brandInfo > p {
+    font-size: 16px;
+    margin: 0;
+  }
+  .LogoInfo > table > tbody > tr > td {
+    padding: 5px;
+  }
+  .contentFooter > h3 {
+    font-size: 22px;
+  }
+  .contentFooter > dl {
+    width: 32%;
+  }
+  .font18 {
+    font-size: 16px;
+  }
+  .footerLeft > dd {
+    font-size: 13px;
+  }
+  .map > img {
+    width: 10%;
+  }
+  .footerpad > .padimg {
+    width: 40%;
+  }
+  .mapa img {
+    width: 15%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .topimg {
+    height: 350px;
+  }
+  .clear {
+    font-size: 30px;
+  }
+  .psize {
+    font-size: 18px;
+  }
+  .content {
+    width: 90%;
+  }
+  .aboutMeImg {
+    height: 300px;
+  }
+  .aboutMeIntroduce {
+    padding: 28px;
+    height: 300px;
+  }
+  h3, .h3 {
+    font-size: 20px;
+  }
+  .mep {
+    font-size: 12px;
+    height: 106px;
+    overflow: auto;
+  }
+  .serviceIntoduce > h3 {
+    font-size: 20px;
+  }
+  .serviceIntoduce > p {
+    font-size: 14px;
+  }
+  .font15 {
+    font-size: 14px;
+  }
+  .intouceMore {
+    margin: 18px 30px 10px 30px;
+  }
+  .intoduceInfo {
+    height: 420px;
+  }
+  .intouceImg {
+    height: 210px;
+  }
+  .intouceTitle > h4 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .intouceTitle > p {
+    font-size: 12px;
+    line-height: 28px;
+    overflow: auto;
+  }
+  .aboutMeIntroduce {
+    padding: 28px;
+    height: 300px;
+  }
+  .font22 {
+    font-size: 16px;
+  }
+  .font16 {
+    font-size: 12px;
+  }
+  .font14 {
+    line-height: 25px;
+    height: 78px;
+    overflow: auto;
+    font-size: 12px;
+    margin: 0;
+  }
+  .mea {
+    margin-top: 16px;
+    font-size: 14px;
+  }
+  .IntroduceTextInfo {
+    height: 300px;
+    padding: 26px;
+  }
+  .IntroduceTextInfo > h3 {
+    font-size: 18px;
+    padding:0;
+  }
+  .IntroduceTextInfo > p {
+    font-size: 12px;
+  }
+  .IntroduceTextInfo > a {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .brandInfo > h3 {
+    font-size: 20px;
+    padding-top: 40px;
+  }
+  .brandInfo > p {
+    font-size: 14px;
+  }
+  .LogoInfo {
+    padding: 14px 20px;
+  }
+  .contentFooter > h3 {
+    font-size: 20px;
+    padding-top: 26px;
+  }
+  .contentFooter > dl {
+    width: 33%;
+  }
+  .contentFooter > dl > dt {
+    padding-bottom: 14px;
+  }
+  .font18 {
+    font-size: 14px;
+    padding-top: 20px;
+  }
+  .footerLeft > dd {
+    font-size: 12px;
+    line-height: 26px;
+  }
+  .footerpad {
+    padding-top: 10px;
+  }
+  .map > img {
+    width: 12%;
+  }
+  .footerpad > .padimg {
+    width: 50%;
+  }
+  .mapa img {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 414px) {
+  .topimg {
+    height: 200px;
+  }
+  .topsize {
+    top: 35px;
+    left: 13%;
+  }
+  .clear {
+    font-size: 18px;
+  }
+  .psize {
+    font-size: 12px;
+  }
+  .content {
+    width: 98%;
+  }
+  .aboutMe {
+    margin-top: 12px;
+  }
+  .aboutMeImg {
+    height: 200px;
+    width: 50%;
+  }
+  .aboutMeIntroduce {
+    padding: 10px;
+    height: 200px;
+    width: 50%;
+  }
+  h3, .h3 {
+    font-size: 16px;
+    padding-top: 9px;
+  }
+  .mespan {
+    line-height: 25px;
+  }
+  .mep {
+    height: 68px;
+  }
+  .mea {
+    margin-top: 5px;
+    font-size: 14px;
+    padding: 8px;
+  }
+  .serviceIntoduce {
+    padding: 15px;
+    margin-top: 14px;
+  }
+  .serviceIntoduce > h3 {
+    font-size: 16px;
+    line-height: 15px;
+  }
+  .serviceIntoduce > p {
+    font-size: 12px;
+    line-height: 44px;
+  }
+  .intoduceInfo {
+    height: 300px;
+    width: 100%;
+  }
+  .intouceImg {
+    height: 180px;
+    margin-bottom: 10px;
+  }
+  .intouceTitle {
+    padding: 0 8px;
+  }
+  .intouceTitle > p {
+    font-size: 12px;
+    line-height: 19px;
+    height: 40px;
+  }
+  .intouceMore {
+    margin: 10px;
+    padding: 10px 0;
+  }
+  .font15 {
+    font-size: 12px;
+  }
+  .intouceTitle > h4 {
+    font-size: 14px;
+    line-height: 8px;
+  }
+  .font22 {
+    font-size: 13px;
+    padding: 0;
+  }
+  .font16 {
+    font-size: 12px;
+    margin: 0;
+  }
+  .font14 {
+    line-height: 26px;
+    height: 50px;
+  }
+  .selfIntoduce {
+    margin-top: 14px;
+  }
+  .produceIntoduce {
+    margin-top: 14px;
+  }
+  .IntroduceTextInfo {
+    height: 200px;
+    padding: 10px;
+    width: 50%;
+  }
+  .IntroduceTextInfo > h3 {
+    font-size: 14px;
+    padding: 0;
+    line-height: 22px;
+  }
+  .IntroduceTextInfo > span {
+    line-height: 10px;
+  }
+  .IntroduceTextInfo > p {
+    font-size: 12px;
+    margin: 0;
+    height: 62px;
+    overflow: auto;
+    line-height: 20px;
+  }
+  .IntroduceTextInfo>.huiyi {
+    height: 24px;
+  }
+  .IntroduceTextInfo > a {
+    margin-top: 9px;
+    font-size: 14px;
+    padding: 8px;
+  }
+  .brandInfo > h3 {
+    font-size: 16px;
+    padding-left: 20px;
+    padding-top: 26px;
+  }
+  .brandInfo > p {
+    font-size: 12px;
+    padding-left: 20px;
+  }
+  .LogoInfo > table > tbody > tr > td {
+    margin-right: 0px;
+    margin-left: 7px;
+    width: 31%;
+  }
+  .LogoInfo {
+    padding: 10px 16px;
+  }
+  .contentFooter {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  .contentFooter > h3 {
+    font-size: 16px;
+    padding-top: 0px;
+  }
+  .contentFooter > dl > dt {
+    padding-bottom: 10px;
+  }
+  .font18 {
+    font-size: 13px;
+    padding-top: 14px;
+  }
+  .map > img {
+    width: 18%;
+    margin-top: -6px;
+  }
+  .contentFooter > dl {
+    width: 33%;
+    margin-bottom: 1px;
+  }
+  .footerLeft > dd {
+    font-size: 12px;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .mea {
+    margin-top: 5px;
+    font-size: 14px;
+    padding: 7px;
+  }
+  .font22 {
+    font-size: 12px;
+    padding: 0;
+    margin-top: 3px;
+  }
+  .IntroduceTextInfo > a {
+    margin-top: 9px;
+    font-size: 14px;
+    padding: 7px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .mea {
+    margin-top: 5px;
+    font-size: 14px;
+    padding: 4px;
+  }
+  .mep {
+    height: 80px;
+    line-height: 20px;
+  }
+  .font22 {
+    font-size: 12px;
+    padding: 0;
+    margin-top: 3px;
+  }
+  .IntroduceTextInfo > a {
+    margin-top: 17px;
+    font-size: 14px;
+    padding: 4px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .whiteBtn {
+    padding-left: 50px;
+  }
+  .font14 {
+    line-height: 23px;
+    height: 44px;
+  }
+  .LogoInfo > table > tbody > tr > td {
+    margin-right: 0px;
+    margin-left: 20px;
+    width: 24%;
+  }
+  .map > img {
+    width: 25%;
+    margin-top: -6px;
+  }
 }
