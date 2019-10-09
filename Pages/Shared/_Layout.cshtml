@@ -37,7 +37,7 @@
             <img src="http://9513246.s21i.faiusr.com/4/ABUIABAEGAAg0pLhywUo5KXEhgQw2wE4MQ.png" alt="米立科技" style="width:100%;height:100%;" />
           </a>
         </div>
-        <div class="collapse navbar-collapse" id="example-navbar-collapse" >
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
           <ul class="nav navbar-nav" id="coll">
             <li><a href="/Index">&nbsp;&nbsp;首&nbsp;&nbsp;页&nbsp;&nbsp;</a></li>
             <li><a href="/Product" id="error">产品中心</a></li>
@@ -78,6 +78,85 @@
         </div>
       </div>
     </div>
+    @*悬浮导航*@
+    <div class="suspension">
+      <div class="suspension-box">
+        <a href="javascript:;" class="a a-service "><i class="i"></i></a>
+        <a href="/About" class="a a-service-phone "><i class="i"></i></a>
+        <a href="javascript:;" class="a a-qrcode"><i class="i"></i></a>
+        <a href="javascript:;" class="a a-top"><i class="i"></i></a>
+        <div class="d d-service">
+          <i class="arrow"></i>
+          <div class="inner-box">
+            <div class="d-service-item clearfix">
+              <a href="/Index" class="clearfix"><span class="circle"><i class="i-qq"></i></span><h3>咨询在线客服</h3></a>
+            </div>
+          </div>
+        </div>
+        <div class="d d-service-phone">
+          <i class="arrow"></i>
+          <div class="inner-box">
+            <div class="d-service-item clearfix">
+              <span class="circle"><i class="i-tel"></i></span>
+              <div class="text">
+                <p>服务热线</p>
+                <p class="red number">17803565206</p>
+              </div>
+            </div>
+            <div class="d-service-intro clearfix">
+              <p><i></i>服务介绍</p>
+              <p><i></i>合作代理</p>
+              <p><i></i>关于我们</p>
+            </div>
+          </div>
+        </div>
+        <div class="d d-qrcode">
+          <i class="arrow"></i>
+          <div class="inner-box">
+            <div class="qrcode-img"><img src="images/side_ewm.jpg" alt=""></div>
+            <p>微信服务号</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+
+        /* ----- 侧边悬浮 ---- */
+        $(document).on("mouseenter", ".suspension .a", function () {
+          var _this = $(this);
+          var s = $(".suspension");
+          var isService = _this.hasClass("a-service");
+          var isServicePhone = _this.hasClass("a-service-phone");
+          var isQrcode = _this.hasClass("a-qrcode");
+          if (isService) { s.find(".d-service").show().siblings(".d").hide(); }
+          if (isServicePhone) { s.find(".d-service-phone").show().siblings(".d").hide(); }
+          if (isQrcode) { s.find(".d-qrcode").show().siblings(".d").hide(); }
+        });
+        $(document).on("mouseleave", ".suspension, .suspension .a-top", function () {
+          $(".suspension").find(".d").hide();
+        });
+        $(document).on("mouseenter", ".suspension .a-top", function () {
+          $(".suspension").find(".d").hide();
+        });
+        $(document).on("click", ".suspension .a-top", function () {
+          $("html,body").animate({ scrollTop: 0 });
+        });
+        $(window).scroll(function () {
+          var st = $(document).scrollTop();
+          var $top = $(".suspension .a-top");
+          if (st > 400) {
+            $top.css({ display: 'block' });
+          } else {
+            if ($top.is(":visible")) {
+              $top.hide();
+            }
+          }
+        });
+
+      });
+    </script>
     <div class="container body-content " style="width:100%;margin:auto;border:0px solid #660066;background-color:#EEEEEE;
 margin-bottom:0%;position: relative;z-index: 0;" id="bodya">
       @RenderBody()
