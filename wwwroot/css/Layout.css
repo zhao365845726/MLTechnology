@@ -244,10 +244,14 @@ ul, ol {
   margin: auto;
 }
 
-.fr {
+.fra {
   float: right;
   color: #5ECFBA;
 }
+  .fra:hover {
+    text-decoration: none;
+    color: coral;
+  }
 
 #btnRegister {
   color: #ff9600;
@@ -271,12 +275,13 @@ ul, ol {
   background: -o-linear-gradient(#1fd783,#1fd06b);
   background: -moz-linear-gradient(#1fd783,#1fd06b);
   background: linear-gradient(#1fd783,#1fd06b);
+  outline: none;
 }
 
 .threeLogin span {
   color: #b3c3c0;
   float: left;
-  padding-right: 146px;
+  padding-right: 1%;
   font-size: 14px;
 }
 
@@ -284,7 +289,7 @@ ul, ol {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: url(http://localhost:56208/images/login_img.png) no-repeat;
+  background: url(../images/5.png) no-repeat;
   vertical-align: middle;
   margin-left: 15px;
   cursor: pointer;
@@ -302,11 +307,18 @@ ul, ol {
   .threeLogin .nwx {
     background-position: -20px 0;
   }
-
-
-@media screen and (max-width: 1680px) {
-  .footerPadding {
+  .threeLogin .nqq:hover {
+    background-position: 0px -20px;
+  }
+  .threeLogin .nwx:hover {
+    background-position: -20px -20px;
+  }
+  @media screen and (max-width: 1680px) {
+    .footerPadding {
     padding: 45px 20%;
+  }
+  .c2 {
+    width: 50%;
   }
 }
 
@@ -367,6 +379,9 @@ ul, ol {
   .footerPadding {
     padding: 45px 6%;
   }
+  .c2 {
+    top: 27%;
+  }
 }
 @media screen and (max-width: 768px) {
   .tp1 {
@@ -404,6 +419,10 @@ ul, ol {
   .footerContent .footerPadding > dl {
     padding: 0 33px;
   }
+  .c2 {
+    top: 36%;
+    width: 74%;
+  }
 }
 @media screen and (max-width: 414px) {
   .tp1 {
@@ -436,7 +455,7 @@ ul, ol {
     background: currentColor;
     padding: 0;
     position: relative;
-    z-index: 10;
+    z-index: 0;
   }
   .container-fluid > .collapse > .nav > li > a {
     color: white;
@@ -485,10 +504,45 @@ ul, ol {
     font-size: 10px;
     line-height: 25px;
   }
+  .c2 {
+    top: 50%;
+    width: 98%;
+    left: 49%;
+  }
+  .modal-body {
+    position: relative;
+    padding: 0px;
+    padding-top: 16px;
+  }
+  .form-control {
+    display: block;
+    width: 91%;
+    height: 32px;
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+  .marginB10 {
+    font-size: 12px;
+    width: 88%;
+    margin: auto;
+    margin-left: 16px;
+  }
+  .denglu {
+    width: 80%;
+    height: 33px;
+    margin-top: 22px;
+    margin-left: 22px;
+    font-size: 13px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+  }
+  ul, ol {
+    padding-left: 17px;
+  }
 }
 @media screen and (max-width: 375px) {
   .container-fluid > .collapse > .nav {
-    margin-top: 90%;
+    margin-top: 52%;
     margin-bottom: 7.5%;
     width: 39%;
   }
@@ -514,6 +568,27 @@ ul, ol {
     padding: 1.5px;
     height: 204px;
   }
+  .c2 {
+    left: 54%;
+  }
+  ul, ol {
+    padding-left: 6px;
+  }
+  .form-control {
+    display: block;
+    width: 95%;
+  }
+  .marginB10 {
+    width: 94%;
+    margin-left: 10px;
+  }
+  .denglu {
+    margin-left: 20px;  
+  }
+  .threeLogin {
+    margin-top: 18px;
+    padding-left: 20px;
+  }
 }
 @media screen and (max-width: 360px) {
   .container-fluid > .collapse > .nav {
@@ -532,6 +607,9 @@ ul, ol {
     padding: 1.5px;
     padding-left: 4px;
     height: 224px;
+  }
+  .c2 {
+    left: 56.6%;
   }
 }
 @media screen and (max-width: 320px) {
@@ -556,5 +634,15 @@ ul, ol {
     padding-left: 12px;
     padding-right: 10px;
     height: 204px;
+  }
+  .c2 {
+    left: 63.6%;
+  }
+  .img1 {
+    width: 0;
+    height: 0;
+  }
+  .img2 {
+    width: 95%;
   }
 }
