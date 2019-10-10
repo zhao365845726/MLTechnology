@@ -15,7 +15,38 @@
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
     <link  rel="stylesheet" href="~/css/Layout.css"/>
-</head>
+    <script type="text/javascript">
+      window.onload = function () {
+        document.onkeydown = function () {
+          var e = window.event || arguments[0];
+          //屏蔽F12
+          if (e.keyCode == 123) {
+            alert('友情提醒您，本网站禁止审查元素');
+            return false;
+            //屏蔽Ctrl+Shift+I
+          } else if ((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)) {
+            alert('友情提醒您，本网站禁止审查元素');
+            return false;
+            //屏蔽Shift+F10
+          } else if ((e.shiftKey) && (e.keyCode == 121)) {
+            alert('本网站禁止审查元素！');
+
+            return false;
+
+          } else if (event.ctrlKey && window.event.keyCode == 83) {
+            alert('本网站禁止保存文件！');
+            return false;
+          }
+        };
+        ////屏蔽右键单击
+        document.oncontextmenu = function () {
+          alert('友情提醒您，本网站禁止审查元素');
+          return false;
+        }
+      }
+
+/**/</script>
+ </head>
 <body>
   <div style="width:100%;margin:auto;border:0px solid blue;">
     <nav class="navbar navbar-default" role="navigation">
@@ -76,19 +107,15 @@
       </div>
     </div>
     <script>
-      //function Dengle() {
-      //      document.getElementById('shade').classList.remove('hide');
-      //      document.getElementById('modal').classList.remove('hide');
-  //    }
       var dengle = document.getElementById('dengle');
       dengle.onclick = function () {
         document.getElementById('shade').classList.remove('hide');
         document.getElementById('modal').classList.remove('hide');
       }
       function Hide() {
-            document.getElementById('shade').classList.add('hide');
-            document.getElementById('modal').classList.add('hide');
-          }
+        document.getElementById('shade').classList.add('hide');
+        document.getElementById('modal').classList.add('hide');
+      }
     </script>
     @*悬浮导航*@
     <div class="suspension">
@@ -169,6 +196,33 @@
 
       });
     </script>
+    <script>
+      $(document).ready(function () {
+        $("#coll a").each(function () {
+          $this = $(this);
+          console.log($this[0].href == String(window.location))
+          if ($this[0].href == String(window.location)) {
+            $this.addClass("actv");
+          }
+        });
+      })
+
+      var bodya = document.getElementById('bodya');
+      var dibua = document.getElementById('dibua');
+      var btn = document.getElementById('btn');
+      btn.onclick = function () {
+        if (bodya.style.display == 'none') {
+          bodya.style.display = 'block';
+        } else {
+          bodya.style.display = 'none';
+        }
+        if (dibua.style.display == 'none') {
+          dibua.style.display = 'block';
+        } else {
+          dibua.style.display = 'none';
+        }
+      }
+    </script>
     <div class="container body-content " style="width:100%;margin:auto;border:0px solid #660066;background-color:#EEEEEE;
 margin-bottom:0%;position: relative;z-index: 0;" id="bodya">
       @RenderBody()
@@ -213,8 +267,8 @@ margin-bottom:0%;position: relative;z-index: 0;" id="bodya">
             <dd style="width: 28%;">
               <span id="szgs_stat_icon_1024947667970555904">
                 @*<a href="http://www.beian.suzhou.gov.cn/websiteMark?siteid=1024947667970555904&amp;type=1" target="_blank">
-                  <img src="~/images/1.gif">
-                </a>*@
+                    <img src="~/images/1.gif">
+                  </a>*@
               </span>
             </dd>
           </dl>
@@ -222,58 +276,69 @@ margin-bottom:0%;position: relative;z-index: 0;" id="bodya">
       </div>
     </footer>
   </div>
-  
 
 
-    <environment include="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-        <script>//导航
-          $(document).ready(function () {
-            $("#coll a").each(function () {
-              $this = $(this);
-              console.log($this[0].href == String(window.location))
-              if ($this[0].href == String(window.location)) {
-                $this.addClass("actv");
-              }          
-            });
-          })
 
-          var bodya = document.getElementById('bodya');
-          var dibua = document.getElementById('dibua');
-          var btn = document.getElementById('btn');
-          btn.onclick = function () {
-            if (bodya.style.display == 'none') {
-              bodya.style.display = 'block';
-            } else {
-              bodya.style.display = 'none';
-            }
-            if (dibua.style.display == 'none') {
-              dibua.style.display = 'block';
-            } else {
-              dibua.style.display = 'none';
-            }
-            }
-        </script>
-    </environment>
-    <environment exclude="Development">
-      <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
-              asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-              asp-fallback-test="window.jQuery"
-              crossorigin="anonymous"
-              integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
-      </script>
-      <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
-              asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
-              asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
-              crossorigin="anonymous"
-              integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
-      </script>
-      <script src="~/js/site.min.js" asp-append-version="true"></script>
-    </environment>
+  <environment include="Development">
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+      //导航
+      //$(document).ready(function () {
+      //  $("#coll a").each(function () {
+      //    $this = $(this);
+      //    console.log($this[0].href == String(window.location))
+      //    if ($this[0].href == String(window.location)) {
+      //      $this.addClass("actv");
+      //    }
+      //  });
+      //})
 
-    @RenderSection("Scripts", required: false)
-    
+      //var bodya = document.getElementById('bodya');
+      //var dibua = document.getElementById('dibua');
+      //var btn = document.getElementById('btn');
+      //btn.onclick = function () {
+      //  if (bodya.style.display == 'none') {
+      //    bodya.style.display = 'block';
+      //  } else {
+      //    bodya.style.display = 'none';
+      //  }
+      //  if (dibua.style.display == 'none') {
+      //    dibua.style.display = 'block';
+      //  } else {
+      //    dibua.style.display = 'none';
+      //  }
+      //}
+    </script>
+  </environment>
+  <environment exclude="Development">
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+            asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+            asp-fallback-test="window.jQuery"
+            crossorigin="anonymous"
+            integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
+    </script>
+    <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+            asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+            asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+            crossorigin="anonymous"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+    </script>
+    <script src="~/js/site.min.js" asp-append-version="true"></script>
+  </environment>
+
+  @RenderSection("Scripts", required: false)
+  @*<script type="text/javascript">
+      document.onmousedown = click
+      function click() {
+        if (event.button == 2) {
+          alert('对不起，您无权查看源代码，这是由知识产权保护法保护的特例对象！');
+        }
+        if (event.button == 3) {
+          alert('对不起，您无权查看源代码，这是由知识产权保护法保护的特例对象！');
+        }
+      }
+    </script>*@
 </body>
 </html>
