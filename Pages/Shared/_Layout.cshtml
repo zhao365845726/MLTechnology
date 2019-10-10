@@ -46,7 +46,7 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="/register"><span class="glyphicon glyphicon-user"></span> 注册</a></li>
-            <li style="margin-left:5%;"><a onclick="Showone();"><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
+            <li style="margin-left:5%;"><a id="dengle"><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
           </ul>
         </div>
       </div>
@@ -78,6 +78,21 @@
         </div>
       </div>
     </div>
+    <script>
+      //function Dengle() {
+      //      document.getElementById('shade').classList.remove('hide');
+      //      document.getElementById('modal').classList.remove('hide');
+  //    }
+      var dengle = document.getElementById('dengle');
+      dengle.onclick = function () {
+        document.getElementById('shade').classList.remove('hide');
+        document.getElementById('modal').classList.remove('hide');
+      }
+      function Hide() {
+            document.getElementById('shade').classList.add('hide');
+            document.getElementById('modal').classList.add('hide');
+          }
+    </script>
     @*悬浮导航*@
     <div class="suspension">
       <div class="suspension-box">
@@ -243,14 +258,6 @@ margin-bottom:0%;position: relative;z-index: 0;" id="bodya">
               dibua.style.display = 'none';
             }
             }
-           function Showone() {
-            document.getElementById('shade').classList.remove('hide');
-            document.getElementById('modal').classList.remove('hide');
-          }
-          function Hide() {
-            document.getElementById('shade').classList.add('hide');
-            document.getElementById('modal').classList.add('hide');
-          }
         </script>
     </environment>
     <environment exclude="Development">
