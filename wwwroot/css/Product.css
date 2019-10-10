@@ -3,7 +3,7 @@
   border-bottom: 2px solid #EE0A0A;
 }
 .produceBanner {
-  background: url(../images/2.1.jpg) no-repeat;
+  background: url(http://image.milisx.com/2.1.jpg) no-repeat;
   background-size: 100% 100%;
   height: 600px;
   width: 100%;
@@ -47,7 +47,7 @@ p {
 }
 /*内容1*/
 .containerCenter {
-  background: url(../images/2.2.jpg) no-repeat;
+  background: url(http://image.milisx.com/2.2.jpg) no-repeat;
   background-size: 100% 100%;
   height: 375px;
   margin-top: 24px;
@@ -129,7 +129,7 @@ p {
 }
 /*内容3*/
 .companyDemand {
-  background: url(../images/2.3.jpg) no-repeat;
+  background: url(http://image.milisx.com/2.3.jpg) no-repeat;
   background-size: 100% 100%;
   height: 450px;
   margin-top: 24px;
@@ -176,10 +176,10 @@ p {
 }
 /*内容4*/
 .serviceCenter {
-  background: url(../images/2.4.jpg) no-repeat center center;
+  background: url(http://image.milisx.com/2.4.jpg) no-repeat center center;
   background-size: 100% 100%;
   height: 375px;
-  margin-top:24px;
+  margin-top: 24px;
 }
 #center {
   top:30px;
@@ -191,7 +191,7 @@ p {
 }
 /*内容6*/
 .comProduceBanner {
-  background: url(../images/2.5.jpg) no-repeat center center;
+  background: url(http://image.milisx.com/2.5.jpg) no-repeat center center;
   background-size: 100% 100%;
   height: 375px;
   margin-top: 24px;
