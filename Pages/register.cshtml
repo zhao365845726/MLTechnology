@@ -4,47 +4,45 @@
   ViewData["Title"] = "米立科技";
 }
 <link type="text/css" rel="stylesheet" href="~/css/register.css" />
-<div class="content-border">
-  <div class="froma">
-    <h1 class="reg-font">
-      请输入注册信息：
-    </h1>
-    <div class="form-div  divone">
-      <label for="username" class="edit_label"><em class="redone">*</em>用户名：</label>
-      <input id="username" name="username" title="用户名不能为空。4～20个字符，不能包含下列特殊字符：? # * , : &amp;lt; > { } % $ / ' \ 空格" type="text" value="">
-      <span class="field-validation-valid" data-valmsg-for="username" data-valmsg-replace="true"></span>
-    </div>
-    <div class="form-div">
-      <label for="password" class="edit_label"><em class="redone">*</em>密码：</label>
-      <input id="password" name="password" title="密码不能为空，且区分大小写。为了您账户的安全，密码至少6位，且不能全为数字，且不能和用户名相同！" type="password">
-      <span class="field-validation-valid" data-valmsg-for="password" data-valmsg-replace="true"></span>
-    </div>
-    <div class="form-div">
-      <label for="repassword" class="edit_label"><em class="redone">*</em>重复密码：</label>
-      <input id="repassword" name="repassword" title="重复密码" type="password">
-      <span class="field-validation-valid" data-valmsg-for="repassword" data-valmsg-replace="true"></span>
-    </div>
-    <div class="form-div">
-      <label for="email" class="edit_label"><em class="red">*</em>Email：</label>
-      <input id="email" name="email" title="为了更方便通讯，强烈建议您使用下列邮箱：163.com,126.com,gmail.com,hotmail.com。Email也可以替代用户名登录哦:)" type="text" value="">
-      <span class="field-validation-valid" data-valmsg-for="email" data-valmsg-replace="true"></span><br>
-      <label class="redone emaila">请填写真实有效的Email，否则将无法收到激活邮件！</label><br>
-    </div>
-    <div class="form-div">
-      <label for="checkcode" class="edit_label"><em class="redone">*</em>验证码：</label>
-      <input class="w_50" id="Reg_CheckCode" name="CheckCode" onfocus="" type="text" value="">
-      <span id="Reg_checkcode"><img alt="验证码，不区分大小写" src="http://www.senparc.com/Home/Checkcode/0?t=0.04779255468919286" class="checkcode" id="imga"> 不区分大小写，<a onclick="ckimg();" class="loada">看不清点击这里</a></span>
-
-      <span class="field-validation-valid" data-valmsg-for="checkcode" data-valmsg-replace="true" style="color:red!important;"></span><br>
-      <br>
-    </div>
-    <div>
-      <input class="btn_reg" type="submit" value="注册">
+<div class="zhuce">
+  <div class="zhuceone">
+    <div class="zhucetwo">
+      <div class="zhucethree">
+        <h1 class="xinxi">用户注册</h1>
+        <form style="margin-top:20px;">
+          <div class="inputone">
+            <label for="userLog" class="inputa"></label>
+            <input id="userLog" type="text" class="userLogo" placeholder="请输入用户名" lay-verify="required|userName" title="用户名不能为空。4～20个字符，不能包含下列特殊字符：? # * , : &amp;lt; > { } % $ / ' \ 空格">@*required (必填项)*@
+          </div>
+          <div class="inputone">
+            <label for="password" class="inputb"></label>
+            <input id="password" name="password" title="密码不能为空，且区分大小写。为了您账户的安全，密码至少6位，且不能全为数字，且不能和用户名相同！" type="password" class="userLogo" placeholder="请输入密码">
+          </div>
+          <div class="inputone">
+            <label for="repassword" class="inputc"></label>
+            <input id="repassword" name="password" type="password" class="userLogo" placeholder="重复密码">
+          </div>
+          <div class="inputone">
+            <label for="email" class="inputd"></label>
+            <input id="email" name="password" title="为了更方便通讯，强烈建议您使用下列邮箱：163.com,126.com,gmail.com,hotmail.com。Email也可以替代用户名登录哦!" type="email" class="userLogo" placeholder="请输入电子邮箱">
+            <label class="redone"><span class="reda">*</span>请填写真实有效的Email，否则将无法收到激活邮件！</label><br>
+          </div>
+          <div class="inputone">
+            <label for="checkcode" class="inpute"></label>
+            <input class="userLogo" id="checkcode" name="CheckCode" onfocus="" type="text" placeholder="请输入验证码">
+            <p class="yanzhengma"><img alt="验证码，不区分大小写" src="http://www.senparc.com/Home/Checkcode/0?t=0.04779255468919286" id="imga"> 不区分大小写，<a onclick="ckimg();" class="loada">看不清点击这里</a></p>
+            <br>
+          </div>
+          <div>
+            <input class="btnone" type="submit" value="注册">
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 </div>
 <script>
   function ckimg() {
-    document.getElementById('imga').src = 'http://www.senparc.com/Home/Checkcode/0?t=0.04779255468919286' + Math.random();    
+    document.getElementById('imga').src = 'http://www.senparc.com/Home/Checkcode/0?t=0.04779255468919286' + Math.random();
   }
 </script>
