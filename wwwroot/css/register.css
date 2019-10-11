@@ -1,4 +1,4 @@
-﻿.content-border {
+﻿/*.content-border {
   width: 65%;
   margin: auto;
   height: 600px;
@@ -6,6 +6,17 @@
   margin-top: 25px;
   margin-bottom: 34px;
   padding: 50px;
+}*/
+.content-border {
+  width: 100%;
+  margin: auto;
+  height: 600px;
+  background-color: white;
+  padding: 50px;
+  padding-left: 19%;
+  padding-right: 19%;
+  background: url(../images/12.jpg) no-repeat;
+  background-size: 100% 100%;
 }
 
 .froma {
@@ -17,7 +28,8 @@
 .reg-font {
   font-size: 25px;
   letter-spacing: 2px;
-  color: #959595;
+  /*color: #959595;*/
+  color:white;
   font-weight: 600;
   user-select: text;
 }
