@@ -652,6 +652,7 @@ ul, ol {
   #coll {
     width: 100%;
     margin-top: 8%;
+    padding:0;
   }
   #tp1 {
     padding-top: 25px;
@@ -688,7 +689,8 @@ ul, ol {
   .container-fluid > .collapse > .nav {
     margin-top: 63%;
     margin-bottom: 6.5%;
-    width: 34%;
+    width: 100%;
+    padding-left: 65%;
   }
   .navbar-right {
     float: right !important;
