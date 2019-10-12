@@ -191,6 +191,9 @@
   .zhuceone {
     padding-left: 30%;
   }
+  .zhucethree {
+    border: 1px solid silver;
+  }
   .zhucetwo {
     padding: 50px;
     padding-top: 15px;
@@ -259,6 +262,9 @@
   .zhuceone {
     padding-left: 0;
   }
+  .zhucethree {
+    border: 1px solid silver;
+  }
   .xinxi {
     font-size: 18px;
     margin-top: 10px;
@@ -288,7 +294,10 @@
   .zhuce {
     height: 360px;
   }
-  .zhucetwo {
+  .zhucethree {
+    border: 1px solid silver;
+  }
+    .zhucetwo {
     padding: 36px;
     padding-top: 15px;
     padding-left: 10px;

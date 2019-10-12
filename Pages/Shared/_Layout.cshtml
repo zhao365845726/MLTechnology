@@ -208,22 +208,7 @@
           }
         });
       })
-
-      //var bodya = document.getElementById('bodya');
-      //var dibua = document.getElementById('dibua');
-      //var btn = document.getElementById('btn');
-      //btn.onclick = function () {
-      //  if (bodya.style.display == 'none') {
-      //    bodya.style.display = 'block';
-      //  } else {
-      //    bodya.style.display = 'none';
-      //  }
-      //  if (dibua.style.display == 'none') {
-      //    dibua.style.display = 'block';
-      //  } else {
-      //    dibua.style.display = 'none';
-      //  }
-      //}
+      
     </script>
     <div class="container body-content " style="width:100%;margin:auto;border:0px solid #660066;background-color:#EEEEEE;
 margin-bottom:0%;position: relative;z-index: 0;padding:0;" id="bodya">
@@ -278,26 +263,8 @@ margin-bottom:0%;position: relative;z-index: 0;padding:0;" id="bodya">
       </div>
     </footer>
   </div>
-
-
-
-  <environment include="Development">
-    <script src="~/lib/jquery/dist/jquery.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    <script>
-      //导航
-      //$(document).ready(function () {
-      //  $("#coll a").each(function () {
-      //    $this = $(this);
-      //    console.log($this[0].href == String(window.location))
-      //    if ($this[0].href == String(window.location)) {
-      //      $this.addClass("actv");
-      //    }
-      //  });
-      //})
-
-      var bodya = document.getElementById('bodya');
+  <script>
+    var bodya = document.getElementById('bodya');
       var dibua = document.getElementById('dibua');
       var btn = document.getElementById('btn');
       btn.onclick = function () {
@@ -312,7 +279,13 @@ margin-bottom:0%;position: relative;z-index: 0;padding:0;" id="bodya">
           dibua.style.display = 'none';
         }
       }
-    </script>
+  </script>
+
+
+  <environment include="Development">
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
   </environment>
   <environment exclude="Development">
     <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"

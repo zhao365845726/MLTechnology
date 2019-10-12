@@ -1,4 +1,7 @@
-﻿.navbar {
+﻿a {
+  cursor:pointer;
+}
+.navbar {
   width: 100%;
   margin: auto;
   border: 0px solid red;
@@ -632,6 +635,9 @@ ul, ol {
     top: 36%;
     width: 74%;
   }
+  .suspension .a {
+    background-color: rgba(0,0,0,0.8);
+  }
 }
 @media screen and (max-width: 414px) {
   .tp1 {
@@ -747,6 +753,9 @@ ul, ol {
   }
   ul, ol {
     padding-left: 17px;
+  }
+  .suspension .a {
+    background-color: rgba(0,0,0,0.5);
   }
 }
 @media screen and (max-width: 375px) {
