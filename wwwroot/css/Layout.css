@@ -1,69 +1,49 @@
 ﻿a {
   cursor:pointer;
 }
-.navbar {
-  width: 100%;
-  margin: auto;
-  border: 0px solid red;
+.navbar-default {
   background-color: white;
-  height: 103px;
   border-bottom: 2px solid #F1F1F1;
+  border-color: #F1F1F1;
 }
-.container-fluid {
-  width: 100%;
-  border: 0px solid red;
-  margin: auto;
-  height: 100%;
+.navbar {
+  margin-bottom: 0;
 }
-.tp1 {
-  border: 0px solid;
-  width: 12.2%;
-  height: 100%;
-  float: left;
+.container-fluid > .navbar-header {
   margin-left: 16%;
   margin-right: 2%;
 }
-#tp1 {
-  border: 0px solid;
-  display: block;
-  padding-top: 24px;
+
+.navbar-brand {
+  height: 100%;
+  padding: 25px 15px;
 }
-.container-fluid > .collapse {
-  width: 69.8%;
-  border: 0px solid blue;
-  margin: 0;
-  float: left;
-  padding: 0;
+.navbar-nav {
+  width: 26.5%;
+  padding: 36px 0px;
 }
 #coll {
-  width: 60%;
+  width: 42%;
+  padding: 36px 0px;
 }
-.container-fluid > .collapse > .nav {
-  width: 40%;
-  margin-top: 3.4%;
+.navbar-default .navbar-nav > li > a {
+  color: black;
+  font-size: 16px;
+  width: auto;
+  padding: 0;
+  padding-bottom: 7px;
+  cursor: pointer;
 }
-  .container-fluid > .collapse > .nav > li > a {
-    color: black;
-    font-size: 16px;
-    width: auto;
-    padding: 0;
-    padding-bottom: 7px;
-    cursor: pointer;
-  }
-.navbar-right {
-  float: right !important;
-   margin-right: 0; 
-}
-.container-fluid > .collapse > .nav li {
-  margin-left: 12%;
+.nav > li {
+  margin-left: 10%;
 }
 .actv {
   color: #EE0A0A;
   border-bottom: 2px solid #EE0A0A;
 }
-  .container-fluid > .collapse > .nav > li > a:hover {
-    color: #EE0A0A;
-  }
+.navbar-default .navbar-nav > li > a:hover {
+  color: #EE0A0A;
+}
  
   /*底部*/
 .dibu {
@@ -355,7 +335,6 @@ ul, ol {
     background-image: url(http://image.milisx.com/side_icon.png);
     background-repeat: no-repeat;
   }
-/* .suspension .a-service .i{background-position:0 0;} */
 .suspension .a-service .i {
   width: 20px;
   height: 20px;
@@ -533,7 +512,12 @@ ul, ol {
     width: 50%;
   }
 }
-
+@media screen and (max-width: 1630px) {
+  .container-fluid > .navbar-header {
+    margin-left: 14%;
+    margin-right: 2%;
+  }
+}
 @media screen and (max-width: 1580px) {
   .footerPadding {
     padding: 45px 18%;
@@ -541,6 +525,16 @@ ul, ol {
 }
 
 @media screen and (max-width: 1450px) {
+  .container-fluid > .navbar-header {
+    margin-left: 10%;
+    margin-right: 2%;
+  }
+  .navbar-nav {
+    width: 24%;
+  }
+  #coll {
+    width: 44%;
+  }
   .footerPadding {
     padding: 45px 16%;
   }
@@ -553,73 +547,52 @@ ul, ol {
 }
 
 @media screen and (max-width: 1200px) {
-  .tp1 {
-    width: 15.2%;
-    margin-left: 15%;
-    margin-right: 0%;
+  .container-fluid > .navbar-header {
+    margin-left: 8%;
+    margin-right: 2%;
+  }
+  .navbar-nav {
+    width: 22%;
   }
 
-  .container-fluid > .collapse > .nav {
-    margin-top: 4.4%;
+  #coll {
+    width: 45%;
   }
-
   .footerPadding {
     padding: 45px 10%;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .tp1 {
-    width: 18.2%;
-    margin-left: 8%;
-    margin-right: 0%;
+  .container-fluid > .navbar-header {
+    margin-left: 6%;
+    margin-right: 2%;
   }
-
-  #coll {
-    width: 70%;
-  }
-
-  .container-fluid > .collapse > .nav {
-    margin-top: 5.4%;
-    width: 28%;
-  }
-
-    .container-fluid > .collapse > .nav li {
-      margin-left: 10%;
-    }
-
   .footerPadding {
     padding: 45px 6%;
   }
   .c2 {
     top: 27%;
+    left: 44%;
+  }
+  .suspension {
+    bottom: 45%;
   }
 }
 @media screen and (max-width: 768px) {
-  .tp1 {
-    width: 24.2%;
-    margin-left: 3%;
+  .container-fluid > .navbar-header {
+    margin-left: 0%;
     margin-right: 0%;
   }
-
+  .navbar-nav {
+    width: 17%;
+  }
   #coll {
-    width: 74%;
+    width: 52%;
   }
-
-  .container-fluid > .collapse > .nav {
-    margin-top: 5.4%;
-    width: 28%;
+  .nav > li {
+    margin-left: 7%;
   }
-
-    .container-fluid > .collapse > .nav li {
-      margin-left: 8%;
-    }
-
-  .container-fluid > .collapse > .nav {
-    margin-top: 7.4%;
-    width: 24%;
-  }
-
     .container-fluid > .collapse > .nav > li > a {
       font-size: 15px;
     }
@@ -635,43 +608,35 @@ ul, ol {
     top: 36%;
     width: 74%;
   }
+  .suspension {
+    bottom: 33.8%;
+    right: 0;
+  }
   .suspension .a {
     background-color: rgba(0,0,0,0.8);
   }
 }
 @media screen and (max-width: 414px) {
-  .tp1 {
-    width: 50.2%;
-    margin-left: 3%;
-    margin-right: 0%;
-}
-  .navbar-header {
-    width:25%;
-    float:right;
+  .navbar-toggle {
+    margin-top: 32px;
+    border-radius: 10px;
+  }
+  .navbar-collapse {
+    background-color: currentColor;
+  }
+  .navbar-nav {
+    width: 100%;
+    margin: 0;
+    display: inline-flex;
+    padding-top: 237px;
+    padding-left: 66%;
   }
   #coll {
     width: 100%;
-    margin-top: 8%;
-    padding:0;
+    display: block;
   }
-  #tp1 {
-    padding-top: 25px;
-  }
-  .navbar-toggle {
-    margin-top: 30px;
-    border-radius: 10px;
-    margin-right: 20px;
-  }
-  .container-fluid {
-    padding: 0;
-  }
-  .container-fluid > .collapse {
-    width: 100%;
-    margin: 0;
-    background: currentColor;
-    padding: 0;
-    position: relative;
-    z-index: 10;
+  .nav > li {
+    margin-left: 0;
   }
   .container-fluid > .collapse > .nav > li > a {
     color: white;
@@ -679,24 +644,15 @@ ul, ol {
     line-height: 50px;
     font-weight: 600;
   }
-  .container-fluid > .navbar-header {
-    margin:0px;
-  }
-  .container-fluid > .collapse > .nav li {
-    margin-left: 10%;
-  }
-
-  .container-fluid > .collapse > .nav {
-    margin-top: 63%;
-    margin-bottom: 6.5%;
-    width: 100%;
-    padding-left: 65%;
-  }
-  .navbar-right {
-    float: right !important;
-    margin-right: 22px;
-    display: inline-flex;
-    position: relative;
+  .navbar-default .navbar-nav > li > a {
+    color: white;
+    font-size: 18px;
+    width: auto;
+    line-height: 50px;
+    font-weight: 600;
+    padding: 0;
+    padding-bottom: 7px;
+    cursor: pointer;
   }
   .dibu {
     height: 245px !important;
@@ -761,21 +717,13 @@ ul, ol {
   }
 }
 @media screen and (max-width: 375px) {
-  .container-fluid > .collapse > .nav {
-    margin-top:90%;
-    margin-bottom: 7.5%;
-    width: 39%;
-  }
-  .navbar-toggle {
-    margin-right: 19px;
-  }
-  .navbar-right {
-    float: right !important;
-    margin-right: 18px;
+  .navbar-nav {
+    width: 100%;
+    margin: 0;
     display: inline-flex;
-    position: relative;
+    padding-top: 169px;
+    padding-left: 62%;
   }
-
   .dibu {
     height: 228px !important;
   }
@@ -809,15 +757,22 @@ ul, ol {
     margin-top: 18px;
     padding-left: 20px;
   }
+  .suspension {
+    bottom: 25%;
+    right: 0;
+  }
 }
 @media screen and (max-width: 360px) {
-  .container-fluid > .collapse > .nav {
-    margin-top: 47%;
+  .navbar-nav {
+    width: 100%;
+    margin: 0;
+    display: inline-flex;
+    padding-top: 142px;
+    padding-left: 62%;
   }
   .dibu {
     height: 250px !important;
   }
-
   .footerPadding {
     padding: 0;
     padding-top: 12px;
@@ -831,15 +786,29 @@ ul, ol {
   .c2 {
     left: 56.6%;
   }
+  .suspension {
+    bottom: 25%;
+    right: 2px;
+  }
 }
 @media screen and (max-width: 320px) {
-  .container-fluid > .collapse > .nav {
-    margin-top: 35%;
-    margin-bottom: 6.5%;
-    width: 44%;
+  .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
   }
-
-
+  .container-fluid > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .navbar-nav {
+    width: 100%;
+    margin: 0;
+    display: inline-flex;
+    padding-top: 72px;
+    padding-left: 55%;
+  }
   .dibu {
     height: 248px !important;
     display: flex;
