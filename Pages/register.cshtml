@@ -9,7 +9,7 @@
     <div class="zhucetwo">
       <div class="zhucethree">
         <h1 class="xinxi">用户注册</h1>
-        <form style="margin-top:20px;">
+        <form class="formone">
           <div class="inputone">
             <label for="userLog" class="inputa"></label>
             <input id="userLog" type="text" class="userLogo" placeholder="请输入用户名" lay-verify="required|userName" title="用户名不能为空。4～20个字符，不能包含下列特殊字符：? # * , : &amp;lt; > { } % $ / ' \ 空格">@*required (必填项)*@
@@ -22,12 +22,12 @@
             <label for="repassword" class="inputc"></label>
             <input id="repassword" name="password" type="password" class="userLogo" placeholder="重复密码">
           </div>
-          <div class="inputone">
+          <div class="inputone emaila">
             <label for="email" class="inputd"></label>
             <input id="email" name="password" title="为了更方便通讯，强烈建议您使用下列邮箱：163.com,126.com,gmail.com,hotmail.com。Email也可以替代用户名登录哦!" type="email" class="userLogo" placeholder="请输入电子邮箱">
             <label class="redone"><span class="reda">*</span>请填写真实有效的Email，否则将无法收到激活邮件！</label><br>
           </div>
-          <div class="inputone">
+          <div class="inputone checkboxone">
             <label for="checkcode" class="inpute"></label>
             <input class="userLogo" id="checkcode" name="CheckCode" onfocus="" type="text" placeholder="请输入验证码">
             <p class="yanzhengma"><img alt="验证码，不区分大小写" src="http://www.senparc.com/Home/Checkcode/0?t=0.04779255468919286" id="imga"> 不区分大小写，<a onclick="ckimg();" class="loada">看不清点击这里</a></p>

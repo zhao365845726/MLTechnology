@@ -664,7 +664,7 @@ ul, ol {
     background: currentColor;
     padding: 0;
     position: relative;
-    z-index: 0;
+    z-index: 10;
   }
   .container-fluid > .collapse > .nav > li > a {
     color: white;
@@ -751,7 +751,7 @@ ul, ol {
 }
 @media screen and (max-width: 375px) {
   .container-fluid > .collapse > .nav {
-    margin-top: 52%;
+    margin-top:90%;
     margin-bottom: 7.5%;
     width: 39%;
   }

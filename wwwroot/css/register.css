@@ -36,7 +36,9 @@
   text-align: center;
   font-weight: bold;
 }
-
+.formone {
+  margin-top: 20px;
+}
 .inputone {
   border: 0px solid;
   margin-bottom: 10px;
@@ -144,4 +146,184 @@
   user-select: none;
   outline: none;
   border: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .zhuce {
+    height: 600px;
+  }
+  .zhuceone {
+    padding-left: 42%;
+  }
+  .zhucetwo {
+    padding: 70px;
+  }
+  .xinxi {
+    font-size: 26px;
+  }
+  .formone {
+    margin-top: 15px;
+  }
+  .inputone {
+    margin-bottom: 8px;
+  }
+  .inputa,.inputb,.inputc,.inputd,.inpute{
+    margin-left: 12.2%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .suspension {
+    right: 0;
+    bottom: 50%;
+  }
+  .zhuce {
+    height: 550px;
+  }
+  .zhucetwo {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .zhuce {
+    height: 400px;
+  }
+  .zhuceone {
+    padding-left: 30%;
+  }
+  .zhucetwo {
+    padding: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .zhucethree {
+    background-color: rgba(0,0,0,0.2);
+  }
+  .xinxi {
+    font-size: 20px;
+  }
+  .formone {
+    margin-top: 0;
+  }
+  label {
+    margin-bottom: 0;
+  }
+  .userLogo {
+    width: 60%;
+    margin-left: 20%;
+    font-size: 14px;
+    height: 30px;
+  }
+  .inputa {
+    margin-top: 5px;
+  }
+  .inputb {
+    margin-top: 3px;
+  }
+  .inputc {
+    margin-top: 4.5px;
+  }
+  .inputd {
+    margin-top: 7px;
+  }
+  .inpute {
+    margin-top: 5px;
+  }
+  .redone {
+    font-size: 13px;
+    padding: 5px;
+  }
+  .emaila {
+    margin-bottom:0;
+  }
+  .checkboxone {
+    line-height: 0.1;
+  }
+  .yanzhengma {
+    padding: 10px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+  .btnone {
+    height: 35px;
+    width: 40%;
+    margin-left: 31%;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .zhuce {
+    height: 372px;
+    border: 0px solid white;
+  }
+  .zhuceone {
+    padding-left: 0;
+  }
+  .xinxi {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+  .userLogo {
+    width: 73%;
+    margin-left: 14%;
+    font-size: 14px;
+    height: 30px;
+  }
+  .redone {
+    font-size: 12px;
+    padding: 2px 0px;
+  }
+  .yanzhengma {
+    padding: 10px 0px;
+    font-size: 12px;
+    letter-spacing: 0;
+  }
+  .suspension {
+    right: 0;
+    bottom: 32%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .zhuce {
+    height: 360px;
+  }
+  .zhucetwo {
+    padding: 36px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 46px;
+    padding-bottom: 15px;
+  }
+  .reda {
+    font-size: 14px;
+    padding: 0 5px;
+  }
+  .userLogo {
+    font-size: 13px;
+  }
+  .yanzhengma {
+    padding: 8px 0px;
+  }
+}
+@media screen and (max-width:320px) {
+  .userLogo {
+    width: 75%;
+    margin-left: 13%;
+    font-size: 12px;
+    height: 30px;
+  }
+  .yanzhengma {
+    padding: 6px 0px;
+  }
+  .checkboxone {
+    line-height: 0.1;
+    margin-bottom: 5px;
+  }
+  .btnone {
+    height: 28px;
+    width: 45%;
+    margin-left: 28%;
+    font-size: 14px;
+  }
 }
