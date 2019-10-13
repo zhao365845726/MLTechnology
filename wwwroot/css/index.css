@@ -413,7 +413,10 @@ table {
   .mep {
     font-size: 12px;
     height: 106px;
-    overflow: auto;
+    overflow: hidden;
+  }
+  .dspy {
+    display:none;
   }
   .serviceIntoduce > h3 {
     font-size: 20px;
@@ -428,7 +431,7 @@ table {
     margin: 18px 30px 10px 30px;
   }
   .intoduceInfo {
-    height: 420px;
+    height: 453px;
   }
   .intouceImg {
     height: 210px;
@@ -440,7 +443,7 @@ table {
   .intouceTitle > p {
     font-size: 12px;
     line-height: 28px;
-    overflow: auto;
+    height: 131px;
   }
   .aboutMeIntroduce {
     padding: 28px;
@@ -576,7 +579,7 @@ table {
     line-height: 44px;
   }
   .intoduceInfo {
-    height: 300px;
+    height: 330px;
     width: 100%;
   }
   .intouceImg {
@@ -588,8 +591,8 @@ table {
   }
   .intouceTitle > p {
     font-size: 12px;
-    line-height: 19px;
-    height: 40px;
+    line-height: 24px;
+    height: 67px;
   }
   .intouceMore {
     margin: 10px;
@@ -602,51 +605,105 @@ table {
     font-size: 14px;
     line-height: 8px;
   }
-  .font22 {
-    font-size: 13px;
-    padding: 0;
-  }
   .font16 {
     font-size: 12px;
     margin: 0;
   }
   .font14 {
     line-height: 26px;
-    height: 50px;
+    height: 55px;
+    overflow: hidden;
+  }
+  .aspa {
+    display:none;
+  }
+  .aspab {
+    display:none;
+  }
+  .abouta {
+    width: 100%;
+  }
+
+  .aboutb {
+    width: 100%;
+    padding: 30px;
+    padding-top: 15px;
+    height: 218px;
   }
   .selfIntoduce {
     margin-top: 14px;
   }
-  .produceIntoduce {
-    margin-top: 14px;
+  .aspab {
+    display: inline;
   }
-  .IntroduceTextInfo {
-    height: 200px;
-    padding: 10px;
-    width: 50%;
+
+  .mea {
+    margin-top: 5px;
+    font-size: 14px;
+    padding: 7px;
+    border-radius: 10px;
+  }
+
+  #mea1 {
+    margin-top: 8px;
+    font-size: 13px;
+    padding: 7px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+    border: 0px;
+    border-radius: 10px;
+  }
+
+    #mea1 > .whiteBtn img {
+      width: 5%;
+    }
+
+    #mea1 > .whiteBtn {
+      padding-left: 75%;
+    }
+
+  #mea3 {
+    margin-top: 8px;
+    font-size: 13px;
+    padding: 7px;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+    #mea3 > .whiteBtn img {
+      width: 5%;
+    }
+
+    #mea3 > .whiteBtn {
+      padding-left: 75%;
+    }
+
+  .font22 {
+    font-size: 13px;
+    padding: 0;
+    margin-top: 8px;
   }
   .IntroduceTextInfo > h3 {
-    font-size: 14px;
+    font-size: 16px;
     padding: 0;
-    line-height: 22px;
   }
-  .IntroduceTextInfo > span {
-    line-height: 10px;
+
+  .IntroduceTextInfo > .huiyi {
+    height: 24px;
+    display: inline;
   }
+
   .IntroduceTextInfo > p {
     font-size: 12px;
     margin: 0;
-    height: 62px;
-    overflow: auto;
-    line-height: 20px;
-  }
-  .IntroduceTextInfo>.huiyi {
-    height: 24px;
+    height: 80px;
+    overflow: hidden;
+    line-height: 22px;
   }
   .IntroduceTextInfo > a {
     margin-top: 9px;
     font-size: 14px;
-    padding: 8px;
+    padding: 7px;
   }
   .brandInfo > h3 {
     font-size: 16px;
@@ -694,15 +751,96 @@ table {
   }
 }
 @media screen and (max-width: 375px) {
+  .intoduceInfo {
+    height: 350px;
+    width: 100%;
+  }
+  .topsize {
+    top: 35px;
+    left: 8%;
+  }
+  .title3 {
+    padding-top: 1px;
+  }
+  .title1 {
+    height: 106px;
+    padding-top: 3px;
+  }
+  .title2 {
+    height: 88px;
+    padding-top: 3px;
+  }
+  .height2 {
+    height:366px;
+  }
+  .height1 {
+    height: 335px;
+  }
+  .intouceTitle > p {
+    font-size: 12px;
+    line-height: 24px;
+    height: 92px;
+  }
+  .abouta {
+    width:100%;
+  }
+  .aboutb {
+    width:100%;
+    padding: 30px;
+    padding-top: 15px;
+  }
+  .aspab {
+    display: inline;
+  }
   .mea {
     margin-top: 5px;
     font-size: 14px;
     padding: 7px;
+    border-radius: 10px;
+  }
+  #mea1{
+    margin-top: 12px;
+    font-size: 13px;
+    padding: 7px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+    border: 0px;
+    border-radius: 10px;
+  }
+  #mea1 > .whiteBtn img {
+    width: 5%;
+  }
+  #mea1 > .whiteBtn {
+    padding-left: 75%;
+  }
+  #mea3 {
+    margin-top: 8px;
+    font-size: 13px;
+    padding: 7px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  #mea3 > .whiteBtn img {
+    width: 5%;
+  }
+  #mea3 > .whiteBtn {
+    padding-left: 75%;
   }
   .font22 {
-    font-size: 12px;
+    font-size: 14px;
     padding: 0;
-    margin-top: 3px;
+    margin-top: 5px;
+  }
+  .IntroduceTextInfo > .huiyi {
+    height: 24px;
+   display: inline; 
+  }
+  .IntroduceTextInfo > p {
+    font-size: 12px;
+    margin: 0;
+    height: 80px;
+    overflow: hidden;
+    line-height: 22px;
   }
   .IntroduceTextInfo > a {
     margin-top: 9px;
@@ -711,8 +849,12 @@ table {
   }
 }
 @media screen and (max-width: 360px) {
+  .topsize {
+    top: 35px;
+    left: 6%;
+  }
   .mea {
-    margin-top: 5px;
+    margin-top: 0px;
     font-size: 14px;
     padding: 4px;
   }
@@ -721,9 +863,12 @@ table {
     line-height: 20px;
   }
   .font22 {
-    font-size: 12px;
+    font-size: 14px;
     padding: 0;
-    margin-top: 3px;
+    margin-top: 5px;
+  }
+  #mea3 > .whiteBtn {
+    padding-left: 74%;
   }
   .IntroduceTextInfo > a {
     margin-top: 17px;
@@ -732,6 +877,22 @@ table {
   }
 }
 @media screen and (max-width: 320px) {
+  .topsize {
+    top: 35px;
+    left: 6%;
+    letter-spacing: 0px;
+  }
+  #mea1 > .whiteBtn {
+    padding-left: 70%;
+  }
+  #mea3 > .whiteBtn {
+    padding-left: 70%;
+  }
+  .font22 {
+    font-size: 14px;
+    padding: 0;
+    margin-top: 11px;
+  }
   .whiteBtn {
     padding-left: 50px;
   }

@@ -98,7 +98,13 @@ p {
 .fr {
   float: right;
 }
-.bgGray {
+.bgGraya {
+  background: #F7F7F7;
+}
+.bgGrayc {
+  background: #F7F7F7;
+}
+.bgGrayb {
   background: #F7F7F7;
 }
 .combannerText .titleLogo {
@@ -195,6 +201,9 @@ p {
   background-size: 100% 100%;
   height: 375px;
   margin-top: 24px;
+}
+.centdera {
+  width:45%;
 }
 @media screen and (max-width: 1024px) {
   .produceBanner {
@@ -375,7 +384,27 @@ p {
     line-height: 20px;
   }
   .combannerText {
-    height: 300px;
+    height: 270px;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .bgGrayd2 {
+    height: 235px;
+  }
+  .bgGrayb {
+    height: 235px;
+  }
+  .bgGrayc {
+    height:220px;
+  }
+  .bgGrayd {
+    height: 220px;
+  }
+  .bgGrayd1 {
+    height:245px;
+  }
+  .titleLogoImg {
+    padding-bottom: 6px;
   }
   .combannerText .titleLogo {
     padding-bottom: 3px;
@@ -393,14 +422,17 @@ p {
     line-height: 22px;
     font-size: 12px;
     margin: 0;
-    height: 130px;
-    overflow: auto;
+    height: auto;
+    overflow: hidden;
+  }
+  .combannerText>.mili1 {
+    height: 72px;
   }
   .logoTop img {
     width:13%;
   }
   .combannerText > .logoTop {
-    height:20px;
+    height: 55px;
   }
   .companyDemand {
     height: 300px;
@@ -462,7 +494,7 @@ p {
     margin-top: 14px;
   }
   .titleLogoImg > .imga {
-      width:100%;
+    width: 58%;
   }
 }
 @media screen and (max-width: 375px) {
@@ -478,10 +510,56 @@ p {
   .bannerCenter {
     padding-top: 10px;
   }
+  .centdera {
+    padding-top:25px;
+  }
+  .combannerText {
+    height: 280px;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .bgGrayc {
+    height: 230px;
+  }
+  .bgGrayd {
+    height: 240px;
+  }
+  .bgGrayb {
+    height: 255px;
+  }
+  .bgGrayd2 {
+    height: 255px;
+  }
+  .bgGrayd1 {
+    height: 260px;
+  }
+}
+@media screen and (max-width:360px) {
+  .bgGrayc {
+    height: 245px;
+  }
 }
 @media screen and (max-width: 320px) {
+  .titleLogoImg {
+    padding-bottom: 6px;
+  }
+  .combannerText > p {
+    height: auto;
+  }
   .companyDemand > h2 {
     padding-top: 0px;
     font-size: 15px;
+  }
+  .bgGrayb {
+    height: 275px;
+  }
+  .bgGrayd2 {
+    height: 275px;
+  }
+  .bgGraya {
+    height: 300px;
+  }
+  .bgGrayd1 {
+    height: 275px;
   }
 }
