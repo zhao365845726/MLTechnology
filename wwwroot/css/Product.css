@@ -333,10 +333,33 @@ p {
     width: 72%;
   }
 }
+@media screen and (max-device-width: 667px) {
+  .logoTop > span img {
+    width:20%;
+  }
+  .companyDemandCenter {
+    width: 93%;
+  }
+}
+@media screen and (max-device-width: 736px) {
+  .logoTop > span img {
+    width: 20%;
+  }
+  .companyDemandCenter {
+    width: 93%;
+  }
+  .font14 {
+    font-size: 12px;
+  }
+  .combannerText {
+    height: 415px;
+  }
+}
 @media screen and (max-width: 414px) {
   .produceBanner {
     height: 200px;
   }
+
   .comPosition {
     /*top: 25px;
     left: 10%;
@@ -345,79 +368,100 @@ p {
     left: 17%;
     width: 80%;
   }
-  .comPosition > h2 {
-    font-size: 40px;
-    color: white;
-    line-height: 30px;
-    font-weight: 600;
-  }
-  .comPosition > p {
-    /*font-size: 12px;
+
+    .comPosition > h2 {
+      font-size: 40px;
+      color: white;
+      line-height: 30px;
+      font-weight: 600;
+    }
+
+    .comPosition > p {
+      /*font-size: 12px;
     line-height: 18px;
     margin: 0;
     color: cornflowerblue;*/
-    display:none;
-  }
+      display: none;
+    }
+
   #font1 {
-    display:none;
+    display: none;
   }
+
   .produceIntoduce {
     width: 98%;
     margin-bottom: 15px;
   }
+
   .containerCenter {
     height: 200px;
     margin-top: 14px;
   }
+
   .bannerCenter {
     padding-left: 20px;
     padding-top: 20px;
     width: 95%;
   }
+
   .font22 {
     font-size: 18px;
   }
+
   .bannerCenter > span {
     color: white;
   }
+
   .bannerCenter > p {
     line-height: 20px;
   }
+
   .combannerText {
     height: 270px;
     width: 100%;
     margin-bottom: 5px;
   }
+
   .bgGrayd2 {
     height: 235px;
   }
+
   .bgGrayb {
     height: 235px;
   }
+
   .bgGrayc {
-    height:220px;
+    height: 220px;
   }
+
   .bgGrayd {
     height: 220px;
   }
+
   .bgGrayd1 {
-    height:245px;
+    height: 245px;
   }
+
   .titleLogoImg {
     padding-bottom: 6px;
   }
+
   .combannerText .titleLogo {
     padding-bottom: 3px;
   }
+
   .titleLogo img, .titleLogoImg img {
     width: 50%;
   }
+
   .combannerText > h3 {
     font-size: 15px;
   }
+
   .textLight {
     line-height: 18px;
   }
+
   .combannerText > p {
     line-height: 22px;
     font-size: 12px;
@@ -425,74 +469,93 @@ p {
     height: auto;
     overflow: hidden;
   }
-  .combannerText>.mili1 {
+
+  .combannerText > .mili1 {
     height: 72px;
   }
+
   .logoTop img {
-    width:13%;
+    width: 13%;
   }
+
   .combannerText > .logoTop {
     height: 55px;
   }
+
   .companyDemand {
     height: 300px;
     margin-top: 14px;
   }
-  .companyDemand > h2 {
-    padding-top: 0px;
-    font-size: 18px;
-  }
-  .companyDemand > p {
-    line-height: 12px;
-    font-size: 12px;
-  }
+
+    .companyDemand > h2 {
+      padding-top: 0px;
+      font-size: 18px;
+    }
+
+    .companyDemand > p {
+      line-height: 12px;
+      font-size: 12px;
+    }
+
   .companyDemandCenter {
     padding-top: 0;
     width: 95%;
   }
+
   .titleImg {
     padding: 0px;
     margin-right: 0px;
     padding-top: 12px;
     padding-left: 13px;
   }
-  .titleImg img {
-    width: 75%;
-  }
+
+    .titleImg img {
+      width: 75%;
+    }
+
   .titleText {
     padding-top: 12px;
     width: 100%;
   }
+
   .font14 {
     font-size: 12px;
   }
+
   .titleText > p {
     color: #fff;
     padding-bottom: 0px;
     margin: 0;
   }
+
   .fr {
     float: left;
   }
+
   .serviceCenter {
     height: 200px;
     margin-top: 14px;
   }
+
   #center {
-    padding-top:20px;
+    padding-top: 20px;
   }
+
   .bannerCenter > p {
     line-height: 20px;
     font-size: 12px;
   }
+
   .bannerCenter > h2 {
     line-height: 30px;
     font-size: 16px;
   }
+
   .comProduceBanner {
     height: 200px;
     margin-top: 14px;
   }
+
   .titleLogoImg > .imga {
     width: 58%;
   }
