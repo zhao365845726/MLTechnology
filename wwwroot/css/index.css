@@ -291,6 +291,58 @@ table {
 .footerpad>.padimg {
   width: 30%;
 }
+
+.shadeone {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,.5);
+  z-index: 2;
+}
+
+.modalone {
+  background-color: white;
+  position: fixed;
+  width: 98%;
+  height: 300px;
+  top: 50%;
+  left: 49%;
+  z-index: 13;
+  margin-top: -150px;
+  margin-left: -200px;
+  overflow: hidden;
+}
+
+.guanyuone {
+  width: 100%;
+  height: 100%;
+  background-color: darkgray;
+  color: white;
+  font-size: 16px;
+  padding: 30px;
+  font-weight: 600;
+  padding-top: 5px;
+}
+
+.lonea {
+  position: relative;
+  margin: 0px 96%;
+  margin-right: 0;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.loneaa {
+  margin-top: 22px;
+}
+
+.nonea {
+  display: none;
+}
+  
+
 @media screen and (max-width: 1024px) {
   .topimg {
     height: 420px;
@@ -847,6 +899,21 @@ table {
     font-size: 14px;
     padding: 7px;
   }
+  .modalone {
+    background-color: white;
+    position: fixed;
+    width: 98%;
+    height: 300px;
+    top: 47%;
+    left: 54%;
+    z-index: 13;
+    margin-top: -150px;
+    margin-left: -200px;
+    overflow: hidden;
+  }
+  .guanyuone {
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 360px) {
   .topsize {
@@ -874,6 +941,21 @@ table {
     margin-top: 17px;
     font-size: 14px;
     padding: 4px;
+  }
+  .modalone {
+    background-color: white;
+    position: fixed;
+    width: 98%;
+    height: 300px;
+    top: 45%;
+    left: 56.5%;
+    z-index: 13;
+    margin-top: -150px;
+    margin-left: -200px;
+    overflow: hidden;
+  }
+  .guanyuone {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -908,5 +990,21 @@ table {
   .map > img {
     width: 25%;
     margin-top: -6px;
+  }
+  .modalone {
+    background-color: white;
+    position: fixed;
+    width: 98%;
+    height: 276px;
+    top: 42%;
+    left: 63.5%;
+    z-index: 13;
+    margin-top: -150px;
+    margin-left: -200px;
+    overflow: hidden;
+  }
+  .guanyuone {
+    font-size: 13px;
+    padding-top:0;
   }
 }

@@ -663,7 +663,7 @@ ul, ol {
     margin: 0;
     display: inline-flex;
     padding-top: 237px;
-    padding-left: 66%;
+    padding-left: 55%;
   }
   #coll {
     width: 100%;
@@ -749,6 +749,10 @@ ul, ol {
   .suspension .a {
     background-color: rgba(0,0,0,0.5);
   }
+  .suspension {
+    bottom: 0;
+    right: 0;
+  }
 }
 @media screen and (max-width: 375px) {
   .navbar-nav {
@@ -756,7 +760,7 @@ ul, ol {
     margin: 0;
     display: inline-flex;
     padding-top: 169px;
-    padding-left: 62%;
+    padding-left: 54%;
   }
   .dibu {
     height: 228px !important;
@@ -792,7 +796,7 @@ ul, ol {
     padding-left: 20px;
   }
   .suspension {
-    bottom: 25%;
+    bottom: 0;
     right: 0;
   }
 }
@@ -802,7 +806,7 @@ ul, ol {
     margin: 0;
     display: inline-flex;
     padding-top: 142px;
-    padding-left: 62%;
+    padding-left: 51%;
   }
   .dibu {
     height: 250px !important;
@@ -821,7 +825,7 @@ ul, ol {
     left: 56.6%;
   }
   .suspension {
-    bottom: 25%;
+    bottom: 0%;
     right: 2px;
   }
 }
@@ -841,7 +845,7 @@ ul, ol {
     margin: 0;
     display: inline-flex;
     padding-top: 72px;
-    padding-left: 55%;
+    padding-left: 44%;
   }
   .dibu {
     height: 248px !important;
