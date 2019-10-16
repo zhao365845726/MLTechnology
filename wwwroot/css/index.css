@@ -957,14 +957,15 @@ table {
   }
 
   .contentFooter {
-    padding: 10px;
+    padding: 20px;
     margin-bottom: 15px;
   }
 
-    .contentFooter > h3 {
-      font-size: 16px;
-      padding-top: 0px;
-    }
+  .contentFooter > h3 {
+    font-size: 16px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
 
     .contentFooter > dl > dt {
       padding-bottom: 10px;
@@ -976,12 +977,17 @@ table {
   }
 
   .map > img {
-    width: 18%;
+    width: 5.5%;
     margin-top: -6px;
   }
-
+  .footerpad > .padimg {
+    width: 26%;
+  }
+  .mapa img {
+    width: 9%;
+  }
   .contentFooter > dl {
-    width: 33%;
+    width: 100%;
     margin-bottom: 1px;
   }
 
@@ -1176,7 +1182,7 @@ table {
     width: 24%;
   }
   .map > img {
-    width: 25%;
+    width: 8%;
     margin-top: -6px;
   }
   .modalone {

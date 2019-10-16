@@ -924,30 +924,44 @@ ul, ol {
       cursor: pointer;
     }
 
-    .dibu {
-      height: 245px !important;
-    }
+  .dibu {
+    height: 192px !important;
+  }
 
     .footerPadding {
       padding: 21px 0px;
       width: 100%;
     }
+  .footerContent .footerPadding > dl {
+    padding: 6px;
+    border-right: 0px;
+    height: auto;
+    display: flex;
+    margin: 0;
+  }
 
-    .footerContent .footerPadding > dl {
-      padding: 6px;
-      height: 204px;
-    }
+  .footerPadding > dl > dt {
+    font-size: 14px;
+    padding-bottom: 0;
+  }
 
-    .footerPadding > dl > dt {
-      font-size: 13px;
-      padding-bottom: 6px;
-    }
-
-    .footerPadding > dl > dd > a {
-      font-size: 10px;
-      line-height: 25px;
-    }
-
+  .footerPadding > dl > dd > a {
+    font-size: 10px;
+    line-height: 25px;
+    color: darkgray;
+  }
+  .dda > dd > a {
+    margin-left: 20.5px;
+  }
+  .ddb > dd > a {
+    margin-left: 27px;
+  }
+  .ddd > dd > a {
+    margin-left:9px;
+  }
+  .ddc > dd > a {
+    margin-left: 13px;
+  }
   .c2 {
     top: 50%;
     width: 98%;
@@ -1008,20 +1022,24 @@ ul, ol {
       padding-top: 259px;
       padding-left: 54%;
     }
-
-    .dibu {
-      height: 228px !important;
-    }
-
     .footerPadding {
       padding: 12px 0px;
     }
-
-    .footerContent .footerPadding > dl {
-      padding: 1.5px;
-      height: 204px;
-    }
-
+  .dda > dd > a {
+    margin-left: 12.5px;
+  }
+  .ddb > dd > a {
+    margin-left: 19px;
+  }
+  .ddc > dd > a {
+    margin-left: 7px;
+  }
+  .ddd > dd > a {
+    margin-left: 0px;
+  }
+  .ddd > dt {
+    width:20%;
+  }
     .c2 {
       left: 54%;
     }
@@ -1063,23 +1081,15 @@ ul, ol {
       padding-top: 232px;
       padding-left: 51%;
     }
-
-    .dibu {
-      height: 250px !important;
-    }
-
-    .footerPadding {
-      padding: 0;
-      padding-top: 12px;
-      display: flex;
-    }
-
-    .footerContent .footerPadding > dl {
-      padding: 1.5px;
-      padding-left: 4px;
-      height: 224px;
-    }
-
+  .dda > dd > a {
+    margin-left: 9.5px;
+  }
+  .ddb > dd > a {
+    margin-left: 16px;
+  }
+  .ddc > dd > a {
+    margin-left: 4px;
+  }
     .c2 {
       left: 56.6%;
     }
@@ -1110,23 +1120,30 @@ ul, ol {
       padding-top: 160px;
       padding-left: 44%;
     }
-
-    .dibu {
-      height: 248px !important;
-      display: flex;
-    }
-
-    .footerPadding {
-      padding: 0;
-      display: flex;
-    }
-
-    .footerContent .footerPadding > dl {
-      padding-left: 12px;
-      padding-right: 10px;
-      height: 204px;
-    }
-
+  .dibu {
+    height: 236px !important;
+  }
+  .footerPadding > dl > dt {
+    font-size: 14px;
+    width: 25%;
+    padding-bottom: 0;
+  }
+  .footerContent .footerPadding > dl {
+    padding: 2px;
+    border-right: 0px;
+    height: auto;
+    display: flex;
+    margin: 0;
+  }
+  .dda > dd > a {
+    margin-left: 0;
+  }
+  .ddb > dd > a {
+    margin-left: 0px;
+  }
+  .ddc > dd > a {
+    margin-left: 0;
+  }
     .c2 {
       left: 63.6%;
     }
