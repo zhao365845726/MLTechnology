@@ -102,49 +102,30 @@
         </div>
       </div>
     </div>
-    <script>
-      var dengle = document.getElementById('dengle');
-      dengle.onclick = function () {
-        document.getElementById('shade').classList.remove('hide');
-        document.getElementById('modal').classList.remove('hide');
-        document.getElementById('example-navbar-collapse').style.zIndex = '0';
-      }
-      function Hide() {
-        document.getElementById('shade').classList.add('hide');
-        document.getElementById('modal').classList.add('hide');
-        document.getElementById('example-navbar-collapse').style.zIndex = '10';
-      }
-    </script>
-    <script>
-      $(document).ready(function () {
-        $("#coll a").each(function () {
-          $this = $(this);
-          console.log($this[0].href == String(window.location))
-          if ($this[0].href == String(window.location)) {
-            $this.addClass("actv");
-          }
-        });
-      })
-
-    </script>
     <div class="container body-content " style="width:100%;margin:auto;border:0px solid #660066;background-color:#EEEEEE;
 margin-bottom:0%;position: relative;z-index: 0;padding:0;" id="bodya">
       @*悬浮导航*@
       <div class="suspension">
         <div class="suspension-box">
-          <a href="javascript:;" class="a a-service "><i class="i"></i></a>
-          <a href="/About" class="a a-service-phone "><i class="i"></i></a>
-          <a href="javascript:;" class="a a-qrcode"><i class="i"></i></a>
+          <a href="javascript:;" class="a a-service " id="suspena"><i class="i"></i></a>
+          <a href="javascript:;" class="a a-service-phone " id="suspenb"><i class="i"></i></a>
+          <a href="javascript:;" class="a a-qrcode" id="suspenc"><i class="i"></i></a>
           <a href="javascript:;" class="a a-top"><i class="i"></i></a>
-          <div class="d d-service">
+          <div class="d d-service" id="suspena1" style="display:none;">
             <i class="arrow"></i>
             <div class="inner-box">
               <div class="d-service-item clearfix">
-                <a href="/Index" class="clearfix"><span class="circle"><i class="i-qq"></i></span><h3>咨询在线客服</h3></a>
+                <a href="/construction" class="clearfix">
+                <span class="circle">
+                  <i class="i-qq"></i>
+                </span>
+                <h3>咨询在线客服</h3>
+                <h2 class="h2a">QQ:365845726</h2>
+                </a>
               </div>
             </div>
           </div>
-          <div class="d d-service-phone">
+          <div class="d d-service-phone" id="suspenb1" style="display:none;">
             <i class="arrow"></i>
             <div class="inner-box">
               <div class="d-service-item clearfix">
@@ -155,13 +136,13 @@ margin-bottom:0%;position: relative;z-index: 0;padding:0;" id="bodya">
                 </div>
               </div>
               <div class="d-service-intro clearfix">
-                <p><i></i>服务介绍</p>
-                <p><i></i>合作代理</p>
-                <p><i></i>关于我们</p>
+                <p id="hrefa"><i></i>服务介绍</p>
+                <p id="hrefb"><i></i>合作代理</p>
+                <p id="hrefc"><i></i>关于我们</p>
               </div>
             </div>
           </div>
-          <div class="d d-qrcode">
+          <div class="d d-qrcode" id="suspenc1" style="display:none;">
             <i class="arrow"></i>
             <div class="inner-box">
               <div class="qrcode-img"><img src="http://image.milisx.com/side_ewm.jpg" alt=""></div>
@@ -170,44 +151,6 @@ margin-bottom:0%;position: relative;z-index: 0;padding:0;" id="bodya">
           </div>
         </div>
       </div>
-      <script src="~/lib/jquery/dist/jquery.min.js"></script>
-      <script type="text/javascript">
-        $(document).ready(function () {
-
-          /* ----- 侧边悬浮 ---- */
-          $(document).on("mouseenter", ".suspension .a", function () {
-            var _this = $(this);
-            var s = $(".suspension");
-            var isService = _this.hasClass("a-service");
-            var isServicePhone = _this.hasClass("a-service-phone");
-            var isQrcode = _this.hasClass("a-qrcode");
-            if (isService) { s.find(".d-service").show().siblings(".d").hide(); }
-            if (isServicePhone) { s.find(".d-service-phone").show().siblings(".d").hide(); }
-            if (isQrcode) { s.find(".d-qrcode").show().siblings(".d").hide(); }
-          });
-          $(document).on("mouseleave", ".suspension, .suspension .a-top", function () {
-            $(".suspension").find(".d").hide();
-          });
-          $(document).on("mouseenter", ".suspension .a-top", function () {
-            $(".suspension").find(".d").hide();
-          });
-          $(document).on("click", ".suspension .a-top", function () {
-            $("html,body").animate({ scrollTop: 0 });
-          });
-          $(window).scroll(function () {
-            var st = $(document).scrollTop();
-            var $top = $(".suspension .a-top");
-            if (st > 400) {
-              $top.css({ display: 'block' });
-            } else {
-              if ($top.is(":visible")) {
-                $top.hide();
-              }
-            }
-          });
-
-        });
-      </script>
       @RenderBody()
     </div>
     <footer class="dibu" id="dibua">
@@ -249,33 +192,18 @@ margin-bottom:0%;position: relative;z-index: 0;padding:0;" id="bodya">
             <dd><a>©2019 - MLTechnology</a></dd>
             @*<dd style="width: 28%;">
               <span id="szgs_stat_icon_1024947667970555904">*@
-                @*<a href="http://www.beian.suzhou.gov.cn/websiteMark?siteid=1024947667970555904&amp;type=1" target="_blank">
-                  <img src="~/images/1.gif">
-                </a>*@
-              @*</span>
-            </dd>*@
+            @*<a href="http://www.beian.suzhou.gov.cn/websiteMark?siteid=1024947667970555904&amp;type=1" target="_blank">
+                <img src="~/images/1.gif">
+              </a>*@
+            @*</span>
+              </dd>*@
           </dl>
         </div>
       </div>
     </footer>
   </div>
-  <script>
-    var bodya = document.getElementById('bodya');
-      var dibua = document.getElementById('dibua');
-      var btn = document.getElementById('btn');
-      btn.onclick = function () {
-        if (bodya.style.display == 'none') {
-          bodya.style.display = 'block';
-        } else {
-          bodya.style.display = 'none';
-        }
-        if (dibua.style.display == 'none') {
-          dibua.style.display = 'block';
-        } else {
-          dibua.style.display = 'none';
-        }
-      }
-  </script>
+  <script src="~/lib/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="~/js/_Layout.js"></script>
   <environment include="Development">
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>

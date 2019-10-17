@@ -307,14 +307,16 @@ ul, ol {
   width: 70px;
   height: 200px;
 }
-
-.suspension-box {
-  position: relative;
-  float: right;
-}
+  .suspension p {
+    cursor:pointer;
+  }
+  .suspension-box {
+    position: relative;
+    float: right;
+  }
 
 .suspension .a {
-  display: block;
+  display: flex;
   width: 44px;
   height: 44px;
   background-color: #353535;
@@ -323,11 +325,12 @@ ul, ol {
   outline: none;
 }
 
-  .suspension .a.active,
-  .suspension .a:hover {
+  .suspension .a.active{
     background: #F05352;
   }
-
+  /*.suspension .a:hover {
+    background: #F05352;
+  }*/
   .suspension .a .i {
     float: left;
     width: 44px;
@@ -441,7 +444,17 @@ ul, ol {
 .suspension .d-service-item:hover .i-qq {
   background-position: center 3px;
 }
-
+.h2a {
+  font-size: 14px;
+  padding-left: 54px;
+}
+.clearfix {
+  color:black;
+}
+.clearfix:hover {
+  text-decoration: none;
+  color: brown
+}
 .suspension .d-service-item .i-tel {
   width: 44px;
   height: 44px;
@@ -889,13 +902,13 @@ ul, ol {
       background-color: currentColor;
     }
 
-    .navbar-nav {
-      width: 100%;
-      margin: 0;
-      display: inline-flex;
-      padding-top: 328px;
-      padding-left: 55%;
-    }
+  .navbar-nav {
+    width: 100%;
+    margin: 0;
+    display: inline-flex;
+    padding-top: 280px;
+    padding-left: 65%;
+  }
 
     #coll {
       width: 100%;
@@ -1012,16 +1025,31 @@ ul, ol {
       bottom: 0;
       right: 1px;
     }
+    .suspension .d-qrcode {
+      top: -65px;
+    }
+    .suspension .d-service-phone {
+      top: -11px;
+    }
+    .suspension .d .arrow {
+      top: 75px;
+    }
+    .suspension .d-qrcode .arrow {
+      top: 178px;
+    }
+    .suspension .d-service .arrow {
+      top: 20px;
+    }
   }
 
   @media screen and (max-width: 375px) {
-    .navbar-nav {
-      width: 100%;
-      margin: 0;
-      display: inline-flex;
-      padding-top: 259px;
-      padding-left: 54%;
-    }
+  .navbar-nav {
+    width: 100%;
+    margin: 0;
+    display: inline-flex;
+    padding-top: 200px;
+    padding-left: 60%;
+  }
     .footerPadding {
       padding: 12px 0px;
     }
