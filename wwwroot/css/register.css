@@ -297,6 +297,9 @@
   .zhucethree {
     border: 1px solid silver;
   }
+  .inputa, .inputb, .inputc, .inputd, .inpute {
+    margin-left: 14.2%;
+  }
     .zhucetwo {
     padding: 36px;
     padding-top: 15px;
