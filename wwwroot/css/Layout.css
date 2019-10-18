@@ -1094,10 +1094,13 @@ ul, ol {
   }
 
   .ddd > dd > a {
-    margin-left: 18px;
+    margin-left: 0px;
   }
   .ddd > dt {
     width:20%;
+  }
+  .ddd > dd {
+    width: 28%;
   }
     .c2 {
       left: 54%;
