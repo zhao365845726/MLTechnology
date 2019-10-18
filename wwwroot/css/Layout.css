@@ -1063,7 +1063,7 @@ ul, ol {
     width: 100%;
     margin: 0;
     display: inline-flex;
-    padding-top: 195px;
+    padding-top: 185px;
     padding-left: 60%;
   }
     .footerPadding {
@@ -1094,7 +1094,7 @@ ul, ol {
   }
 
   .ddd > dd > a {
-    margin-left: 6px;
+    margin-left: 10px;
   }
   .ddd > dt {
     width:20%;
