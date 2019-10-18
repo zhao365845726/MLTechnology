@@ -964,16 +964,20 @@ ul, ol {
     color: darkgray;
   }
   .dda > dd > a {
-    margin-left: 20.5px;
+    /*margin-left: 20.5px;*/
+    margin-left: 30.5px;
   }
   .ddb > dd > a {
-    margin-left: 27px;
+    /*margin-left: 27px;*/
+    margin-left: 37px;
   }
   .ddd > dd > a {
-    margin-left:9px;
+    /*margin-left:9px;*/
+    margin-left: 15px;
   }
   .ddc > dd > a {
-    margin-left: 13px;
+    /*margin-left: 13px;*/
+    margin-left: 20px;
   }
   .c2 {
     top: 50%;
