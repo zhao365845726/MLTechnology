@@ -477,9 +477,12 @@ p {
   .logoTop img {
     width: 13%;
   }
-
+  .logoTop > span img {
+    width: 15%;
+  }
   .combannerText > .logoTop {
     height: 55px;
+    padding-left: 14px;
   }
 
   .companyDemand {
