@@ -564,6 +564,11 @@ p {
   }
 }
 @media screen and (max-width: 375px) {
+  .comPosition {
+    top: 78px;
+    left: 24%;
+    width: 70%;
+  }
   .produceBanner {
     height: 180px;
   }

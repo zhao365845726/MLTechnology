@@ -1063,13 +1063,13 @@ ul, ol {
     width: 100%;
     margin: 0;
     display: inline-flex;
-    padding-top: 200px;
+    padding-top: 195px;
     padding-left: 60%;
   }
     .footerPadding {
       padding: 12px 0px;
     }
-  .dda > dd > a {
+  /*.dda > dd > a {
     margin-left: 12.5px;
   }
   .ddb > dd > a {
@@ -1080,6 +1080,21 @@ ul, ol {
   }
   .ddd > dd > a {
     margin-left: 0px;
+  }*/
+  .dda > dd > a {
+    margin-left: 16.5px;
+  }
+
+  .ddb > dd > a {
+    margin-left: 24px;
+  }
+
+  .ddc > dd > a {
+    margin-left: 13px;
+  }
+
+  .ddd > dd > a {
+    margin-left: 6px;
   }
   .ddd > dt {
     width:20%;
