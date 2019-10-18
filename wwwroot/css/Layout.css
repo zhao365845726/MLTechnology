@@ -906,7 +906,7 @@ ul, ol {
     width: 100%;
     margin: 0;
     display: inline-flex;
-    padding-top: 100px;
+    padding-top: 230px;
     padding-left: 65%;
   }
 
@@ -964,20 +964,16 @@ ul, ol {
     color: darkgray;
   }
   .dda > dd > a {
-    /*margin-left: 20.5px;*/
-    margin-left: 30.5px;
+    margin-left: 20.5px;
   }
   .ddb > dd > a {
-    /*margin-left: 27px;*/
-    margin-left: 37px;
+    margin-left: 27px;
   }
   .ddd > dd > a {
-    /*margin-left:9px;*/
-    margin-left: 15px;
+    margin-left:9px;
   }
   .ddc > dd > a {
-    /*margin-left: 13px;*/
-    margin-left: 20px;
+    margin-left: 13px;
   }
   .c2 {
     top: 50%;
@@ -1051,7 +1047,7 @@ ul, ol {
     width: 100%;
     margin: 0;
     display: inline-flex;
-    padding-top: 160px;
+    padding-top: 200px;
     padding-left: 60%;
   }
     .footerPadding {
