@@ -906,7 +906,7 @@ ul, ol {
     width: 100%;
     margin: 0;
     display: inline-flex;
-    padding-top: 250px;
+    padding-top: 260px;
     padding-left: 65%;
   }
 
@@ -947,6 +947,7 @@ ul, ol {
     }
   .footerContent .footerPadding > dl {
     padding: 6px;
+    padding-left: 10px;
     border-right: 0px;
     height: auto;
     display: flex;
