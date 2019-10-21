@@ -72,7 +72,8 @@
 }
 .mea {
   display: inline-block;
-  border: 1px solid #fff;
+  /*border: 1px solid #fff;*/
+  border: 1px solid #f0bc58;
   padding: 13px 18px 12px 18px;
   margin-top: 30px;
   color: #fff;
@@ -150,12 +151,12 @@
     display: -webkit-box;
   }
 .intouceMore {
-  border-top: 1px solid #E5E5E5;
+  border-top: 1px solid #EEE;
   margin: 30px 30px 10px 30px;
   padding: 15px 0;
 }
   .intouceMore > span {
-    color: #C4152F;
+    color: #FDA409;
   }
 .font15 {
   font-size: 15px;
@@ -198,11 +199,10 @@
   }
   .IntroduceTextInfo > a {
     display: inline-block;
-    border: 1px solid #fff;
+    border: 1px solid #FDA409;
     padding: 13px 18px 12px 18px;
     margin-top: 30px;
-    border: 1px solid #C4152F;
-    color: #C4152F;
+    color: #FDA409;
     text-decoration: none;
     font-size: 16px;
   }
@@ -247,7 +247,7 @@ table {
   margin-bottom: 34px;
 }
   .contentFooter > dl > dt {
-    border-bottom: 1px solid #E5E5E5;
+    border-bottom: 1px solid #EEE;
     padding-bottom: 20px;
   }
   .contentFooter > h3 {
@@ -259,7 +259,7 @@ table {
     margin:0;
   }
   .contentFooter > dl {
-    width: 31%;
+    width: 50%;
   }
 .footerLeft {
   padding-right: 20px;
@@ -281,7 +281,7 @@ table {
 }
 .map > img {
   padding-left: 10px;
-  width: 7%;
+  width: 4%;
   position: relative;
   margin-top: -12px;
 }
@@ -289,7 +289,7 @@ table {
   width:10%;
 }
 .footerpad>.padimg {
-  width: 30%;
+  width: 19%;
 }
 
 .shadeone {
@@ -351,6 +351,9 @@ table {
     top: 90px;
     left: 21%;
   }
+  .IntroduceTextInfo > h3 {
+    padding-top: 0;
+  }
   .clear {
     font-size: 32px;
   }
@@ -406,6 +409,7 @@ table {
   }
   .IntroduceTextInfo {
     height: 400px;
+    padding-top: 40px;
   }
   .brandInfo > h3 {
     font-size: 22px;
@@ -421,7 +425,7 @@ table {
     font-size: 22px;
   }
   .contentFooter > dl {
-    width: 32%;
+    width: 50%;
   }
   .font18 {
     font-size: 16px;
@@ -430,10 +434,11 @@ table {
     font-size: 13px;
   }
   .map > img {
-    width: 10%;
+    width: 7%;
+    margin-top: -10px;
   }
   .footerpad > .padimg {
-    width: 40%;
+    width: 32%;
   }
   .mapa img {
     width: 15%;
@@ -480,7 +485,7 @@ table {
     font-size: 14px;
   }
   .intouceMore {
-    margin: 18px 30px 10px 30px;
+    margin: 12px 30px 10px 30px;
   }
   .intoduceInfo {
     height: 453px;
@@ -547,9 +552,6 @@ table {
     font-size: 20px;
     padding-top: 26px;
   }
-  .contentFooter > dl {
-    width: 33%;
-  }
   .contentFooter > dl > dt {
     padding-bottom: 14px;
   }
@@ -565,10 +567,10 @@ table {
     padding-top: 10px;
   }
   .map > img {
-    width: 12%;
+    width: 8%;
   }
   .footerpad > .padimg {
-    width: 50%;
+    width: 35%;
   }
   .mapa img {
     width: 20%;
@@ -879,6 +881,7 @@ table {
     background-color: rgba(0,0,0,0.2);
     border: 0px;
     border-radius: 10px;
+    border: 1px solid #FDA409;
   }
 
     #mea1 > .whiteBtn img {

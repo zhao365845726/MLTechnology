@@ -23,12 +23,14 @@ if (widtha > 768) {
     mea.style.textDecoration = 'none';
     whiteBtnOne.style.display = 'none';
     blackBtn.style.display = 'inline';
+    mea.style.border = '0px';
   }
   mea.onmouseout = function () {
     mea.style.backgroundColor = '';
     mea.style.color = '';
     whiteBtnOne.style.display = 'inline';
     blackBtn.style.display = 'none';
+    mea.style.border = '1px solid #f0bc58';
   }
   mea1.onmouseover = function () {
     mea1.style.backgroundColor = 'white';
@@ -36,25 +38,29 @@ if (widtha > 768) {
     mea1.style.textDecoration = 'none';
     whiteBtnOne2.style.display = 'none';
     blackBtn2.style.display = 'inline';
+    mea1.style.border = '0px';
   }
   mea1.onmouseout = function () {
     mea1.style.backgroundColor = '';
     mea1.style.color = '';
     whiteBtnOne2.style.display = 'inline';
     blackBtn2.style.display = 'none';
+    mea1.style.border = '1px solid #f0bc58';
   }
   mea3.onmouseover = function () {
-    mea3.style.backgroundColor = '#C4152F';
+    mea3.style.backgroundColor = '#FDA409';
     mea3.style.color = 'white';
     mea3.style.textDecoration = 'none';
     RedArrowBtn3.style.display = 'none';
     whiteArrowBtn3.style.display = 'inline';
+    mea3.style.border = '0px';
   }
   mea3.onmouseout = function () {
     mea3.style.backgroundColor = '';
     mea3.style.color = '';
     RedArrowBtn3.style.display = 'inline';
     whiteArrowBtn3.style.display = 'none';
+    mea3.style.border = '1px solid #f0bc58';
   }
   mea.onclick = function () {
     window.location.href = "About";
@@ -72,6 +78,7 @@ if (widtha > 768) {
     mea.style.backgroundColor = 'white';
     mea.style.color = 'black';
     mea.style.textDecoration = 'none';
+    mea.style.border = '0px';
     window.location.href = "Index#guanyuone";
   }
   var lonea = document.getElementById('lonea');
@@ -80,6 +87,7 @@ if (widtha > 768) {
     document.getElementById('modalone').classList.add('nonea');
     mea.style.backgroundColor = '';
     mea.style.color = '';
+    mea.style.border = '1px solid #f0bc58';
   }
   mea1.onclick = function () {
     document.getElementById('shadeone').classList.remove('nonea');
@@ -87,6 +95,7 @@ if (widtha > 768) {
     mea1.style.backgroundColor = 'white';
     mea1.style.color = 'black';
     mea1.style.textDecoration = 'none';
+    mea1.style.border = '0px';
     window.location.href = "Index#guanyutwo";
   }
   var loneb = document.getElementById('loneb');
@@ -95,13 +104,15 @@ if (widtha > 768) {
     document.getElementById('modalone').classList.add('nonea');
     mea1.style.backgroundColor = '';
     mea1.style.color = '';
+    mea1.style.border = '1px solid #f0bc58';
   }
   mea3.onclick = function () {
     document.getElementById('shadeone').classList.remove('nonea');
     document.getElementById('modalone').classList.remove('nonea');
-    mea3.style.backgroundColor = '#C4152F';
+    mea3.style.backgroundColor = '#f0bc58';
     mea3.style.color = 'white';
     mea3.style.textDecoration = 'none';
+    mea3.style.border = '0px';
     window.location.href = "Index#guanyuthree";
   }
   var lonec = document.getElementById('lonec');
@@ -110,6 +121,7 @@ if (widtha > 768) {
     document.getElementById('modalone').classList.add('nonea');
     mea3.style.backgroundColor = '';
     mea3.style.color = '';
+    mea3.style.border = '1px solid #f0bc58';
   }
 }
 

@@ -22,7 +22,7 @@
 }
 
 .zhucethree {
-  border: 1px solid white;
+  border: 1px solid #F2D292;
   width: 100%;
   background-color: silver;
   border-radius: 30px;
@@ -99,7 +99,7 @@
   width: 100%;
   text-align: center;
   padding: 10px;
-  color: darkred;
+  color: #896C33;
 }
 
 .reda {
@@ -124,14 +124,15 @@
   font-weight: 600;
   letter-spacing: 2px;
   margin: 0;
+  color: beige;
 }
 
 .loada {
-  color: #333;
+  color: beige;
 }
 
   .loada:hover {
-    color: darkred;
+    color: #EABD62;
     text-decoration: none;
   }
 
@@ -140,7 +141,7 @@
   width: 30%;
   margin-left: 35%;
   color: #fff;
-  background-color: #607D8B;
+  background-color: #EABD62;
   font-size: 20px;
   border-radius: 10px;
   user-select: none;

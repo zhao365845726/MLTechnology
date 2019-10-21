@@ -1,0 +1,27 @@
+﻿@page
+@model MLTechnology.Pages.pdfModel
+@{
+}
+<style>
+  #example1 {
+    width: 66%;
+    height: 800px;
+    margin: auto;
+  }
+</style>
+<div id="example1"></div>
+<script src="~/js/pdfobject.js"></script>
+<script type="text/javascript">
+  var options = {
+    height: "800px",
+    pdfOpenParams: { scrollbars: '0', toolbar: '0', statusbar: '0' }              //禁用工具栏代码
+  };
+  //PDFObject.embed("企业宣传册.pdf", "#example1", options);
+    if(PDFObject.supportsPDFs){
+      // PDF嵌入到网页指定id
+      PDFObject.embed("企业宣传册.pdf", "#example1", options);
+    } else {
+      alert("当前不支持哦！返回首页");
+    location.href = "/index";
+    }
+</script>

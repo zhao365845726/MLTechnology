@@ -31,18 +31,21 @@
   font-size: 16px;
   width: auto;
   padding: 0;
-  padding-bottom: 7px;
+  padding-bottom: 10px;
   cursor: pointer;
+ 
 }
 .nav > li {
   margin-left: 10%;
 }
 .actv {
-  color: #EE0A0A;
-  border-bottom: 2px solid #EE0A0A;
+  color: #FDA409;
+  border-bottom: 2px solid #FDA409;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .navbar-default .navbar-nav > li > a:hover {
-  color: #EE0A0A;
+  color: #FDA409;
 }
  
   /*底部*/
@@ -451,10 +454,10 @@ ul, ol {
 .clearfix {
   color:black;
 }
-.clearfix:hover {
-  text-decoration: none;
-  color: brown
-}
+  .clearfix:hover {
+    text-decoration: none;
+    color: #FDA409
+  }
 .suspension .d-service-item .i-tel {
   width: 44px;
   height: 44px;

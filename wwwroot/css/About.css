@@ -64,7 +64,7 @@ img {
   background: #F7F7F7;
 }
   .classLeft .red {
-    color: #C4152F;
+    color: #FDA409;
   }
 .fl {
   float: left;
@@ -125,6 +125,20 @@ img {
     color: rgba(215,215,215,1);
     line-height: 26px;
   }
+.pdfa {
+  height: 150px;
+  background: #F2D292;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+  .pdfa p {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 140px;
+    cursor: pointer;
+  }
 /*内容3*/
 .technologyInfo {
   margin-top: 25px;
@@ -143,6 +157,7 @@ img {
     font-size: 30px;
     margin:0;
   }
+
 .font18 {
   font-size: 18px;
 }
@@ -208,7 +223,7 @@ img {
   }
   .IntroduceTextInfo > p {
     font-size: 14px;
-    line-height: 23px;
+    line-height: 32px;
     letter-spacing: 1px;
   }
 /*内容5*/
@@ -290,6 +305,11 @@ table {
     top: 90px;
     left: 21%;
   }
+  .IntroduceTextInfo > p {
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 1px;
+  }
   .classPos > h2 {
     font-size: 32px;
     padding-bottom: 0;
@@ -332,7 +352,7 @@ table {
     padding: 40px;
   }
   .IntroduceTextInfo > h3 {
-    padding-top: 16px;
+    padding-top: 0px;
   }
   .aboutMeIntroduce {
     height: 420px;
@@ -409,7 +429,7 @@ table {
   }
   .IntroduceTextInfo > p {
     font-size: 13px;
-    line-height: 22px;
+    line-height: 21px;
   }
   .aboutMeIntroduce {
     height: 300px;
@@ -474,6 +494,16 @@ table {
     font-size: 40px;
     line-height: 70px;
     padding-left: 120px;
+  }
+  .pdfa {
+    height: 75px;
+  }
+  .pdfa p {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    line-height: 74px;
+    cursor: pointer;
   }
   .font20 {
     font-size: 18px;
