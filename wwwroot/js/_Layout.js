@@ -30,7 +30,7 @@ var suspenb1 = document.getElementById('suspenb1');
 var suspenc = document.getElementById('suspenc')
 var suspenc1 = document.getElementById('suspenc1');
 var widthb = window.screen.width;
-if (widthb > 768) {
+if (widthb > 1025) {
   suspena.onmouseover = function () {
     suspena1.style.display = 'block'
     suspena.style.background = '#F2D292'
@@ -39,18 +39,14 @@ if (widthb > 768) {
       suspena.style.background = '#F2D292'
     }
     suspena1.onmouseout = function () {
-     suspena1.style.display = 'none'
-     suspena.style.background = '#353535'
+      suspena1.style.display = 'none'
+      suspena.style.background = '#353535'
     }
     suspenb1.style.display = 'none'
     suspenb.style.background = '#353535'
     suspenc1.style.display = 'none'
     suspenc.style.background = '#353535'
   }
-  //suspena.onmouseout = function () {
-  //  suspena1.style.display = 'none'
-  //  suspena.style.background = '#353535'
-  //}
   suspenb.onmouseover = function () {
     suspenb1.style.display = 'block'
     suspenb.style.background = '#F2D292'
@@ -67,10 +63,6 @@ if (widthb > 768) {
     suspenc1.style.display = 'none'
     suspenc.style.background = '#353535'
   }
-  //suspenb.onmouseout = function () {
-  //  suspenb1.style.display = 'none'
-  //  suspenb.style.background = '#353535'
-  //}
   suspenc.onmouseover = function () {
     suspenc1.style.display = 'block'
     suspenc.style.background = '#F2D292'
@@ -87,12 +79,48 @@ if (widthb > 768) {
     suspenb1.style.display = 'none'
     suspenb.style.background = '#353535'
   }
-  //suspenc.onmouseout = function () {
-  //  suspenc1.style.display = 'none'
-  //  suspenc.style.background = '#353535'
-  //}
 }
-else {
+else if (widthb > 768 && widthb < 1025) {
+  suspena.onclick = function () {
+    if (suspena1.style.display == 'none') {
+      suspena1.style.display = 'block'
+      suspena.style.background = '#F2D292'
+    } else {
+      suspena1.style.display = 'none'
+      suspena.style.background = '#353535'
+    }
+    suspenb.style.background = '#353535';
+    suspenb1.style.display = 'none'
+    suspenc.style.background = '#353535';
+    suspenc1.style.display = 'none'
+  }
+  suspenb.onclick = function () {
+    if (suspenb1.style.display == 'none') {
+      suspenb1.style.display = 'block'
+      suspenb.style.background = '#F2D292'
+    } else {
+      suspenb1.style.display = 'none'
+      suspenb.style.background = '#353535'
+    }
+    suspena.style.background = '#353535';
+    suspena1.style.display = 'none'
+    suspenc.style.background = '#353535';
+    suspenc1.style.display = 'none'
+  }
+  suspenc.onclick = function () {
+    if (suspenc1.style.display == 'none') {
+      suspenc1.style.display = 'block'
+      suspenc.style.background = '#F2D292'
+    } else {
+      suspenc1.style.display = 'none'
+      suspenc.style.background = '#353535'
+    }
+    suspena.style.background = '#353535';
+    suspena1.style.display = 'none'
+    suspenb.style.background = '#353535';
+    suspenb1.style.display = 'none'
+  }
+} else {
   suspena.onclick = function () {
     if (suspena1.style.display == 'none') {
       suspena1.style.display = 'block'
@@ -154,6 +182,18 @@ $(document).ready(function () {
       }
     }
   });
+})
+$('body').click(function (e) {
+  var type = e.target;
+  console.log(type)
+  if (type.className != 'i') {
+    suspena1.style.display = 'none'
+    suspena.style.background = '#353535'
+    suspenb1.style.display = 'none'
+    suspenb.style.background = '#353535'
+    suspenc1.style.display = 'none'
+    suspenc.style.background = '#353535'
+  }
 })
 var hrefa = document.getElementById('hrefa');
 var hrefb = document.getElementById('hrefb');
