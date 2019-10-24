@@ -79,6 +79,14 @@ if (widthb > 1025) {
     suspenb1.style.display = 'none'
     suspenb.style.background = '#353535'
   }
+  document.onclick = function () {
+    suspena1.style.display = 'none'
+    suspena.style.background = '#353535'
+    suspenb1.style.display = 'none'
+    suspenb.style.background = '#353535'
+    suspenc1.style.display = 'none'
+    suspenc.style.background = '#353535'
+  }
 }
 else if (widthb > 768 && widthb < 1025) {
   suspena.onclick = function () {
@@ -120,6 +128,18 @@ else if (widthb > 768 && widthb < 1025) {
     suspenb.style.background = '#353535';
     suspenb1.style.display = 'none'
   }
+  $('body').click(function (e) {
+    var type = e.target;
+    console.log(type)
+    if (type.className != 'i') {
+      suspena1.style.display = 'none'
+      suspena.style.background = '#353535'
+      suspenb1.style.display = 'none'
+      suspenb.style.background = '#353535'
+      suspenc1.style.display = 'none'
+      suspenc.style.background = '#353535'
+    }
+  })
 } else {
   suspena.onclick = function () {
     if (suspena1.style.display == 'none') {
@@ -160,6 +180,18 @@ else if (widthb > 768 && widthb < 1025) {
     suspenb.style.background = 'rgba(0,0,0,0.5)';
     suspenb1.style.display = 'none'
   }
+  $('body').click(function (e) {
+    var type = e.target;
+    console.log(type)
+    if (type.className != 'i') {
+      suspena1.style.display = 'none'
+      suspena.style.background = 'rgba(0,0,0,0.5)'
+      suspenb1.style.display = 'none'
+      suspenb.style.background = 'rgba(0,0,0,0.5)'
+      suspenc1.style.display = 'none'
+      suspenc.style.background = 'rgba(0,0,0,0.5)'
+    }
+  })
 }
 $(document).ready(function () {
   $(document).on("mouseleave", ".suspension .a-top", function () {
@@ -183,18 +215,7 @@ $(document).ready(function () {
     }
   });
 })
-$('body').click(function (e) {
-  var type = e.target;
-  console.log(type)
-  if (type.className != 'i') {
-    suspena1.style.display = 'none'
-    suspena.style.background = '#353535'
-    suspenb1.style.display = 'none'
-    suspenb.style.background = '#353535'
-    suspenc1.style.display = 'none'
-    suspenc.style.background = '#353535'
-  }
-})
+
 var hrefa = document.getElementById('hrefa');
 var hrefb = document.getElementById('hrefb');
 var hrefc = document.getElementById('hrefc');
