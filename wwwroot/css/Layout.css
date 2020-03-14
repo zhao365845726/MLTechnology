@@ -306,7 +306,7 @@ ul, ol {
   position: fixed;
   z-index: 55;
   right: 10px;
-  bottom: 30%;
+  bottom: 50%;
   width: 70px;
   height: 200px;
 }

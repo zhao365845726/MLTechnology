@@ -284,9 +284,10 @@ img {
   .payPad > p {
     padding-bottom: 15px;
     font-size: 16px;
+    line-height:31px;
   }
 table {
-  width: 50%;
+  width: 100%;
   border: 0;
 }
   table th {

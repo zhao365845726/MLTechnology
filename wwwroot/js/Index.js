@@ -156,34 +156,34 @@ function companyInfoGray(a) {
     document.getElementById('brandInfoGray_7').style.display = 'none'
     document.getElementById('brandInfo_7').style.display = 'inline'
   }
-  if (a === 8) {
-    document.getElementById('brandInfoGray_8').style.display = 'none'
-    document.getElementById('brandInfo_8').style.display = 'inline'
-  }
-  if (a === 9) {
-    document.getElementById('brandInfoGray_9').style.display = 'none'
-    document.getElementById('brandInfo_9').style.display = 'inline'
-  }
-  if (a === 10) {
-    document.getElementById('brandInfoGray_10').style.display = 'none'
-    document.getElementById('brandInfo_10').style.display = 'inline'
-  }
-  if (a === 11) {
-    document.getElementById('brandInfoGray_11').style.display = 'none'
-    document.getElementById('brandInfo_11').style.display = 'inline'
-  }
-  if (a === 12) {
-    document.getElementById('brandInfoGray_12').style.display = 'none'
-    document.getElementById('brandInfo_12').style.display = 'inline'
-  }
+  //if (a === 8) {
+  //  document.getElementById('brandInfoGray_8').style.display = 'none'
+  //  document.getElementById('brandInfo_8').style.display = 'inline'
+  //}
+  //if (a === 9) {
+  //  document.getElementById('brandInfoGray_9').style.display = 'none'
+  //  document.getElementById('brandInfo_9').style.display = 'inline'
+  //}
+  //if (a === 10) {
+  //  document.getElementById('brandInfoGray_10').style.display = 'none'
+  //  document.getElementById('brandInfo_10').style.display = 'inline'
+  //}
+  //if (a === 11) {
+  //  document.getElementById('brandInfoGray_11').style.display = 'none'
+  //  document.getElementById('brandInfo_11').style.display = 'inline'
+  //}
+  //if (a === 12) {
+  //  document.getElementById('brandInfoGray_12').style.display = 'none'
+  //  document.getElementById('brandInfo_12').style.display = 'inline'
+  //}
   if (a === 13) {
     document.getElementById('brandInfoGray_13').style.display = 'none'
     document.getElementById('brandInfo_13').style.display = 'inline'
   }
-  if (a === 14) {
-    document.getElementById('brandInfoGray_14').style.display = 'none'
-    document.getElementById('brandInfo_14').style.display = 'inline'
-  }
+  //if (a === 14) {
+  //  document.getElementById('brandInfoGray_14').style.display = 'none'
+  //  document.getElementById('brandInfo_14').style.display = 'inline'
+  //}
 }
 function companyInfo(a) {
   document.getElementById('brandInfoGray_1').style.display = 'inline'
@@ -200,20 +200,20 @@ function companyInfo(a) {
   document.getElementById('brandInfo_6').style.display = 'none'
   document.getElementById('brandInfoGray_7').style.display = 'inline'
   document.getElementById('brandInfo_7').style.display = 'none'
-  document.getElementById('brandInfoGray_8').style.display = 'inline'
-  document.getElementById('brandInfo_8').style.display = 'none'
-  document.getElementById('brandInfoGray_9').style.display = 'inline'
-  document.getElementById('brandInfo_9').style.display = 'none'
-  document.getElementById('brandInfoGray_10').style.display = 'inline'
-  document.getElementById('brandInfo_10').style.display = 'none'
-  document.getElementById('brandInfoGray_11').style.display = 'inline'
-  document.getElementById('brandInfo_11').style.display = 'none'
-  document.getElementById('brandInfoGray_12').style.display = 'inline'
-  document.getElementById('brandInfo_12').style.display = 'none'
+  //document.getElementById('brandInfoGray_8').style.display = 'inline'
+  //document.getElementById('brandInfo_8').style.display = 'none'
+  //document.getElementById('brandInfoGray_9').style.display = 'inline'
+  //document.getElementById('brandInfo_9').style.display = 'none'
+  //document.getElementById('brandInfoGray_10').style.display = 'inline'
+  //document.getElementById('brandInfo_10').style.display = 'none'
+  //document.getElementById('brandInfoGray_11').style.display = 'inline'
+  //document.getElementById('brandInfo_11').style.display = 'none'
+  //document.getElementById('brandInfoGray_12').style.display = 'inline'
+  //document.getElementById('brandInfo_12').style.display = 'none'
   document.getElementById('brandInfoGray_13').style.display = 'inline'
   document.getElementById('brandInfo_13').style.display = 'none'
-  document.getElementById('brandInfoGray_14').style.display = 'inline'
-  document.getElementById('brandInfo_14').style.display = 'none'
+  //document.getElementById('brandInfoGray_14').style.display = 'inline'
+  //document.getElementById('brandInfo_14').style.display = 'none'
 }
 
 
