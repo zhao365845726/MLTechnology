@@ -47,8 +47,35 @@
 .navbar-default .navbar-nav > li > a:hover {
   color: #FDA409;
 }
- 
-  /*底部*/
+.Chinese {
+  /*position: absolute;*/
+  width: 60px;
+  outline: none;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.ChineseOne {
+  background: #FDA409;
+  color: white;
+  border: 2px solid #F2D292;
+  margin-top: -3px;
+
+}
+.English {
+  /*position: absolute;*/
+  margin-left: -5px;
+  outline: none;
+  width: 60px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.EnglishOne {
+  border: 1px solid #F2D292;
+  background: white;
+  color: #FDA409;
+  margin-top: -2px;
+}
+/*底部*/
 .dibu {
   background: #434343 !important;
   padding-top: 0 !important;
@@ -594,9 +621,17 @@ ul, ol {
   @media screen and (max-width: 1024px) {
     .container-fluid > .navbar-header {
       margin-left: 6%;
-      margin-right: 2%;
+      margin-right: 0%;
     }
-
+  .nav > li {
+    margin-left: 6%;
+  }
+  #coll {
+    width: 47%;
+  }
+  .navbar-nav {
+    width: 20%;
+  }
     .footerPadding {
       padding: 45px 6%;
     }
@@ -651,18 +686,29 @@ ul, ol {
   }
 
   @media screen and (max-width: 768px) {
-    .container-fluid > .navbar-header {
+    /*.container-fluid > .navbar-header {
       margin-left: 0%;
       margin-right: 0%;
-    }
-
+    }*/
+  .container-fluid > .navbar-header {
+    margin-left: 3%;
+    margin-right: 0%;
+  }
     .navbar-nav {
-      width: 17%;
+      width: 18%;
     }
-
-    #coll {
-      width: 52%;
-    }
+  #coll {
+    width: 52%;
+    padding: 28px 0px;
+  }
+  .Chinese {
+    width: 51px;
+    font-size: 10px;
+  }
+  .English {
+    width: 51px;
+    font-size: 10px;
+  }
 
     .nav > li {
       margin-left: 7%;
