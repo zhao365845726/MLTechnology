@@ -10,8 +10,8 @@
   margin-bottom: 0;
 }
 .container-fluid > .navbar-header {
-  margin-left: 16%;
-  margin-right: 2%;
+  margin-left: 8%;
+  margin-right: 0%;
 }
 
 .navbar-brand {
@@ -23,7 +23,7 @@
   padding: 36px 0px;
 }
 #coll {
-  width: 42%;
+  width: 52%;
   padding: 36px 0px;
 }
 .navbar-default .navbar-nav > li > a {
