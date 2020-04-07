@@ -317,13 +317,13 @@ option = {
     roam: false,//禁止拖动和缩放
     itemStyle: {
       normal: {//选取前颜色
-        //areaColor: '#cfdcec',
-        areaColor: '#F8E8A9',
+        areaColor: '#cfdcec',
+        //areaColor: '#F8E8A9',
         borderColor: '#fff'
       },
       emphasis: {//选取后颜色
-        areaColor: '#FDA409'
-        //areaColor: '#032a6e'
+        //areaColor: '#FDA409'
+        areaColor: '#032a6e'
       }
     }
   },
