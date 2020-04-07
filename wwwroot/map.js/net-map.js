@@ -120,29 +120,50 @@ var geoCoordMap = {
   '新西兰': [9.422292, 47.288875],
   '瑞典': [21.490919, 66.190875],
   '保加利亚': [23.257059, -8.616742],
-  '韶关': [113.7964, 24.7028]
+  '韶关': [113.7964, 24.7028],
+  '高平': [112.937688, 35.786798],
 };
 
 var SXData = [
-  [{ name: '绍兴' }, { name: '韩国', value: 180 }],
-  [{ name: '绍兴' }, { name: '澳大利亚', value: 170 }],
-  [{ name: '绍兴' }, { name: '拉脱维亚', value: 160 }],
-  [{ name: '绍兴' }, { name: '芬兰', value: 150 }],
-  [{ name: '绍兴' }, { name: '奥地利', value: 140 }],
-  [{ name: '绍兴' }, { name: '意大利', value: 130 }],
-  [{ name: '绍兴' }, { name: '新西兰', value: 120 }],
-  [{ name: '绍兴' }, { name: '瑞典', value: 110 }],
-  [{ name: '绍兴' }, { name: '保加利亚', value: 100 }],
-  [{ name: '绍兴' }, { name: '南非', value: 95 }],
-  [{ name: '绍兴' }, { name: '坦桑尼亚', value: 90 }],
-  [{ name: '绍兴' }, { name: '爱沙尼亚', value: 80 }],
-  [{ name: '绍兴' }, { name: '墨西哥', value: 70 }],
-  [{ name: '绍兴' }, { name: '美国', value: 60 }],
-  [{ name: '绍兴' }, { name: '加拿大', value: 50 }],
-  [{ name: '绍兴' }, { name: '德国', value: 40 }],
-  [{ name: '绍兴' }, { name: '英国', value: 30 }],
-  [{ name: '绍兴' }, { name: '斯洛伐克', value: 20 }],
-  [{ name: '绍兴' }, { name: '日本', value: 10 }]
+  //[{ name: '高平' },{name:'高平',value:190}],
+  //[{ name: '绍兴' }, { name: '韩国', value: 180 }],
+  //[{ name: '绍兴' }, { name: '澳大利亚', value: 170 }],
+  //[{ name: '绍兴' }, { name: '拉脱维亚', value: 160 }],
+  //[{ name: '绍兴' }, { name: '芬兰', value: 150 }],
+  //[{ name: '绍兴' }, { name: '奥地利', value: 140 }],
+  //[{ name: '绍兴' }, { name: '意大利', value: 130 }],
+  //[{ name: '绍兴' }, { name: '新西兰', value: 120 }],
+  //[{ name: '绍兴' }, { name: '瑞典', value: 110 }],
+  //[{ name: '绍兴' }, { name: '保加利亚', value: 100 }],
+  //[{ name: '绍兴' }, { name: '南非', value: 95 }],
+  //[{ name: '绍兴' }, { name: '坦桑尼亚', value: 90 }],
+  //[{ name: '绍兴' }, { name: '爱沙尼亚', value: 80 }],
+  //[{ name: '绍兴' }, { name: '墨西哥', value: 70 }],
+  //[{ name: '绍兴' }, { name: '美国', value: 60 }],
+  //[{ name: '绍兴' }, { name: '加拿大', value: 50 }],
+  //[{ name: '绍兴' }, { name: '德国', value: 40 }],
+  //[{ name: '绍兴' }, { name: '英国', value: 30 }],
+  //[{ name: '绍兴' }, { name: '斯洛伐克', value: 20 }],
+  //[{ name: '绍兴' }, { name: '日本', value: 10 }]，
+  [{ name: '高平' }, { name: '韩国', value: 180 }],
+  [{ name: '高平' }, { name: '澳大利亚', value: 170 }],
+  [{ name: '高平' }, { name: '拉脱维亚', value: 160 }],
+  [{ name: '高平' }, { name: '芬兰', value: 150 }],
+  [{ name: '高平' }, { name: '奥地利', value: 140 }],
+  [{ name: '高平' }, { name: '意大利', value: 130 }],
+  [{ name: '高平' }, { name: '新西兰', value: 120 }],
+  [{ name: '高平' }, { name: '瑞典', value: 110 }],
+  [{ name: '高平' }, { name: '保加利亚', value: 100 }],
+  [{ name: '高平' }, { name: '南非', value: 95 }],
+  [{ name: '高平' }, { name: '坦桑尼亚', value: 90 }],
+  [{ name: '高平' }, { name: '爱沙尼亚', value: 80 }],
+  [{ name: '高平' }, { name: '墨西哥', value: 70 }],
+  [{ name: '高平' }, { name: '美国', value: 60 }],
+  [{ name: '高平' }, { name: '加拿大', value: 50 }],
+  [{ name: '高平' }, { name: '德国', value: 40 }],
+  [{ name: '高平' }, { name: '英国', value: 30 }],
+  [{ name: '高平' }, { name: '斯洛伐克', value: 20 }],
+  [{ name: '高平' }, { name: '日本', value: 10 }]
 ];
 
 var SHData = [
@@ -178,6 +199,7 @@ var convertData = function (data) {
     var dataItem = data[i];
     var fromCoord = geoCoordMap[dataItem[0].name];
     var toCoord = geoCoordMap[dataItem[1].name];
+    console.log(dataItem);
     if (fromCoord && toCoord) {
       res.push({
         fromName: dataItem[0].name,
@@ -191,9 +213,9 @@ var convertData = function (data) {
 
 var color = ['#6ea6e6', '#6ea6e6', '#032a6e'];
 var series = [];
-[['绍兴', SXData], ['上海', SHData], ['广州', GZData]].forEach(function (item, i) {
+[['高平', SXData], ['上海', SHData], ['广州', GZData]].forEach(function (item, i) {
   series.push({
-    /*  name: item[0] + ' Top10',*/
+      //name: item[0] + ' Top10',
     type: 'lines',
     zlevel: 1,
     effect: {
@@ -214,7 +236,7 @@ var series = [];
     data: convertData(item[1])
   },
     {
-      /*  name: item[0] + ' Top10',*/
+        //name: item[0] + ' Top10',
       type: 'lines',
       zlevel: 2,
       effect: {
@@ -235,7 +257,7 @@ var series = [];
       data: convertData(item[1])
     },
     {
-      //          name: item[0] + ' Top10',
+                //name: item[0] + ' Top10',
       type: 'effectScatter',
       coordinateSystem: 'geo',
       zlevel: 2,
@@ -278,7 +300,7 @@ option = {
     orient: 'vertical',
     top: 'bottom',
     left: 'right',
-    //data:['北京 Top10', '上海 Top10', '广州 Top10'],
+    data:['北京 Top10', '上海 Top10', '广州 Top10'],
     textStyle: {
       color: '#fff'
     },
@@ -289,7 +311,7 @@ option = {
     zoom: 1.3,// 改变这个值的大小就可以了
     label: {
       emphasis: {
-        show: false
+        show: true
       }
     },
     roam: false,//禁止拖动和缩放
