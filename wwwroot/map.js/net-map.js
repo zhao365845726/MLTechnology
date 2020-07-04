@@ -311,7 +311,7 @@ option = {
     zoom: 1.3,// 改变这个值的大小就可以了
     label: {
       emphasis: {
-        show: true
+        show: true,
       }
     },
     roam: false,//禁止拖动和缩放
