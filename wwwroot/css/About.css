@@ -11,6 +11,10 @@ p, h3, h4, h2, dd {
 img {
   width:100%;height:100%;
 }
+.zhifubao {
+  width: 20%;
+  padding-bottom: 12px;
+}
 .aboutbg {
   background: url(http://image.milisx.com/3.1.jpg) no-repeat;
   background-size: 100% 100%;
@@ -171,7 +175,7 @@ img {
 }
 .combannerText {
   width: 50%;
-  height: 510px;
+  height: 662px;
   padding: 40px;
   background: #fff;
 }
@@ -298,74 +302,100 @@ table {
     font-size:16px;
     background-color: #F5F5F5;
   }
+@media screen and (max-width: 1100px) {
+  .combannerText > p {
+    line-height: 23px;
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .aboutbg {
     height: 420px;
   }
+
   .classPos {
     top: 90px;
     left: 21%;
   }
+
   .IntroduceTextInfo > p {
     font-size: 14px;
     line-height: 26px;
     letter-spacing: 1px;
   }
+
   .classPos > h2 {
     font-size: 32px;
     padding-bottom: 0;
   }
+
   .classPos > p {
     font-size: 20px;
     line-height: 45px;
   }
+
   .classContent {
     width: 80%;
   }
+
   .classRight {
     padding: 29px;
   }
-  .classRight > p {
-    font-size: 12px;
-  }
+
+    .classRight > p {
+      font-size: 12px;
+    }
+
   .aboutContentbg {
     height: 400px;
   }
+
   .technologyCenter {
     height: 400px;
   }
+
   .technologyText {
     padding-top: 58px;
     width: 90%;
     margin: auto;
   }
-  .technologyText > p {
-    line-height: 28px;
-  }
+
+    .technologyText > p {
+      line-height: 28px;
+    }
+
   .combannerText > p {
     font-size: 13px;
   }
+
   .aboutMeImg {
     height: 378px;
   }
+
   .IntroduceTextInfo {
     height: 378px;
     padding: 40px;
   }
-  .IntroduceTextInfo > h3 {
-    padding-top: 0px;
-  }
+
+    .IntroduceTextInfo > h3 {
+      padding-top: 0px;
+    }
+
   .aboutMeIntroduce {
     height: 420px;
     padding: 35px;
   }
+
   .imgone {
-    height:420px;
+    height: 420px;
   }
+
   .aboutMeIntroduce > p {
     font-size: 12px;
     line-height: 21px;
   }
+
   .payWay > h3 {
     padding: 5px 0;
   }

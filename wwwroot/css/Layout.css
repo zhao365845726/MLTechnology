@@ -10,8 +10,8 @@
   margin-bottom: 0;
 }
 .container-fluid > .navbar-header {
-  margin-left: 16%;
-  margin-right: 2%;
+  margin-left: 8%;
+  margin-right: 0%;
 }
 
 .navbar-brand {
@@ -23,7 +23,7 @@
   padding: 36px 0px;
 }
 #coll {
-  width: 42%;
+  width: 52%;
   padding: 36px 0px;
 }
 .navbar-default .navbar-nav > li > a {
@@ -36,7 +36,7 @@
  
 }
 .nav > li {
-  margin-left: 10%;
+  margin-left: 9%;
 }
 .actv {
   color: #FDA409;
@@ -47,8 +47,35 @@
 .navbar-default .navbar-nav > li > a:hover {
   color: #FDA409;
 }
- 
-  /*底部*/
+.Chinese {
+  /*position: absolute;*/
+  width: 60px;
+  outline: none;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.ChineseOne {
+  background: #FDA409;
+  color: white;
+  border: 2px solid #F2D292;
+  margin-top: -3px;
+
+}
+.English {
+  /*position: absolute;*/
+  margin-left: -5px;
+  outline: none;
+  width: 60px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.EnglishOne {
+  border: 1px solid #F2D292;
+  background: white;
+  color: #FDA409;
+  margin-top: -2px;
+}
+/*底部*/
 .dibu {
   background: #434343 !important;
   padding-top: 0 !important;
@@ -524,7 +551,7 @@ ul, ol {
   height: 100%;
 }
   /*响应式设置*/
-  @media screen and (max-width: 1680px) {
+ @media screen and (max-width: 1680px) {
     .footerPadding {
       padding: 45px 20%;
     }
@@ -533,12 +560,19 @@ ul, ol {
       width: 50%;
     }
   }
-
+@media screen and (max-width: 1660px) {
+  .nav > li {
+    margin-left: 7%;
+  }
+}
   @media screen and (max-width: 1630px) {
-    .container-fluid > .navbar-header {
-      margin-left: 14%;
-      margin-right: 2%;
-    }
+  .container-fluid > .navbar-header {
+    margin-left: 9%;
+    margin-right: 0%;
+  }
+  .navbar-nav {
+    width: 23.5%;
+  }
   }
 
   @media screen and (max-width: 1580px) {
@@ -548,53 +582,65 @@ ul, ol {
   }
 
   @media screen and (max-width: 1450px) {
-    .container-fluid > .navbar-header {
-      margin-left: 10%;
-      margin-right: 2%;
-    }
+  .container-fluid > .navbar-header {
+    margin-left: 6%;
+    margin-right: 0%;
+  }
 
     .navbar-nav {
       width: 24%;
     }
 
-    #coll {
-      width: 44%;
-    }
+  #coll {
+    width: 50%;
+  }
 
     .footerPadding {
       padding: 45px 16%;
     }
   }
-
+@media screen and (max-width: 1384px) {
+  .nav > li {
+    margin-left: 5%;
+  }
+}
   @media screen and (max-width: 1348px) {
     .footerPadding {
       padding: 45px 14%;
     }
   }
-
+@media screen and (max-width: 1262px) {
+  .container-fluid > .navbar-header {
+    margin-left: 4%;
+    margin-right: 0%;
+  }
+  #coll {
+    width: 51%;
+  }
+}
   @media screen and (max-width: 1200px) {
-    .container-fluid > .navbar-header {
-      margin-left: 8%;
-      margin-right: 2%;
-    }
-
     .navbar-nav {
-      width: 22%;
+      width: 18%;
     }
-
-    #coll {
-      width: 45%;
-    }
-
+  .nav > li {
+    margin-left: 5%;
+  }
+  #coll {
+    width: 56%;
+  }
     .footerPadding {
       padding: 45px 10%;
     }
   }
-
+@media screen and (max-width: 1044px) {
+  .nav > li {
+    margin-left: 3%;
+  }
+}
   @media screen and (max-width: 1024px) {
-    .container-fluid > .navbar-header {
-      margin-left: 6%;
-      margin-right: 2%;
+ 
+    .navbar-nav {
+      width: 17%;
     }
 
     .footerPadding {
@@ -651,17 +697,32 @@ ul, ol {
   }
 
   @media screen and (max-width: 768px) {
-    .container-fluid > .navbar-header {
+    /*.container-fluid > .navbar-header {
       margin-left: 0%;
+      margin-right: 0%;
+    }*/
+    .container-fluid > .navbar-header {
+      margin-left: 3%;
       margin-right: 0%;
     }
 
     .navbar-nav {
-      width: 17%;
+      width: 18%;
     }
 
     #coll {
       width: 52%;
+      padding: 28px 0px;
+    }
+
+    .Chinese {
+      width: 51px;
+      font-size: 10px;
+    }
+
+    .English {
+      width: 51px;
+      font-size: 10px;
     }
 
     .nav > li {
@@ -694,210 +755,211 @@ ul, ol {
         background-color: rgba(0,0,0,0.8);
       }
   }
-@media screen and (max-device-width: 736px) {
-  .navbar-toggle {
-    margin-top: 32px;
-    border-radius: 10px;
+
+  @media screen and (max-device-width: 736px) {
+    .navbar-toggle {
+      margin-top: 32px;
+      border-radius: 10px;
+    }
+
+    .navbar-collapse {
+      background-color: currentColor;
+    }
+
+    .navbar-nav {
+      width: 100%;
+      margin: 0;
+      display: inline-flex;
+      padding: 25px 0px;
+      padding-top: 0px;
+      padding-left: 76%;
+    }
+
+    #coll {
+      width: 100%;
+      display: block;
+      padding: 10px 0px;
+    }
+
+    .nav > li {
+      margin-left: 0;
+    }
+
+    .container-fluid > .collapse > .nav > li > a {
+      color: white;
+      font-size: 18px;
+      line-height: 50px;
+      font-weight: 600;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+      color: white;
+      font-size: 18px;
+      width: auto;
+      line-height: 50px;
+      font-weight: 600;
+      padding: 0;
+      padding-bottom: 0px;
+      cursor: pointer;
+    }
+
+    .c2 {
+      top: 61%;
+      width: 74%;
+      left: 41%;
+    }
+
+    .suspension {
+      bottom: 0;
+      right: 1px;
+    }
   }
 
-  .navbar-collapse {
-    background-color: currentColor;
+  @media screen and (max-device-width: 667px) {
+    .container-fluid > .collapse > .nav > li > a {
+      line-height: 47.8px;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+      line-height: 47.8px;
+    }
+
+    .navbar-nav {
+      padding: 0;
+      padding-top: 0px;
+      padding-left: 75%;
+    }
+
+    .c2 {
+      top: 68%;
+      width: 75%;
+      left: 42%;
+      height: 260px;
+    }
+
+    .denglu {
+      width: 75%;
+      height: 35px;
+      margin-top: 10px;
+    }
+
+    .threeLogin {
+      margin-top: 12px;
+      padding-left: 47px;
+    }
+
+    .footerPadding {
+      width: 92%;
+    }
   }
 
-  .navbar-nav {
-    width: 100%;
-    margin: 0;
-    display: inline-flex;
-    padding: 25px 0px;
-    padding-top: 0px;
-    padding-left: 76%;
+  @media screen and (max-device-width: 640px) {
+    .container-fluid > .collapse > .nav > li > a {
+      line-height: 44.8px;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+      line-height: 44.8px;
+    }
+
+    .navbar-nav {
+      padding-left: 74%;
+    }
+
+    .c2 {
+      width: 78%;
+    }
+
+    .denglu {
+      width: 75%;
+      height: 35px;
+      margin-top: 10px;
+    }
+
+    .threeLogin {
+      margin-top: 12px;
+      padding-left: 47px;
+    }
+
+    .footerPadding {
+      width: 97%;
+    }
   }
 
-  #coll {
-    width: 100%;
-    display: block;
-    padding: 10px 0px;
-  }
+  @media screen and (max-device-width: 568px) {
+    .container-fluid > .collapse > .nav > li > a {
+      line-height: 36.8px;
+      font-size: 17px;
+    }
 
-  .nav > li {
-    margin-left: 0;
-  }
+    .navbar-default .navbar-nav > li > a {
+      line-height: 36.8px;
+      font-size: 17px;
+    }
 
-  .container-fluid > .collapse > .nav > li > a {
-    color: white;
-    font-size: 18px;
-    line-height: 50px;
-    font-weight: 600;
-  }
+    .navbar-nav {
+      padding-left: 72%;
+    }
 
-  .navbar-default .navbar-nav > li > a {
-    color: white;
-    font-size: 18px;
-    width: auto;
-    line-height: 50px;
-    font-weight: 600;
-    padding: 0;
-    padding-bottom: 0px;
-    cursor: pointer;
-  }
+    .c2 {
+      top: 79%;
+      width: 84%;
+      left: 42%;
+      height: 213px;
+    }
 
-  .c2 {
-    top: 61%;
-    width: 74%;
-    left: 41%;
-  }
+    .modal-header {
+      padding: 8px;
+    }
 
-  .suspension {
-    bottom: 0;
-    right: 1px;
-  }
-}
+    .modal-body {
+      position: relative;
+      padding: 15px;
+      padding-top: 5px;
+    }
 
-@media screen and (max-device-width: 667px) {
-  .container-fluid > .collapse > .nav > li > a {
-    line-height: 47.8px;
-  }
+    ul, ol {
+      padding-left: 0;
+    }
 
-  .navbar-default .navbar-nav > li > a {
-    line-height: 47.8px;
-  }
+    .form-control {
+      width: 100%;
+      height: 25px;
+      font-size: 12px;
+    }
 
-  .navbar-nav {
-    padding: 0;
-    padding-top: 0px;
-    padding-left: 75%;
-  }
+    .marginB10 {
+      margin-bottom: 0px;
+      font-size: 12px;
+      width: 100%;
+    }
 
-  .c2 {
-    top: 68%;
-    width: 75%;
-    left: 42%;
-    height: 260px;
-  }
+    .denglu {
+      width: 100%;
+      height: 30px;
+      font-size: 12px;
+      margin-left: 0;
+      margin-top: 10px;
+    }
 
-  .denglu {
-    width: 75%;
-    height: 35px;
-    margin-top: 10px;
-  }
+    .threeLogin {
+      margin-top: 12px;
+      padding-left: 35px;
+    }
 
-  .threeLogin {
-    margin-top: 12px;
-    padding-left: 47px;
-  }
+    .dibu {
+      height: 255px !important;
+    }
 
-  .footerPadding {
-    width: 92%;
-  }
-}
+    .footerPadding {
+      width: 100%;
+      padding: 20px 0%;
+    }
 
-@media screen and (max-device-width: 640px) {
-  .container-fluid > .collapse > .nav > li > a {
-    line-height: 44.8px;
+    .footerContent .footerPadding > dl {
+      padding: 0 27px;
+    }
   }
-
-  .navbar-default .navbar-nav > li > a {
-    line-height: 44.8px;
-  }
-
-  .navbar-nav {
-    padding-left: 74%;
-  }
-
-  .c2 {
-    width: 78%;
-  }
-
-  .denglu {
-    width: 75%;
-    height: 35px;
-    margin-top: 10px;
-  }
-
-  .threeLogin {
-    margin-top: 12px;
-    padding-left: 47px;
-  }
-
-  .footerPadding {
-    width: 97%;
-  }
-}
-
-@media screen and (max-device-width: 568px) {
-  .container-fluid > .collapse > .nav > li > a {
-    line-height: 36.8px;
-    font-size: 17px;
-  }
-
-  .navbar-default .navbar-nav > li > a {
-    line-height: 36.8px;
-    font-size: 17px;
-  }
-
-  .navbar-nav {
-    padding-left: 72%;
-  }
-
-  .c2 {
-    top: 79%;
-    width: 84%;
-    left: 42%;
-    height: 213px;
-  }
-
-  .modal-header {
-    padding: 8px;
-  }
-
-  .modal-body {
-    position: relative;
-    padding: 15px;
-    padding-top: 5px;
-  }
-
-  ul, ol {
-    padding-left: 0;
-  }
-
-  .form-control {
-    width: 100%;
-    height: 25px;
-    font-size: 12px;
-  }
-
-  .marginB10 {
-    margin-bottom: 0px;
-    font-size: 12px;
-    width: 100%;
-  }
-
-  .denglu {
-    width: 100%;
-    height: 30px;
-    font-size: 12px;
-    margin-left: 0;
-    margin-top: 10px;
-  }
-
-  .threeLogin {
-    margin-top: 12px;
-    padding-left: 35px;
-  }
-
-  .dibu {
-    height: 255px !important;
-  }
-
-  .footerPadding {
-    width: 100%;
-    padding: 20px 0%;
-  }
-
-  .footerContent .footerPadding > dl {
-    padding: 0 27px;
-  }
-}
 
   @media screen and (max-width: 414px) {
     .navbar-toggle {
@@ -913,10 +975,15 @@ ul, ol {
     width: 100%;
     margin: 0;
     display: inline-flex;
-    padding-top: 260px;
-    padding-left: 65%;
+    padding-top: 212px;
+    padding-left: 34%;
   }
-
+  .ChineseOne {
+    margin-top: 14px;
+  }
+  #dengle {
+  margin-right:15px;
+  }
     #coll {
       width: 100%;
       display: block;
@@ -944,34 +1011,35 @@ ul, ol {
       cursor: pointer;
     }
 
-  .dibu {
-    height: 192px !important;
-  }
+    .dibu {
+      height: 192px !important;
+    }
 
     .footerPadding {
-      padding: 21px 0px;
+      padding: 5px 0px;
       width: 100%;
     }
-  .footerContent .footerPadding > dl {
-    padding: 6px;
-    padding-left: 10px;
-    border-right: 0px;
-    height: auto;
-    display: flex;
-    margin: 0;
-  }
 
-  .footerPadding > dl > dt {
-    font-size: 14px;
-    padding-bottom: 0;
-  }
+    .footerContent .footerPadding > dl {
+      padding: 6px;
+      padding-left: 10px;
+      border-right: 0px;
+      height: auto;
+      display: flex;
+      margin: 0;
+    }
 
-  .footerPadding > dl > dd > a {
-    font-size: 10px;
-    line-height: 25px;
-    color: darkgray;
-  }
-  /*.dda > dd > a {
+    .footerPadding > dl > dt {
+      font-size: 14px;
+      padding-bottom: 0;
+    }
+
+    .footerPadding > dl > dd > a {
+      font-size: 10px;
+      line-height: 25px;
+      color: darkgray;
+    }
+    /*.dda > dd > a {
     margin-left: 20.5px;
   }
   .ddb > dd > a {
@@ -983,27 +1051,28 @@ ul, ol {
   .ddc > dd > a {
     margin-left: 13px;
   }*/
-  .dda > dd > a {
-    margin-left: 25.5px;
-  }
+    .dda > dd > a {
+      margin-left: 25.5px;
+    }
 
-  .ddb > dd > a {
-    margin-left: 32px;
-  }
+    .ddb > dd > a {
+      margin-left: 32px;
+    }
 
-  .ddd > dd > a {
-    margin-left: 14px;
-  }
+    .ddd > dd > a {
+      margin-left: 14px;
+    }
 
-  .ddc > dd > a {
-    margin-left: 18px;
-  }
-  .c2 {
-    top: 50%;
-    width: 98%;
-    height: 261px;
-    left: 49%;
-  }
+    .ddc > dd > a {
+      margin-left: 18px;
+    }
+
+    .c2 {
+      top: 50%;
+      width: 98%;
+      height: 261px;
+      left: 49%;
+    }
 
     .modal-body {
       position: relative;
@@ -1045,38 +1114,44 @@ ul, ol {
     }
 
     .suspension {
-      bottom: 0;
+      bottom: 30%;
       right: 1px;
     }
-    .suspension .d-qrcode {
-      top: -65px;
-    }
-    .suspension .d-service-phone {
-      top: -11px;
-    }
-    .suspension .d .arrow {
-      top: 75px;
-    }
-    .suspension .d-qrcode .arrow {
-      top: 178px;
-    }
-    .suspension .d-service .arrow {
-      top: 20px;
-    }
+
+      .suspension .d-qrcode {
+        top: -65px;
+      }
+
+      .suspension .d-service-phone {
+        top: -11px;
+      }
+
+      .suspension .d .arrow {
+        top: 75px;
+      }
+
+      .suspension .d-qrcode .arrow {
+        top: 178px;
+      }
+
+      .suspension .d-service .arrow {
+        top: 20px;
+      }
   }
 
   @media screen and (max-width: 375px) {
-  .navbar-nav {
-    width: 100%;
-    margin: 0;
-    display: inline-flex;
-    padding-top: 185px;
-    padding-left: 60%;
-  }
+    .navbar-nav {
+      width: 100%;
+      margin: 0;
+      display: inline-flex;
+      padding-top: 185px;
+      padding-left: 60%;
+    }
+
     .footerPadding {
       padding: 12px 0px;
     }
-  /*.dda > dd > a {
+    /*.dda > dd > a {
     margin-left: 12.5px;
   }
   .ddb > dd > a {
@@ -1088,27 +1163,30 @@ ul, ol {
   .ddd > dd > a {
     margin-left: 0px;
   }*/
-  .dda > dd > a {
-    margin-left: 16.5px;
-  }
+    .dda > dd > a {
+      margin-left: 16.5px;
+    }
 
-  .ddb > dd > a {
-    margin-left: 24px;
-  }
+    .ddb > dd > a {
+      margin-left: 24px;
+    }
 
-  .ddc > dd > a {
-    margin-left: 13px;
-  }
+    .ddc > dd > a {
+      margin-left: 13px;
+    }
 
-  .ddd > dd > a {
-    margin-left: 0px;
-  }
-  .ddd > dt {
-    width:20%;
-  }
-  .ddd > dd {
-    width: 28%;
-  }
+    .ddd > dd > a {
+      margin-left: 0px;
+    }
+
+    .ddd > dt {
+      width: 20%;
+    }
+
+    .ddd > dd {
+      width: 28%;
+    }
+
     .c2 {
       left: 54%;
     }
@@ -1150,15 +1228,19 @@ ul, ol {
       padding-top: 232px;
       padding-left: 51%;
     }
-  .dda > dd > a {
-    margin-left: 9.5px;
-  }
-  .ddb > dd > a {
-    margin-left: 16px;
-  }
-  .ddc > dd > a {
-    margin-left: 4px;
-  }
+
+    .dda > dd > a {
+      margin-left: 9.5px;
+    }
+
+    .ddb > dd > a {
+      margin-left: 16px;
+    }
+
+    .ddc > dd > a {
+      margin-left: 4px;
+    }
+
     .c2 {
       left: 56.6%;
     }
@@ -1189,30 +1271,37 @@ ul, ol {
       padding-top: 160px;
       padding-left: 44%;
     }
-  .dibu {
-    height: 236px !important;
-  }
-  .footerPadding > dl > dt {
-    font-size: 14px;
-    width: 25%;
-    padding-bottom: 0;
-  }
-  .footerContent .footerPadding > dl {
-    padding: 2px;
-    border-right: 0px;
-    height: auto;
-    display: flex;
-    margin: 0;
-  }
-  .dda > dd > a {
-    margin-left: 0;
-  }
-  .ddb > dd > a {
-    margin-left: 0px;
-  }
-  .ddc > dd > a {
-    margin-left: 0;
-  }
+
+    .dibu {
+      height: 236px !important;
+    }
+
+    .footerPadding > dl > dt {
+      font-size: 14px;
+      width: 25%;
+      padding-bottom: 0;
+    }
+
+    .footerContent .footerPadding > dl {
+      padding: 2px;
+      border-right: 0px;
+      height: auto;
+      display: flex;
+      margin: 0;
+    }
+
+    .dda > dd > a {
+      margin-left: 0;
+    }
+
+    .ddb > dd > a {
+      margin-left: 0px;
+    }
+
+    .ddc > dd > a {
+      margin-left: 0;
+    }
+
     .c2 {
       left: 63.6%;
     }
