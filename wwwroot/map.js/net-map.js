@@ -1,7 +1,5 @@
-// JavaScript source code
-/**
- * Created by Administrator on 2017/1/10 0010.
- */
+//import { log } from "util";
+
 var dom = document.getElementById("container");
 var myChart = echarts.init(dom);
 var app = {};
@@ -125,26 +123,6 @@ var geoCoordMap = {
 };
 
 var SXData = [
-  //[{ name: '高平' },{name:'高平',value:190}],
-  //[{ name: '绍兴' }, { name: '韩国', value: 180 }],
-  //[{ name: '绍兴' }, { name: '澳大利亚', value: 170 }],
-  //[{ name: '绍兴' }, { name: '拉脱维亚', value: 160 }],
-  //[{ name: '绍兴' }, { name: '芬兰', value: 150 }],
-  //[{ name: '绍兴' }, { name: '奥地利', value: 140 }],
-  //[{ name: '绍兴' }, { name: '意大利', value: 130 }],
-  //[{ name: '绍兴' }, { name: '新西兰', value: 120 }],
-  //[{ name: '绍兴' }, { name: '瑞典', value: 110 }],
-  //[{ name: '绍兴' }, { name: '保加利亚', value: 100 }],
-  //[{ name: '绍兴' }, { name: '南非', value: 95 }],
-  //[{ name: '绍兴' }, { name: '坦桑尼亚', value: 90 }],
-  //[{ name: '绍兴' }, { name: '爱沙尼亚', value: 80 }],
-  //[{ name: '绍兴' }, { name: '墨西哥', value: 70 }],
-  //[{ name: '绍兴' }, { name: '美国', value: 60 }],
-  //[{ name: '绍兴' }, { name: '加拿大', value: 50 }],
-  //[{ name: '绍兴' }, { name: '德国', value: 40 }],
-  //[{ name: '绍兴' }, { name: '英国', value: 30 }],
-  //[{ name: '绍兴' }, { name: '斯洛伐克', value: 20 }],
-  //[{ name: '绍兴' }, { name: '日本', value: 10 }]，
   [{ name: '高平' }, { name: '韩国', value: 180 }],
   [{ name: '高平' }, { name: '澳大利亚', value: 170 }],
   [{ name: '高平' }, { name: '拉脱维亚', value: 160 }],
@@ -199,7 +177,6 @@ var convertData = function (data) {
     var dataItem = data[i];
     var fromCoord = geoCoordMap[dataItem[0].name];
     var toCoord = geoCoordMap[dataItem[1].name];
-    console.log(dataItem);
     if (fromCoord && toCoord) {
       res.push({
         fromName: dataItem[0].name,
@@ -328,12 +305,11 @@ option = {
     }
   },
   series: series
-};;
+};
 if (option && typeof option === "object") {
   myChart.setOption(option, true);
   window.onresize = myChart.resize
 }
-
 
 $(window).resize(function () {
   myChart.resize();
