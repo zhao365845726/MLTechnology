@@ -156,10 +156,10 @@ function companyInfoGray(a) {
     document.getElementById('brandInfoGray_7').style.display = 'none'
     document.getElementById('brandInfo_7').style.display = 'inline'
   }
-  //if (a === 8) {
-  //  document.getElementById('brandInfoGray_8').style.display = 'none'
-  //  document.getElementById('brandInfo_8').style.display = 'inline'
-  //}
+  if (a === 8) {
+    document.getElementById('brandInfoGray_8').style.display = 'none'
+    document.getElementById('brandInfo_8').style.display = 'inline'
+  }
   //if (a === 9) {
   //  document.getElementById('brandInfoGray_9').style.display = 'none'
   //  document.getElementById('brandInfo_9').style.display = 'inline'
@@ -200,8 +200,8 @@ function companyInfo(a) {
   document.getElementById('brandInfo_6').style.display = 'none'
   document.getElementById('brandInfoGray_7').style.display = 'inline'
   document.getElementById('brandInfo_7').style.display = 'none'
-  //document.getElementById('brandInfoGray_8').style.display = 'inline'
-  //document.getElementById('brandInfo_8').style.display = 'none'
+  document.getElementById('brandInfoGray_8').style.display = 'inline'
+  document.getElementById('brandInfo_8').style.display = 'none'
   //document.getElementById('brandInfoGray_9').style.display = 'inline'
   //document.getElementById('brandInfo_9').style.display = 'none'
   //document.getElementById('brandInfoGray_10').style.display = 'inline'
