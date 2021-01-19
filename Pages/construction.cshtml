@@ -13,18 +13,21 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
-      padding: 10px 6.5%;
+      padding: 50px 12.5%;
+      background: #F2F2F2;
   }
   .ul-list li {
     margin-left: 1.5%;
     margin-top:10px;
     margin-bottom:10px;
+    width:150px;
+    height:70px;
   }
   .ul-list li img {
-     width:200px;
-     height:100px;
+     width:100%;
+     height:100%;
      border:1px solid #EEEEF2;
-     border-radius:10px;
+     border-radius:6px;
   }
   .content-con {
     padding:2% 8.2%;
@@ -33,6 +36,12 @@
     font-size: 24px;
     margin-bottom: 3%;
   }
+  .content-flex {
+      display: -webkit-flex;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content:space-around;
+  }
   .con-img {
      width:200px;
      height:150px;
@@ -40,47 +49,80 @@
      border-radius:6px;
   }
   .con-body {
-    width: 85%;
+    width: 68%;
     float: right;
     font-size: 16px;
-    line-height: 28px;
-    padding-top:1.5%; 
+    line-height: 26px;
+    padding-top: 1.5%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
    }
   .con-div {
     margin-bottom: 2.5%;
+    width: 45%;
   }
 </style>
 <div class="content-icon">
   <div>
     <ul class="ul-list">
-      <li><img src="http://image.milisx.com/1.01.png" /></li>
-      <li><img src="http://image.milisx.com/1.02.png" /></li>
-      <li><img src="http://image.milisx.com/1.03.png" /></li>
-      <li><img src="http://image.milisx.com/1.04.png" /></li>
-      <li><img src="http://image.milisx.com/1.05.png" /></li>
-      <li><img src="http://image.milisx.com/1.06.png" /></li>
-      <li><img src="http://image.milisx.com/1.07.png" /></li>
+      <li><img src="../images/int.png" /></li>
       <li><img src="http://image.milisx.com/1.08.png" /></li>
-      <li><img src="http://image.milisx.com/1.09.png" /></li>
-      <li><img src="http://image.milisx.com/1.010.png" /></li>
-      <li><img src="http://image.milisx.com/1.011.png" /></li>
-      <li><img src="http://image.milisx.com/1.012.png" /></li>
       <li><img src="~/images/amazon.jpg" /></li>
+      <li><img src="~/images/jinmei.png" /></li>
+      <li><img src="~/images/kexing.png" /></li>
+      <li><img src="~/images/dugang.png" /></li>
+      <li><img src="~/images/datong.png" /></li>
+      <li><img src="~/images/lianen.png" /></li>
+      <li><img src="~/images/hanjiaz.png" /></li>
+      <li><img src="~/images/zhenjiuw.png" /></li>
     </ul>
   </div>
   <div class="content-con">
     <p class="title">服务的客户</p>
-    <div class="con-div">
-      <img src="~/images/amazon.jpg" class="con-img" />
-      <p class="con-body">亚马逊及其它销售商为客户提供数百万种独特的全新、翻新及二手商品，如图书、影视、音乐和游戏、数码下载、电子和电脑、家居园艺用品、玩具、婴幼儿用品、食品、服饰、鞋类和珠宝、健康和个人护理用品、体育及户外用品、玩具、汽车及工业产品等。</p>
-    </div>
-    <div class="con-div">
-      <img src="http://image.milisx.com/1.01.png" class="con-img" />
-      <p class="con-body">微软（英文名称：Microsoft；中文名称：微软公司或美国微软公司）始建于1975年，是一家美国跨国科技公司，也是世界PC（Personal Computer，个人计算机）软件开发的先导，由比尔·盖茨与保罗·艾伦创办于1975年，公司总部设立在华盛顿州的雷德蒙德（Redmond，邻近西雅图）。以研发、制造、授权和提供广泛的电脑软件服务业务为主。</p>
-    </div>
-    <div class="con-div">
-      <img src="http://image.milisx.com/1.08.png" class="con-img" />
-      <p class="con-body">中国联通主要经营GSM、WCDMA和FDD-LTE制式移动网络业务，固定通信业务，国内、国际通信设施服务业务，卫星国际专线业务、数据通信业务、网络接入业务和各类电信增值业务，与通信信息业务相关的系统集成业务等。2009年1月6日，原中国联合通信有限公司与原中国网络通信集团公司重组合并，新公司更名为中国联合网络通信集团有限公司。为与合并前的中国联通相区分，业界常以“新联通”进行称呼。</p>
-    </div>
+    <div class="content-flex">
+      <div class="con-div">
+        <img src="../images/int.png" class="con-img" />
+        <p class="con-body">英特尔是美国一家以研制CPU为主的公司，是全球最大的个人计算机零件和CPU制造商，它成立于1968年，具有52年产品创新和市场领导的历史。</p>
+      </div>
+      <div class="con-div">
+        <img src="~/images/amazon.jpg" class="con-img" />
+        <p class="con-body">亚马逊公司（Amazon，简称亚马逊；NASDAQ：AMZN），是美国最大的一家网络电子商务公司，位于华盛顿州的西雅图。是网络上最早开始经营电子商务的公司之一，亚马逊成立于1995年，一开始只经营网络的书籍销售业务，现在则扩及了范围相当广的其他产品，已成为全球商品品种最多的网上零售商和全球第二大互联网企业，在公司名下，也包括了AlexaInternet、a9、lab126、和互联网电影数据库（Internet Movie Database，IMDB）等子公司。</p>
+      </div>
+      <div class="con-div">
+        <img src="http://image.milisx.com/1.08.png" class="con-img" />
+        <p class="con-body">中国联通主要经营GSM、WCDMA和FDD-LTE制式移动网络业务，固定通信业务，国内、国际通信设施服务业务，卫星国际专线业务、数据通信业务、网络接入业务和各类电信增值业务，与通信信息业务相关的系统集成业务等。2009年1月6日，原中国联合通信有限公司与原中国网络通信集团公司重组合并，新公司更名为中国联合网络通信集团有限公司。为与合并前的中国联通相区分，业界常以“新联通”进行称呼。</p>
+      </div>
+      <div class="con-div">
+        <img src="~/images/jinmei.png" class="con-img" />
+        <p class="con-body">山西晋城无烟煤矿业集团有限责任公司（简称“晋煤集团”）是由山西省国资委控股、国开金融公司、中国信达公司持股的有限责任公司，是中国优质无烟煤重要的生产企业、全中国最大的煤层气抽采利用企业集团、全中国最大的煤化工企业集团、全中国最大的瓦斯发电企业集团和山西最具活力的煤机制造集团。 [1]  也是中国国家规划的13个大型煤炭基地中晋东煤炭基地的重要组成部分，是19个首批煤炭国家规划矿区晋城矿区的骨干企业。</p>
+      </div>
+      <div class="con-div">
+        <img src="~/images/kexing.png" class="con-img" />
+        <p class="con-body">山西高平科兴前和煤业有限公司成立于2008年06月13日，注册地位于山西省高平市原村乡前河村，法定代表人为琚永清。经营范围包括矿产资源开采：煤炭开采；煤炭洗选；煤炭销售；道路货物运输；煤制品生产加工及销售。（依法须经批准的项目，经相关部门批准后方可开展经营活动）山西高平科兴前和煤业有限公司对外投资2家公司。</p>
+      </div>
+      <div class="con-div">
+        <img src="~/images/dugang.png" class="con-img" />
+        <p class="con-body">由北京都港航空地面服务有限公司独家运营，本公司创立于2015年，座落于北京首都国际机场。本公司在多年的航空服务领域中积累了丰富的专业经验，致力于为中高端商旅出行人士提供高效、便捷、贴心、全面的航空地面管家式服务，并打造了一支专业、从容的旅途策划领军服务团队。</p>
+      </div>
+      <div class="con-div">
+        <img src="~/images/datong.png" class="con-img" />
+        <p class="con-body">大同市各界人民代表会议协商委员会组建于1949年12月，行使政协地方组织的职能，1955年3月召开了政协大同市第一届委员会第一次全体会议，现在为第十一届政协委员会，是七月份换届的。十一届政协有主席、副主席主席10人（其中中共党员5名），平均年龄55.9岁。90%具有大专以上文化学历或高级技术职称。政协委员379人，其中常委61人，共来自15个参加单位和14个界别。政协机关设有二室、六委和一个中心，即办公厅、研究室、经济与人口资源委员会、提案委员会、科教文卫委员会、社会法制委员会、学习文史委员会、农村工作委员会和后勤服务中心。</p>
+      </div>
+      <div class="con-div">
+        <img src="~/images/lianen.png" class="con-img" />
+        <p class="con-body">天津联恩教育科技有限公司于2018年04月10日成立。法定代表人任成,公司经营范围包括：教育软件技术开发、转让、咨询服务；教育信息咨询；企业管理咨询；会议服务；计算机系统集成服务；企业管理；办公用品、体育用品（弩除外）、工艺品、计算机软硬件及辅助设备、电子产品批发兼零售；组织文化艺术交流活动等。</p>
+      </div>
+      <div class="con-div">
+        <img src="~/images/hanjiaz.png" class="con-img" />
+        <p class="con-body">山西韩梨果业有限公司简称韩梨庄园，地处山西省高平市西部，位于距离市区20公里的韩家庄村，因全村家家户户种植韩梨玉露香而得名。韩家庄是野川镇圪塔庄村的一个自然村，三面环山，甘泉长流，梯田相叠，风水天成，四季分明，景色宜人。</p>
+      </div>
+      <div class="con-div">
+        <img src="~/images/zhenjiuw.png" class="con-img" />
+        <p class="con-body">真酒网，让您远离假酒！我们拥有资深的鉴酒师与品酒师团队，十多年的潜心研究与经验总结，成就专业鉴酒实力，目前在新媒体拥有400多万粉丝，在行业内遥遥领先，鉴定超过50万瓶假酒，举办过5000多场鉴别培训，服务于10000多家知名企业。授人以鱼不如授人以渔，我们不仅仅“只卖真酒”，我们更是通过专业的真假酒鉴定培训及7*24h微信在线鉴定服务，保证让您随时随地远离假酒！同时我们致力于白酒、葡萄酒、洋酒、茶道等文化及礼仪的传播，让您在商务接待的过程中表现的更专业与自信。</p>
+      </div>
+    </div>  
   </div>
 </div>
