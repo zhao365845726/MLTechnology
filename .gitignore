@@ -57,3 +57,4 @@ dkms.conf
 /obj/Release/netcoreapp2.1
 /.vs
 obj/*.*
+/bin/Release/netcoreapp2.1
