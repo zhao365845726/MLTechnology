@@ -21,27 +21,27 @@
           var e = window.event || arguments[0];
           //屏蔽F12
           if (e.keyCode == 123) {
-            alert('友情提醒您，本网站禁止审查元素');
-            return false;
+            //alert('友情提醒您，本网站禁止审查元素');
+            //return false;
             //屏蔽Ctrl+Shift+I
           } else if ((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)) {
-            alert('友情提醒您，本网站禁止审查元素');
-            return false;
+            //alert('友情提醒您，本网站禁止审查元素');
+            //return false;
             //屏蔽Shift+F10
           } else if ((e.shiftKey) && (e.keyCode == 121)) {
-            alert('本网站禁止审查元素！');
+            //alert('本网站禁止审查元素！');
 
-            return false;
+            //return false;
 
           } else if (event.ctrlKey && window.event.keyCode == 83) {
-            alert('本网站禁止保存文件！');
-            return false;
+            //alert('本网站禁止保存文件！');
+            //return false;
           }
         };
         ////屏蔽右键单击
         document.oncontextmenu = function () {
-          alert('友情提醒您，本网站禁止审查元素');
-          return false;
+          //alert('友情提醒您，本网站禁止审查元素');
+          //return false;
         }
       }
 
