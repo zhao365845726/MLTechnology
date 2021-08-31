@@ -21,27 +21,27 @@
           var e = window.event || arguments[0];
           //屏蔽F12
           if (e.keyCode == 123) {
-            //alert('友情提醒您，本网站禁止审查元素');
-            //return false;
+            alert('友情提醒您，本网站禁止审查元素');
+            return false;
             //屏蔽Ctrl+Shift+I
           } else if ((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)) {
-            //alert('友情提醒您，本网站禁止审查元素');
-            //return false;
+            alert('友情提醒您，本网站禁止审查元素');
+            return false;
             //屏蔽Shift+F10
           } else if ((e.shiftKey) && (e.keyCode == 121)) {
-            //alert('本网站禁止审查元素！');
+            alert('本网站禁止审查元素！');
 
-            //return false;
+            return false;
 
           } else if (event.ctrlKey && window.event.keyCode == 83) {
-            //alert('本网站禁止保存文件！');
-            //return false;
+            alert('本网站禁止保存文件！');
+            return false;
           }
         };
         ////屏蔽右键单击
         document.oncontextmenu = function () {
-          //alert('友情提醒您，本网站禁止审查元素');
-          //return false;
+          alert('友情提醒您，本网站禁止审查元素');
+          return false;
         }
       }
 
@@ -171,7 +171,7 @@ margin-bottom:0%;position: relative;z-index: 0;padding:0;" id="bodya">
           <div class="d d-qrcode" id="suspenc1" style="display:none;">
             <i class="arrow"></i>
             <div class="inner-box">
-              <div class="qrcode-img"><img src="http://image.mlkj.milisx.com/qrcode_for_gh_sxmlkj.jpg" alt=""></div>
+              <div class="qrcode-img"><img src="https://mltechnology.oss-cn-beijing.aliyuncs.com/official/website/98-mlkj/qrcode_for_gh_sxmlkj.jpg" alt=""></div>
               <p>微信服务号</p>
             </div>
           </div>
