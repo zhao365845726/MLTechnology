@@ -16,7 +16,7 @@ img {
   padding-bottom: 12px;
 }
 .aboutbg {
-  background: url(http://image.milisx.com/3.1.jpg) no-repeat;
+  background: url(https://mltechnology.oss-cn-beijing.aliyuncs.com/official/website/98-mlkj/3.1.jpg) no-repeat;
   background-size: 100% 100%;
   height: 600px;
   width: 100%;
@@ -105,7 +105,7 @@ img {
 }
 /*内容2*/
 .aboutContentbg {
-  background: url(http://image.milisx.com/3.2.jpg) no-repeat center center;
+  background: url(https://mltechnology.oss-cn-beijing.aliyuncs.com/official/website/98-mlkj/3.2.jpg) no-repeat center center;
   background-size: 100% 100%;
   height: 500px;
   position: relative;
@@ -148,7 +148,7 @@ img {
   margin-top: 25px;
 }
 .technologyCenter {
-  background: url(http://image.milisx.com/3.3.jpg) no-repeat center center;
+  background: url(https://mltechnology.oss-cn-beijing.aliyuncs.com/official/website/98-mlkj/3.3.jpg) no-repeat center center;
   background-size: 100% 100%;
   height: 500px;
 }
