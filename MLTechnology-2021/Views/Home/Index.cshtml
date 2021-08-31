@@ -1,8 +1,26 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@using MLTechnology_2021.Models
+@model MLPageModel
+@{
+    ViewData["Title"] = @Model.EnterPriceAbbreviation;
 }
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="@Model.DomainName/home-banner-001" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="@Model.DomainName/home-banner-002" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="@Model.DomainName/home-banner-003" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+

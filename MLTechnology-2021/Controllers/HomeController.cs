@@ -20,7 +20,7 @@ namespace MLTechnology_2021.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View(new MLPageModel());
         }
 
         public IActionResult Privacy()
