@@ -4,18 +4,35 @@
     ViewData["Title"] = @Model.EnterPriceAbbreviation;
 }
 
+<style>
+    .demo {
+        font-family: sans-serif;
+        border: 1px solid #eee;
+        border-radius: 2px;
+        padding: 20px 30px;
+        margin-top: 1em;
+        margin-bottom: 40px;
+        user-select: none;
+        overflow-x: auto;
+    }
+</style>
+
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-        <img src="@Model.DomainName/home-banner-001" class="d-block w-100" alt="...">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="@Model.DomainName/home-banner-001" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="@Model.DomainName/home-banner-002" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="@Model.DomainName/home-banner-003" class="d-block w-100" alt="...">
+        </div>
     </div>
-    <div class="carousel-item">
-      <img src="@Model.DomainName/home-banner-002" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="@Model.DomainName/home-banner-003" class="d-block w-100" alt="...">
-    </div>
-  </div>
+</div>
+
+<div id="hello-vue" class="demo">
+    {{ message }}
 </div>
 
 <div class="text-center">
@@ -24,3 +41,17 @@
 </div>
 
 
+@section scripts{
+<script>
+    const HelloVueApp = {
+      data() {
+        return {
+          message: 'Hello Vue!!'
+        }
+      }
+    }
+
+    Vue.createApp(HelloVueApp).mount('#hello-vue')
+</script>
+
+}
